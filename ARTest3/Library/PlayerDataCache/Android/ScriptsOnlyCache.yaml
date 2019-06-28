@@ -36,7 +36,7 @@ ScriptsOnlyBuild:
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/Scenes/Phase3.unity:
+    Assets/Stephen/Scenes/Phase3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -58,6 +58,8 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -1070,5 +1072,5 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Phase3.unity
-  playerPath: C:/Users/slauth/Desktop/Old WSUProjects/ARTest3/Builds/Test10.apk
+  - Assets/Stephen/Scenes/Phase3.unity
+  playerPath: C:/Users/slauth/Documents/GitHub/WSU_internship/ARTest3/Builds/Test11.apk

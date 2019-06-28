@@ -1270,8 +1270,9 @@ GameObject:
   - component: {fileID: 2134400074}
   - component: {fileID: 2134400073}
   - component: {fileID: 2134400072}
-  - component: {fileID: 2134400071}
   - component: {fileID: 2134400075}
+  - component: {fileID: 2134400076}
+  - component: {fileID: 2134400071}
   m_Layer: 0
   m_Name: TestFB
   m_TagString: Fatberg
@@ -1279,20 +1280,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &2134400071
-CapsuleCollider:
+--- !u!54 &2134400071
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134400070}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.5000002
-  m_Height: 2.0000002
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &2134400072
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1369,3 +1372,17 @@ MonoBehaviour:
     rgba: 0
   itemName: Fatberg
   desc: Lump of trash found in sewers.
+--- !u!64 &2134400076
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134400070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
