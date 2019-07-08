@@ -5,6 +5,7 @@ using UnityEngine;
 public class PuzzleManager : MonoBehaviour
 {
     public Puzzle puzzlePrefab;
+    public GameObject winGameMenu;
 
     private List<Puzzle> puzzleList = new List<Puzzle>();
     private List<Vector3> puzzlePositions = new List<Vector3>();
@@ -47,7 +48,15 @@ public class PuzzleManager : MonoBehaviour
                 game_status.status = GameStatus.GameState.play;
                 break;
             case GameStatus.GameState.play:
+                if (HaveWeWon() == true)
+                {
+                    game_status.status = GameStatus.GameState.win;
+                }
                 MovePuzzle();
+                break;
+            case GameStatus.GameState.win:
+                //end game
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
         }
     }
@@ -184,5 +193,17 @@ public class PuzzleManager : MonoBehaviour
             randomNumbers.Add(number);
             p.transform.position = puzzlePositions[number];
         }
+    }
+
+    bool HaveWeWon()
+    {
+        foreach(Puzzle p in puzzleList)
+        {
+            if(p.transform.position != p.winPosition)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

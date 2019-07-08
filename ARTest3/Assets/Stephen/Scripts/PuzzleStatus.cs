@@ -8,7 +8,8 @@ public class GameStatus : MonoBehaviour
     {
         start,
         start_pressed,
-        play
+        play,
+        win
     }
     public GameState status;
     public GameStatus()
