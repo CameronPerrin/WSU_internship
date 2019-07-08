@@ -1,5 +1,9 @@
 sceneSetups:
-- path: Assets/Scenes/Phase3.unity
+<<<<<<< HEAD
+- path: Assets/GregsStuff/Phase1.unity
+=======
+- path: Assets/Stephen/Scenes/Throw_Test.unity
+>>>>>>> ef990e91186728df3480485f6ab5774da4e75b75
   isLoaded: 1
   isActive: 1
   isSubScene: 0
