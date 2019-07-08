@@ -7,6 +7,8 @@ public class PuzzleManager : MonoBehaviour
     public Puzzle puzzlePrefab;
 
     private List<Puzzle> puzzleList = new List<Puzzle>();
+    private List<Vector3> puzzlePositions = new List<Vector3>();
+    private List<int> randomNumbers = new List<int>();
 
     private Vector2 startPosition = new Vector2(-3.55f, 1.77f);
     private Vector2 offset = new Vector2(1.05f, 1.05f);
@@ -24,6 +26,9 @@ public class PuzzleManager : MonoBehaviour
     public string FolderName;
     public GameObject FullPicture;
 
+    [HideInInspector]
+    public static GameStatus game_status = new GameStatus();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +40,16 @@ public class PuzzleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePuzzle();
+        switch (game_status.status)
+        {
+            case GameStatus.GameState.start_pressed:
+                MixPuzzles();
+                game_status.status = GameStatus.GameState.play;
+                break;
+            case GameStatus.GameState.play:
+                MovePuzzle();
+                break;
+        }
     }
 
     private void SpawnPuzzle(int number)
@@ -151,5 +165,24 @@ public class PuzzleManager : MonoBehaviour
             filePath = "Puzzles/" + FolderName + "/pic";
             Texture2D mat1 = Resources.Load(filePath, typeof(Texture2D)) as Texture2D;
             FullPicture.GetComponent<Renderer>().material.mainTexture = mat1;
+    }
+
+    void MixPuzzles()
+    {
+        int number;
+        foreach(Puzzle p in puzzleList)
+        {
+            puzzlePositions.Add(p.transform.position);
+        }
+        foreach (Puzzle p in puzzleList)
+        {
+            number = Random.Range(0, puzzleList.Count);
+            while (randomNumbers.Contains(number))
+            {
+                number = Random.Range(0, puzzleList.Count);
+            }
+            randomNumbers.Add(number);
+            p.transform.position = puzzlePositions[number];
+        }
     }
 }
