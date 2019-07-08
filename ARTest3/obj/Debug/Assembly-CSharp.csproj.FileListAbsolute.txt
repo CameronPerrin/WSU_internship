@@ -1,0 +1,2 @@
+C:\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
