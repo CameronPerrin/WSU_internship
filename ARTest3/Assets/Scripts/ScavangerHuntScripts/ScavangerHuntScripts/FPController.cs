@@ -20,7 +20,7 @@ public class FPController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         hasMoved = true;
         currentPos = transform.position;
@@ -49,7 +49,7 @@ public class FPController : MonoBehaviour
     }
     private void LateUpdate()
     {
-            Debug.DrawRay(transform.position, transform.forward);
+            //Debug.DrawRay(transform.position, transform.forward);
         //Debug.Log(Vector3.Distance(currentPos, transform.position));
         if (Vector3.Distance(currentPos, transform.position) <.01f)
         {

@@ -35,11 +35,11 @@ public class ArtifactController : MonoBehaviour
             clicked.GetComponent<MeshRenderer>().material.color = origColor;
             clicked = null;
         }
-
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Debug.DrawRay(ray.origin,ray.direction,Color.blue);
+            RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
@@ -64,7 +64,7 @@ public class ArtifactController : MonoBehaviour
                 if (hit.transform != null && hit.transform.gameObject.GetComponent<MeshRenderer>().material.color == origColor)
                 {     
                     //Debug statement to check click is working               
-                    //PrintName(hit.transform.gameObject);
+                    Debug.Log(hit.transform.gameObject);
                     hit.transform.gameObject.GetComponent<MeshRenderer>().material.color = color;
                     clicked.GetComponent<Rigidbody>().isKinematic = true;
                     clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;

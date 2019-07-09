@@ -14,6 +14,6 @@ public class MadeToss : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(item);
+        Destroy(gameObject);
     }
 }
