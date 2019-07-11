@@ -240,13 +240,19 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/WSUGithubProject/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/WSUGithubProject/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/WSUGithubProject/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.1.7f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -669,16 +675,27 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\ArtifactController.cs" />
-    <Compile Include="Assets\Scripts\IgnoreRaycast.cs" />
-    <Compile Include="Assets\Scripts\ItemInfo.cs" />
-    <Compile Include="Assets\Scripts\ScavangerHuntScripts\FunctionCaller.cs" />
-    <Compile Include="Assets\Scripts\ScavangerHuntScripts\InfoPopUp.cs" />
-    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavengerHunt.cs" />
-    <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\Player\FirstPersonCont.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\CheckIfInside.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\FPController.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\FunctionCaller.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\InfoPopUp.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\ObjectInformation.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\PickUp.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\ScavengerHunt.cs" />
+    <Compile Include="Assets\Stephen\Scripts\ArtifactController.cs" />
+    <Compile Include="Assets\Stephen\Scripts\Buttons.cs" />
+    <Compile Include="Assets\Stephen\Scripts\IgnoreRaycast.cs" />
+    <Compile Include="Assets\Stephen\Scripts\ItemInfo.cs" />
+    <Compile Include="Assets\Stephen\Scripts\MadeToss.cs" />
+    <Compile Include="Assets\Stephen\Scripts\Puzzle.cs" />
+    <Compile Include="Assets\Stephen\Scripts\PuzzleManager.cs" />
+    <Compile Include="Assets\Stephen\Scripts\PuzzleStatus.cs" />
+    <Compile Include="Assets\Stephen\Scripts\SimpleCameraController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shaders\CullOffShader.shader" />
+    <None Include="Assets\Stephen\Shaders\CullOffShader.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

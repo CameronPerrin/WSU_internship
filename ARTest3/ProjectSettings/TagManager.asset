@@ -8,6 +8,7 @@ TagManager:
   - UIBar
   - NoSpawn
   - Plane
+  - Controller
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FPController : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class FPController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
         hasMoved = true;
         currentPos = transform.position;
@@ -46,24 +47,22 @@ public class FPController : MonoBehaviour
             transform.eulerAngles = (Vector2)rotation * rotSpeed;
         }
         cannotMoveForward = false;
-    }
-    private void LateUpdate()
-    {
-            //Debug.DrawRay(transform.position, transform.forward);
+
+        //Debug.DrawRay(transform.position, transform.forward);
         //Debug.Log(Vector3.Distance(currentPos, transform.position));
-        if (Vector3.Distance(currentPos, transform.position) <.01f)
+        if (Vector3.Distance(currentPos, transform.position) < .01f)
         {
             hasMoved = false;
         }
-        if(!hasMoved && hasCollided)
+        if (!hasMoved && hasCollided)
         {
             RaycastHit hit;
-            if(Physics.Raycast(transform.position,transform.forward,out hit))
+            if (Physics.Raycast(transform.position, transform.forward, out hit))
             {
-                if(hit.transform.name == "Walls")
+                if (hit.transform.name == "Walls")
                 {
                     //Debug.Log(Vector3.Distance(hit.point, movePos));
-                    if(Vector3.Distance(hit.point, movePos) < .8f)
+                    if (Vector3.Distance(hit.point, movePos) < .8f)
                     {
                         cannotMoveForward = true;
                         Debug.Log("Cant move forward");
@@ -71,8 +70,12 @@ public class FPController : MonoBehaviour
                 }
             }
         }
-        
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
+
 
     private void OnCollisionStay(Collision collision)
     {
