@@ -29,7 +29,7 @@ public class ScavengerHunt : MonoBehaviour
     public List<SpawnedInformation> spawnInfo;
     bool isReady;
     // Update is called once per frame
-     void Start()
+     void Awake()
     {
         spawnInfo = new List<SpawnedInformation>();
        // textObject = GameObject.FindGameObjectWithTag("UIBar");
@@ -39,6 +39,7 @@ public class ScavengerHunt : MonoBehaviour
         {
             SpawnItems();
         }
+        GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().score = 0;
     }
     public void SpawnItems()
     {
@@ -73,7 +74,9 @@ public class ScavengerHunt : MonoBehaviour
     void Spawn(Vector3 pos, SpawnedInformation info)
     {
         string objectName = spawns[Random.Range(0, spawns.Length)];
+        Debug.Log(objectName);
         GameObject temp = Instantiate(Resources.Load<GameObject>("ObjectsToFind/" + objectName));
+
         info = temp.GetComponent<ObjectInformation>().objectInfo;
         //info.name = objectName;
         pos = new Vector3(pos.x, pos.y + temp.GetComponent<MeshRenderer>().bounds.extents.y, pos.z);
