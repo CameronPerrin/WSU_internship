@@ -56,9 +56,15 @@
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
 
+			float3 direction = cross(IN.viewDir, o.Normal);
+			//float3 direction2 = ((direction + IN.viewDir)/2) * _SinTime.z;
+			float3 direction2 = float3(lerp(IN.viewDir.x, direction.x, _SinTime.w), lerp(IN.viewDir.y, direction.y, _SinTime.w), lerp(IN.viewDir.z, direction.z, _SinTime.w));
+
 			o.Normal = UnpackNormal(tex2D(_BumpMap, IN.uv_BumpMap));
-			half rim = 1.0 - saturate(dot(normalize(IN.viewDir), o.Normal));
+			half rim = 1.0 - saturate(dot(normalize(direction2), o.Normal));
 			o.Emission = _RimColor.rgb * pow(rim, _RimPower);
+
+			
         }
         ENDCG
     }
