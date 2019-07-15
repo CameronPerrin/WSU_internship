@@ -20,6 +20,7 @@ public class ScannerMove : MonoBehaviour
     public GameObject textBoxContainer;
     public GameObject clicked;
     private Vector3 oldPos;
+    private Quaternion oldRot;
 
     void Start()
     {
@@ -47,8 +48,10 @@ public class ScannerMove : MonoBehaviour
             {
                 clicked = hit.transform.gameObject;
                 oldPos = clicked.transform.position;
+                oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
                 clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance  + Camera.main.transform.right * shift;
+                clicked.transform.rotation = new Quaternion(0,0,0,0);
                 textBoxContainer.SetActive(false);
                 descContainer.SetActive(true);
                 itemName.text = clicked.GetComponent<ItemInfo>().itemName;
@@ -64,6 +67,7 @@ public class ScannerMove : MonoBehaviour
             {
                 clicked.transform.parent = null;
                 clicked.transform.position = oldPos;
+                clicked.transform.rotation = oldRot;
                 textBoxContainer.SetActive(true);
                 clicked = null;
                 descContainer.SetActive(false);
