@@ -79,7 +79,7 @@ public class FPController : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        Debug.Log(collision.transform.name);
+        //Debug.Log(collision.transform.name);
         if(collision.transform.tag != "Plane" && collision.transform.name == "Walls")
         {
             hasCollided = true;

@@ -19,6 +19,7 @@ public class ScavengerHunt : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject textObject;
+    GameObject inventoryObject;
     GameObject plane;
     public int amountToSpawn;
     [Tooltip("Every Spawned Object Requires Script Type Object Information")]
@@ -28,9 +29,11 @@ public class ScavengerHunt : MonoBehaviour
     public bool readyToSpawn;
     public List<SpawnedInformation> spawnInfo;
     bool isReady;
+    public bool hasClicked;
     // Update is called once per frame
      void Awake()
-    {
+     {
+        inventoryObject = GameObject.FindGameObjectWithTag("Inventory");
         spawnInfo = new List<SpawnedInformation>();
        // textObject = GameObject.FindGameObjectWithTag("UIBar");
         textObject.SetActive(false);
@@ -40,6 +43,14 @@ public class ScavengerHunt : MonoBehaviour
             SpawnItems();
         }
         GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().score = 0;
+     }
+    private void Update()
+    {
+        if(hasClicked)
+        {
+            inventoryObject.GetComponent<Inventory>().ShowList();
+            hasClicked = false;
+        }
     }
     public void SpawnItems()
     {
@@ -74,7 +85,7 @@ public class ScavengerHunt : MonoBehaviour
     void Spawn(Vector3 pos, SpawnedInformation info)
     {
         string objectName = spawns[Random.Range(0, spawns.Length)];
-        Debug.Log(objectName);
+        //Debug.Log(objectName);
         GameObject temp = Instantiate(Resources.Load<GameObject>("ObjectsToFind/" + objectName));
 
         info = temp.GetComponent<ObjectInformation>().objectInfo;
@@ -98,7 +109,9 @@ public class ScavengerHunt : MonoBehaviour
         temp.GetComponent<InfoPopUp>().SetSpawnInfo(info);
         temp.GetComponent<InfoPopUp>().text = Instantiate(textObject);
         temp.GetComponent<InfoPopUp>().text.transform.parent = textObject.transform.parent;
-      
+        InventoryInfo inventoryInfo = new InventoryInfo(info, temp.GetComponent<ObjectInformation>());
+
+        inventoryObject.GetComponent<Inventory>().AddToList(inventoryInfo);
         spawnInfo.Add(info);
         isReady = false;
     }

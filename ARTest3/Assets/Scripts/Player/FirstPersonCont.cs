@@ -17,6 +17,7 @@ public class FirstPersonCont : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //camera.transform.position = transform.position;
         float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
