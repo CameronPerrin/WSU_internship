@@ -9,10 +9,18 @@ public class ScannerMove : MonoBehaviour
     private float y;
     private Vector3 rotate;
     public Transform cam;
+    public float distance;
+    public float shift;
 
     //Test Scanner Beep
-    public Text textBox;
+    public Text indicator;
     public Text itemName;
+    public Text desc;
+    public GameObject descContainer;
+    public GameObject textBoxContainer;
+    public GameObject clicked;
+    private Vector3 oldPos;
+    private Quaternion oldRot;
 
     void Start()
     {
@@ -34,17 +42,37 @@ public class ScannerMove : MonoBehaviour
         {
             Debug.Log("Hit Sum'n");
             Debug.Log(hit.transform.gameObject);
-            textBox.text = "!";
+            indicator.text = "!";
 
-            if (Input.GetButtonDown("Submit"))
+            if (Input.GetButtonDown("Submit") && !clicked)
             {
-                itemName.text = hit.transform.gameObject.name;
+                clicked = hit.transform.gameObject;
+                oldPos = clicked.transform.position;
+                oldRot = clicked.transform.rotation;
+                clicked.transform.parent = cam;
+                clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance  + Camera.main.transform.right * shift;
+                clicked.transform.rotation = new Quaternion(0,0,0,0);
+                textBoxContainer.SetActive(false);
+                descContainer.SetActive(true);
+                itemName.text = clicked.GetComponent<ItemInfo>().itemName;
+                desc.text = clicked.GetComponent<ItemInfo>().desc;
             }
         }
         else
         {
-            textBox.text = ".";
-            itemName.text = "";
+            indicator.text = ".";
         }
+
+        if (Input.GetButtonDown("Cancel") && clicked)
+            {
+                clicked.transform.parent = null;
+                clicked.transform.position = oldPos;
+                clicked.transform.rotation = oldRot;
+                textBoxContainer.SetActive(true);
+                clicked = null;
+                descContainer.SetActive(false);
+                itemName.text = "";
+                desc.text = "";
+            }
     }
 }
