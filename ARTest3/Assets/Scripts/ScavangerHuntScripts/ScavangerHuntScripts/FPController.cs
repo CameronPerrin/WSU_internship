@@ -31,7 +31,7 @@ public class FPController : MonoBehaviour
         Vector3 vec = new Vector3(h * speed, 0, v * speed);
         vec = Vector3.ProjectOnPlane(transform.forward * speed * v, Vector3.up);
         Vector3 movement = Vector3.ProjectOnPlane(transform.right * speed * h, Vector3.up);
-        if(cannotMoveForward)
+        if (cannotMoveForward)
         {
             vec.z = 0;
             Debug.Log(vec);
@@ -39,15 +39,11 @@ public class FPController : MonoBehaviour
         vec.y = 0;
         movePos = (vec + movement + transform.position); // So i know where we want to move if we are colliding
         transform.position += (vec + movement);
-        if (Input.GetMouseButton(1))
-        {
-            rotation.y += Input.GetAxis("Mouse X");
-            rotation.x += -Input.GetAxis("Mouse Y");
-            camera.transform.eulerAngles = (Vector2)rotation * rotSpeed;
-            transform.eulerAngles = (Vector2)rotation * rotSpeed;
-        }
+        rotation.y += Input.GetAxis("Mouse X");
+        rotation.x += -Input.GetAxis("Mouse Y");
+        camera.transform.eulerAngles = (Vector2)rotation * rotSpeed;
+        transform.eulerAngles = (Vector2)rotation * rotSpeed;
         cannotMoveForward = false;
-
         //Debug.DrawRay(transform.position, transform.forward);
         //Debug.Log(Vector3.Distance(currentPos, transform.position));
         if (Vector3.Distance(currentPos, transform.position) < .01f)
@@ -70,7 +66,7 @@ public class FPController : MonoBehaviour
                 }
             }
         }
-        if(Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -80,7 +76,7 @@ public class FPController : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         //Debug.Log(collision.transform.name);
-        if(collision.transform.tag != "Plane" && collision.transform.name == "Walls")
+        if (collision.transform.tag != "Plane" && collision.transform.name == "Walls")
         {
             hasCollided = true;
             //GetComponent<Rigidbody>().velocity = Vector3.zero;
