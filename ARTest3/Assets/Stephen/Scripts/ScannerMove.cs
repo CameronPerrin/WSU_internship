@@ -10,16 +10,22 @@ public class ScannerMove : MonoBehaviour
     private float y;
     private Vector3 rotate;
     public Transform cam;
+    public Quaternion camStartRot;
+    public Transform camStartPos;
+
     //Variables to position object in proper place in front of camera
     public float distance;
     public float shift;
     public float shiftV;
 
     //List and varaibles used to house locations of objects in fatberg
-    public List<Vector3> distances;
+    public List<GameObject> items;
     public GameObject one;
     public GameObject two;
     public GameObject three;
+    public GameObject four;
+    public GameObject five;
+
     //Variable used for testing 
     public float away;
 
@@ -29,8 +35,9 @@ public class ScannerMove : MonoBehaviour
     public GameObject descContainer;
     public GameObject textBoxContainer;
 
-    //Test Scanner Beep for reticles and arrows
+    //Scanner objects: reticle and arrows
     public GameObject indicator;
+    public List<GameObject> arrows;
 
     //Variable for currently selected item
     public GameObject clicked;
@@ -43,26 +50,38 @@ public class ScannerMove : MonoBehaviour
     public float speed;
     public float framesleft;
 
+    private Ray ray;
+    public RaycastHit hit;
+
 
     void Start()
     {
         cam = Camera.main.transform;
-        distances.Add(one.transform.position);
-        distances.Add(two.transform.position);
-        distances.Add(three.transform.position);
+        camStartRot = cam.rotation;
+        newPos = camStartPos.position + camStartPos.forward * distance 
+                                            + camStartPos.right * shift 
+                                            + camStartPos.up * shiftV;
+        items.Add(one);
+        items.Add(two);
+        items.Add(three);
+        items.Add(four);
+        items.Add(five);
     }
 
     void Update()
     {
-        //Camera rotation input
-        y = Input.GetAxisRaw("PS X");
-        x = Input.GetAxisRaw("PS Y");
-        rotate = new Vector3(x * -1, y * -1, 0);
-        transform.eulerAngles = transform.eulerAngles - rotate;
+        if (!clicked)
+        {
+            //Camera rotation input
+            y = Input.GetAxisRaw("PS X");
+            x = Input.GetAxisRaw("PS Y");
+            rotate = new Vector3(x * -1, y * -1, 0);
+            transform.eulerAngles = transform.eulerAngles - rotate;
+        }
 
-        Ray ray = new Ray(cam.position, cam.forward);
+        ray = new Ray(cam.position, cam.forward);
         Debug.DrawRay(ray.origin,ray.direction,Color.blue);
-        RaycastHit hit;
+        
 
         if (Physics.Raycast(ray, out hit, 100.0f))
         {
@@ -79,13 +98,14 @@ public class ScannerMove : MonoBehaviour
                 oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
 
-                //Position to move selected object to in front of camera
+                /* 
+                //Position to move selected object to in front of camera position when clicked
                 newPos = Camera.main.transform.position + Camera.main.transform.forward * distance 
                                             + Camera.main.transform.right * shift 
                                             + Camera.main.transform.up * shiftV;
-                
-
+                */
                 //clicked.transform.position = newPos;
+
                 clicked.transform.rotation = new Quaternion(0,0,0,0);
                 textBoxContainer.SetActive(false);
                 descContainer.SetActive(true);
@@ -97,27 +117,69 @@ public class ScannerMove : MonoBehaviour
         {
             //Distance check for changing reticle color when searching FB
             indicator.GetComponent<SpriteRenderer>().color = Color.white;
-            if(Vector3.Distance(distances[0], ray.GetPoint(25)) < 3f || Vector3.Distance(distances[1], ray.GetPoint(25)) < 3f || Vector3.Distance(distances[2], ray.GetPoint(25)) < 3f)
+            /* 
+            if(Vector3.Distance(items[0].transform.position, ray.GetPoint(25)) < 3f)
             {   
-                //away = Vector3.Distance(distances[0], ray.GetPoint(25));
                 indicator.GetComponent<SpriteRenderer>().color = Color.yellow;
             } 
-            else
+            else if(Vector3.Distance(items[1].transform.position, ray.GetPoint(25)) < 3f)
             {
-                //away = Vector3.Distance(distances[0], ray.GetPoint(25));
                 indicator.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            else if(Vector3.Distance(items[2].transform.position, ray.GetPoint(25)) < 3f)
+            {
+                indicator.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            else if(Vector3.Distance(items[3].transform.position, ray.GetPoint(25)) < 3f)
+            {
+                indicator.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            else if(Vector3.Distance(items[4].transform.position, ray.GetPoint(25)) < 3f)
+            {
+                indicator.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            */
+
+            foreach (var item in items)
+            {
+                if (Vector3.Distance(item.transform.position, ray.GetPoint(25)) < 3f)
+                {
+                    foreach(var arrow in arrows)
+                    {
+                        if (item == arrow.GetComponent<ArrowPoint>().target)
+                        {
+                            arrow.GetComponent<ArrowPoint>().arrow.GetComponent<SpriteRenderer>().color = Color.red;
+                        }
+                        else
+                        {
+                            arrow.GetComponent<ArrowPoint>().arrow.GetComponent<SpriteRenderer>().color = new Color32(0, 214, 255, 255);
+                        }
+                    }
+                }
+                else if (Vector3.Distance(item.transform.position, ray.GetPoint(25)) > 3f)
+                {
+                    foreach(var arrow in arrows)
+                    {
+                        if (item == arrow.GetComponent<ArrowPoint>().target)
+                        {
+                            arrow.GetComponent<ArrowPoint>().arrow.GetComponent<SpriteRenderer>().color = new Color32(0, 214, 255, 255);
+                        }
+                        
+                    }
+                }
             }
         }
 
-        //Moves item from fatberg to correct location in the "UI"
+        //Moves item from fatberg to correct location in the "UI" as well as resets camera to original position
         if(framesleft > 0)
         {
+            transform.rotation = Quaternion.Lerp(transform.rotation, camStartRot, Time.deltaTime * speed);
             clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
             framesleft--;
         }
         
         //Puts item back when circle is pressed
-        if (Input.GetButtonDown("Cancel") && clicked)
+        if (Input.GetButtonDown("Cancel") && clicked && framesleft == 0)
         {
                 clicked.transform.parent = null;
                 clicked.transform.position = oldPos;
