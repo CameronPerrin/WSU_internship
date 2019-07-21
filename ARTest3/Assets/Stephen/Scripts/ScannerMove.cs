@@ -5,36 +5,44 @@ using UnityEngine.UI;
 
 public class ScannerMove : MonoBehaviour
 {
+    //Camera Rotation Variables
     private float x;
     private float y;
     private Vector3 rotate;
     public Transform cam;
+    //Variables to position object in proper place in front of camera
     public float distance;
     public float shift;
     public float shiftV;
 
-    //Distance list etc.
+    //List and varaibles used to house locations of objects in fatberg
     public List<Vector3> distances;
     public GameObject one;
     public GameObject two;
     public GameObject three;
+    //Variable used for testing 
     public float away;
 
-    //Test Scanner Beep
-    public Text indicator;
+    //Text boxes and variables for text itself
     public Text itemName;
     public Text desc;
     public GameObject descContainer;
     public GameObject textBoxContainer;
+
+    //Test Scanner Beep for reticles and arrows
+    public GameObject indicator;
+
+    //Variable for currently selected item
     public GameObject clicked;
+
+
+    //Lerp variables for moving objects
+    private Quaternion oldRot;
     private Vector3 oldPos;
     private Vector3 newPos;
-
     public float speed;
-    private float startTime;
-    public float length;
+    public float framesleft;
 
-    private Quaternion oldRot;
 
     void Start()
     {
@@ -46,6 +54,7 @@ public class ScannerMove : MonoBehaviour
 
     void Update()
     {
+        //Camera rotation input
         y = Input.GetAxisRaw("PS X");
         x = Input.GetAxisRaw("PS Y");
         rotate = new Vector3(x * -1, y * -1, 0);
@@ -57,31 +66,26 @@ public class ScannerMove : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100.0f))
         {
-            Debug.Log("Hit Sum'n");
-            Debug.Log(hit.transform.gameObject);
-            indicator.text = "!";
+            //Debug.Log("Hit Sum'n");
+            //Debug.Log(hit.transform.gameObject);
+            indicator.GetComponent<SpriteRenderer>().color = Color.red;
 
             if (Input.GetButtonDown("Submit") && !clicked)
             {
-                
+                framesleft = 15 * speed;
+
                 clicked = hit.transform.gameObject;
                 oldPos = clicked.transform.position;
                 oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
 
-                
+                //Position to move selected object to in front of camera
                 newPos = Camera.main.transform.position + Camera.main.transform.forward * distance 
                                             + Camera.main.transform.right * shift 
                                             + Camera.main.transform.up * shiftV;
-                /*
-                startTime = Time.time;
-                length = Vector3.Distance(oldPos, newPos);
-                float distCovered = (Time.time - startTime) * speed;
-                float fracJourney = distCovered / length;
-                clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, fracJourney);
-                */
+                
 
-                clicked.transform.position = newPos;
+                //clicked.transform.position = newPos;
                 clicked.transform.rotation = new Quaternion(0,0,0,0);
                 textBoxContainer.SetActive(false);
                 descContainer.SetActive(true);
@@ -91,25 +95,28 @@ public class ScannerMove : MonoBehaviour
         }
         else
         {
-            indicator.text = ".";
-            //Not currently working
-            //foreach(var item in distances)
-            //{
-                if(Vector3.Distance(distances[0], ray.GetPoint(25)) < 3f || Vector3.Distance(distances[1], ray.GetPoint(25)) < 3f || Vector3.Distance(distances[2], ray.GetPoint(25)) < 3f)
-                {   
-                    //away = Vector3.Distance(distances[0], ray.GetPoint(25));
-                    indicator.color = Color.red;
-                } 
-                else
-                {
-                    //away = Vector3.Distance(distances[0], ray.GetPoint(25));
-                    indicator.color = Color.white;
-                }
-            //}
+            //Distance check for changing reticle color when searching FB
+            indicator.GetComponent<SpriteRenderer>().color = Color.white;
+            if(Vector3.Distance(distances[0], ray.GetPoint(25)) < 3f || Vector3.Distance(distances[1], ray.GetPoint(25)) < 3f || Vector3.Distance(distances[2], ray.GetPoint(25)) < 3f)
+            {   
+                //away = Vector3.Distance(distances[0], ray.GetPoint(25));
+                indicator.GetComponent<SpriteRenderer>().color = Color.yellow;
+            } 
+            else
+            {
+                //away = Vector3.Distance(distances[0], ray.GetPoint(25));
+                indicator.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+        }
+
+        //Moves item from fatberg to correct location in the "UI"
+        if(framesleft > 0)
+        {
+            clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
+            framesleft--;
         }
         
-        
-
+        //Puts item back when circle is pressed
         if (Input.GetButtonDown("Cancel") && clicked)
         {
                 clicked.transform.parent = null;
@@ -121,10 +128,5 @@ public class ScannerMove : MonoBehaviour
                 itemName.text = "";
                 desc.text = "";
         }
-    }
-
-    private void MoveToFront()
-    {
-    
     }
 }
