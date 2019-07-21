@@ -9,6 +9,7 @@ TagManager:
   - NoSpawn
   - Plane
   - Controller
+  - Inventory
   layers:
   - Default
   - TransparentFX

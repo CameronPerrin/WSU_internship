@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Stephen/Scenes/puzzle.unity
     guid: 92a8ccf6400d84447b9aaf0e05528988
   - enabled: 0
-    path: Assets/Stephen/Scenes/Phase3.unity
+    path: Assets/Stephen/Scenes/OldScenes/Phase3.unity
     guid: 33a6cd8f078b94645ab65c154ada5cba
   m_configObjects: {}

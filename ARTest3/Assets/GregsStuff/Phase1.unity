@@ -396,6 +396,7 @@ MonoBehaviour:
   - FryingPan
   - bleach
   readyToSpawn: 0
+  hasClicked: 0
 --- !u!1 &333674351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,6 +1579,7 @@ MonoBehaviour:
   - Pill
   - PillBottle
   readyToSpawn: 0
+  hasClicked: 0
 --- !u!64 &1194752536
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1827,6 +1829,7 @@ MonoBehaviour:
   - Nut
   - lego
   readyToSpawn: 0
+  hasClicked: 0
 --- !u!64 &1370818683
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2092,6 +2095,7 @@ MonoBehaviour:
   - oil
   - Ketchup
   readyToSpawn: 0
+  hasClicked: 0
 --- !u!64 &1620414286
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2172,6 +2176,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isWall: 0
+--- !u!1 &1649761200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649761202}
+  - component: {fileID: 1649761201}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Inventory
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1649761201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649761200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f6118a5363e224da4cb5bdb69aed7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1649761202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649761200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.6572595, y: -10.315404, z: -6.340248}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1650983436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4580592044709513644, guid: 19710d6037e84ab4a80921a3679da08b,
@@ -2197,6 +2244,7 @@ MonoBehaviour:
   - oil
   - lego
   readyToSpawn: 0
+  hasClicked: 0
 --- !u!64 &1650983441
 MeshCollider:
   m_ObjectHideFlags: 0
