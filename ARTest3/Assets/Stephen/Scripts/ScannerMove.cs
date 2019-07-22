@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class ScannerMove : MonoBehaviour
 {
     //Camera Rotation Variables
-    private float x;
-    private float y;
+    public float x;
+    public float y;
     private Vector3 rotate;
     public Transform cam;
     public Quaternion camStartRot;
