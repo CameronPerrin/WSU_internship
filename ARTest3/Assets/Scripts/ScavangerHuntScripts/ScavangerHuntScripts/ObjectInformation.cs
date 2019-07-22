@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectInformation : MonoBehaviour
 {
     public SpawnedInformation objectInfo;
+    public float pressureIncrease = 5f;
     public string name;
     public string description;
     public bool flushable;
@@ -26,7 +27,7 @@ public class ObjectInformation : MonoBehaviour
     {
         if(collision.transform.tag == "NoSpawn" && !hasWaited)
         {
-            Debug.Log("hit");
+            GameObject.FindGameObjectWithTag("Controller").GetComponent<Timer>().AddSliderVal(pressureIncrease);
             hunt.SpawnItems();
             hunt.spawnInfo.Remove(objectInfo);
             Destroy(this.gameObject);                
