@@ -12,7 +12,7 @@ public class ItemInfo : MonoBehaviour
 
     void Awake()
     {
-        rend = this.GetComponent<MeshRenderer>();
-        origColor = rend.material.color;
+        //rend = this.GetComponent<MeshRenderer>();
+        //origColor = rend.material.color;
     }
 }
