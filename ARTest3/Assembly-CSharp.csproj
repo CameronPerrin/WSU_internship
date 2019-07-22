@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\ObjectInformation.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\ScavengerHunt.cs" />
+    <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\Timer.cs" />
     <Compile Include="Assets\Stephen\Scripts\ArrowPoint.cs" />
     <Compile Include="Assets\Stephen\Scripts\ArtifactController.cs" />
     <Compile Include="Assets\Stephen\Scripts\Buttons.cs" />
