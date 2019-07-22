@@ -1,4 +1,66 @@
-Base path: D:/Program Files/Unity/2019.1.7f1/Editor/Data
+Base path: C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=2549 outsize=965 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=14597 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=45313 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=31357 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=74137 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=34669 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=41529 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=64197 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=56593 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=15475 outsize=96701 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=25750 outsize=13793 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=25750 outsize=15977 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9347 outsize=12805 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=11912 outsize=1173 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7423 outsize=1037 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21453 outsize=15269 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=642 outsize=749 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7883 outsize=1781 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=35006 outsize=34605 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=35006 outsize=34605 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=5089 outsize=4769 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2596 outsize=2169 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=9349 outsize=4921 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=7712 outsize=5509 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=3918 outsize=2705 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=2510 outsize=541 ok=1
 Cmd: compileSnippet
-  api=4 type=0 insize=22708 outsize=2218 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+  api=4 type=1 insize=2663 outsize=926 kw=CHECKERBOARD_DOWNSAMPLE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=1302 outsize=218 kw=UNITY_PASS_SHADOWCASTER SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=2962 outsize=1838 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=3105 outsize=542 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4077 outsize=1738 kw=NEAREST_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4077 outsize=502 kw=BILINEAR pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1

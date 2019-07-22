@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class ScannerMove : MonoBehaviour
 {
     //Camera Rotation Variables
-    private float x;
-    private float y;
+    public float x;
+    public float y;
     private Vector3 rotate;
     public Transform cam;
     public Quaternion camStartRot;
@@ -93,7 +93,7 @@ public class ScannerMove : MonoBehaviour
             {
                 framesleft = 15 * speed;
 
-                clicked = hit.transform.gameObject;
+                clicked = hit.transform.parent.gameObject;
                 oldPos = clicked.transform.position;
                 oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
@@ -117,28 +117,6 @@ public class ScannerMove : MonoBehaviour
         {
             //Distance check for changing reticle color when searching FB
             indicator.GetComponent<SpriteRenderer>().color = Color.white;
-            /* 
-            if(Vector3.Distance(items[0].transform.position, ray.GetPoint(25)) < 3f)
-            {   
-                indicator.GetComponent<SpriteRenderer>().color = Color.yellow;
-            } 
-            else if(Vector3.Distance(items[1].transform.position, ray.GetPoint(25)) < 3f)
-            {
-                indicator.GetComponent<SpriteRenderer>().color = Color.white;
-            }
-            else if(Vector3.Distance(items[2].transform.position, ray.GetPoint(25)) < 3f)
-            {
-                indicator.GetComponent<SpriteRenderer>().color = Color.white;
-            }
-            else if(Vector3.Distance(items[3].transform.position, ray.GetPoint(25)) < 3f)
-            {
-                indicator.GetComponent<SpriteRenderer>().color = Color.white;
-            }
-            else if(Vector3.Distance(items[4].transform.position, ray.GetPoint(25)) < 3f)
-            {
-                indicator.GetComponent<SpriteRenderer>().color = Color.white;
-            }
-            */
 
             foreach (var item in items)
             {
@@ -175,6 +153,7 @@ public class ScannerMove : MonoBehaviour
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, camStartRot, Time.deltaTime * speed);
             clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
+            clicked.transform.rotation = oldRot;
             framesleft--;
         }
         
