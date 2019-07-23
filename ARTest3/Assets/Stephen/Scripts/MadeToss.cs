@@ -22,7 +22,11 @@ public class MadeToss : MonoBehaviour
         {
             Destroy(gameObject);
             if (hasWaited)
-             GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().score++;
+            {
+                GameController controller = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>();
+                controller.GetComponent<GameController>().score++;
+                GameObject.FindGameObjectWithTag("Controller").GetComponent<Timer>().AddSliderVal(5f);
+            }
         }
     }
     IEnumerator Delay()

@@ -20,7 +20,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         text.text = "You have removed: " + score.ToString() + " / " + count;
-        if(score >= count || GetComponent<Timer>().GetSliderVal() >= GetComponent<Timer>().endTime)
+        if(score >= count || GetComponent<Timer>().GetSliderVal() >= GetComponent<Timer>().slider.maxValue)
         {
             SceneManager.LoadScene(1);
         }

@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1513573470}
   speed: 0.05
-  rotSpeed: 30
+  rotSpeed: 5
   hasCollided: 0
   lerpTime: 0.1
 --- !u!65 &181697075
@@ -263,7 +263,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0.7957747
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -412,7 +412,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 600
+  displayLightIntensity: 10
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
@@ -449,6 +449,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -2351675239129813416, guid: 19710d6037e84ab4a80921a3679da08b, type: 3}
+--- !u!65 &248836988
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248836983}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.634356, y: 4.6, z: 6}
+  m_Center: {x: -0.00000011920928, y: -0.00000011920932, z: 2.562219}
 --- !u!1 &316060063 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2962737397355318046, guid: 19710d6037e84ab4a80921a3679da08b,
@@ -533,7 +546,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0.7957747
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -682,7 +695,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 600
+  displayLightIntensity: 10
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
@@ -954,8 +967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0.41000366, y: 0}
-  m_SizeDelta: {x: -0.82, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.000015259, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &450462072 stripped
 GameObject:
@@ -1053,7 +1066,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0.7957747
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1202,7 +1215,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 600
+  displayLightIntensity: 10
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
@@ -1834,6 +1847,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 6530271668053957946, guid: 19710d6037e84ab4a80921a3679da08b, type: 3}
+--- !u!65 &802710391
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802710386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.634356, y: 4.6, z: 6}
+  m_Center: {x: 0, y: 5.0259442e-14, z: 2.8527489}
 --- !u!1 &844723645 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8859346064678186532, guid: 19710d6037e84ab4a80921a3679da08b,
@@ -1963,7 +1989,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0.7957747
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2112,7 +2138,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 600
+  displayLightIntensity: 10
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
@@ -2143,10 +2169,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104660686}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 5944167874912347858, guid: 19710d6037e84ab4a80921a3679da08b, type: 3}
 --- !u!1 &1131439078
@@ -2253,7 +2279,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0.7957747
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2402,7 +2428,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 600
+  displayLightIntensity: 10
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
@@ -2474,10 +2500,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240545058}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: -646770979848735258, guid: 19710d6037e84ab4a80921a3679da08b, type: 3}
 --- !u!1 &1306572651
@@ -2538,7 +2564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d505cc4ff9474991c59af7bf30eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 0
+  endTime: 90
   text: {fileID: 0}
   slider: {fileID: 355422561}
 --- !u!1 &1306586862 stripped
@@ -2561,6 +2587,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 1876282957118884733, guid: 19710d6037e84ab4a80921a3679da08b, type: 3}
+--- !u!65 &1306586867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306586862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.634356, y: 4.6, z: 6}
+  m_Center: {x: -0.00000011920928, y: -0.00000011920932, z: 2.562219}
 --- !u!1 &1321447561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,11 +2958,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422441834}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.10847448, y: 0.14206073, z: 0.032738544}
-  m_Center: {x: -7.204943e-17, y: 0.00925765, z: 0.085876286}
+  m_Size: {x: 0.10847448, y: 0.1521059, z: 0.04715126}
+  m_Center: {x: -3.5254236e-17, y: 0.0042350655, z: 0.09308266}
 --- !u!64 &1422441838
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3057,6 +3096,7 @@ MonoBehaviour:
   other: 0
   distance: 1
   throwForce: 50
+  radius: 5
   cam: {fileID: 1513573473}
   textBox: {fileID: 0}
   nameBox: {fileID: 0}
@@ -3208,6 +3248,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: -886159790208864880, guid: 19710d6037e84ab4a80921a3679da08b, type: 3}
+--- !u!65 &1608568951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608568946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.634356, y: 4.6, z: 6}
+  m_Center: {x: -0.00000011920928, y: -0.00000011920932, z: 2.562219}
 --- !u!1 &1620414281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7836104413664268648, guid: 19710d6037e84ab4a80921a3679da08b,
@@ -3836,7 +3889,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 47.746483
+  m_Intensity: 0.7957747
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3985,7 +4038,7 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 0
-  displayLightIntensity: 600
+  displayLightIntensity: 10
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120

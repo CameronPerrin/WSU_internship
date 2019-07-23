@@ -903,3 +903,17 @@ C:\Users\slauth\Documents\GitHub\WSU_internship\ARTest3\obj\Debug\Assembly-CShar
 C:\Users\slauth\Documents\GitHub\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\slauth\Documents\GitHub\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.dll
 C:\Users\slauth\Documents\GitHub\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.Editor.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.Runtime.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.ShaderLibrary.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.HighDefinition.Editor.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.HighDefinition.Runtime.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.ShaderGraph.Editor.dll
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.Editor.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.Runtime.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.HighDefinition.Runtime.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.ShaderGraph.Editor.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.HighDefinition.Editor.pdb
+C:\WSUProject\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.ShaderLibrary.pdb
