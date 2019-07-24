@@ -32,6 +32,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         GameObject temp = Instantiate(Resources.Load<GameObject>("ObjectsToFind/" + objectName));
         GameObject prefabTemp = Instantiate(spawnedPrefab);
         prefabTemp.GetComponent<ItemInfo>().desc = invenTemp.objInfo.description;
+        prefabTemp.GetComponent<ItemInfo>().itemName = invenTemp.objInfo.name;
         prefabTemp.transform.position = vec;
         temp.transform.position = vec;
         temp.transform.parent = prefabTemp.transform;
