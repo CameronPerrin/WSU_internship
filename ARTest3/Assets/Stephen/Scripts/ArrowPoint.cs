@@ -14,9 +14,11 @@ public class ArrowPoint : MonoBehaviour
     {
         arrow = transform.GetChild(0).gameObject;
         cam = Camera.main.gameObject;
+        reticle = transform.parent.gameObject;
     }
     void Update()
     {
+
         //Simple arrow rotation for searching for objects in FB
         dir = target.transform.position;
         transform.LookAt(transform.position + transform.forward, dir - reticle.transform.position);

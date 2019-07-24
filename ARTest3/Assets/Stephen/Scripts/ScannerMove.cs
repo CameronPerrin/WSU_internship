@@ -38,6 +38,7 @@ public class ScannerMove : MonoBehaviour
     //Scanner objects: reticle and arrows
     public GameObject indicator;
     public List<GameObject> arrows;
+    public GameObject arrowPrefab;
 
     //Variable for currently selected item
     public GameObject clicked;
@@ -58,16 +59,27 @@ public class ScannerMove : MonoBehaviour
     {
         cam = Camera.main.transform;
         camStartRot = cam.rotation;
-        newPos = camStartPos.position + camStartPos.forward * distance 
-                                            + camStartPos.right * shift 
+        newPos = camStartPos.position + camStartPos.forward * distance
+                                            + camStartPos.right * shift
                                             + camStartPos.up * shiftV;
-        items.Add(one);
-        items.Add(two);
-        items.Add(three);
-        items.Add(four);
-        items.Add(five);
+        SetUp();
     }
 
+    void SetUp()
+    {
+        arrows = new List<GameObject>();
+        for (int i = 0; i < items.Count; i++)
+        {
+            GameObject temp = Instantiate(arrowPrefab);
+            temp.transform.parent = GameObject.FindGameObjectWithTag("Reticles").transform;
+            temp.GetComponent<ArrowPoint>().target = items[i];
+            temp.transform.position = arrowPrefab.transform.position;
+            items[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            arrows.Add(temp);
+            
+        }
+        arrowPrefab.SetActive(false);
+    }
     void Update()
     {
         if (!clicked)
