@@ -2538,6 +2538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   text: {fileID: 605284019}
+  phaseThreeSceneNum: 1
 --- !u!4 &1306572653
 Transform:
   m_ObjectHideFlags: 0

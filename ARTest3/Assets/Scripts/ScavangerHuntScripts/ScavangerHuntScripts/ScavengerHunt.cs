@@ -104,6 +104,7 @@ public class ScavengerHunt : MonoBehaviour
         temp.transform.position = pos;
         temp.GetComponent<ObjectInformation>().plane = this.gameObject;
         temp.GetComponent<ObjectInformation>().hunt = this;
+        temp.GetComponent<ObjectInformation>().name = objectName;
         temp.AddComponent<InfoPopUp>();
         temp.GetComponent<InfoPopUp>().SetSpawnInfo(info);
         temp.GetComponent<InfoPopUp>().text = Instantiate(textObject);

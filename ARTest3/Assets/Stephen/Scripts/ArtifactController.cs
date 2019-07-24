@@ -130,7 +130,7 @@ public class ArtifactController : MonoBehaviour
                 //textBox.text = " ";
             }
         }
-        else if (Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E) || clicked == null)
         {
             if (clicked)
             {
@@ -139,6 +139,8 @@ public class ArtifactController : MonoBehaviour
                 clicked.GetComponent<Rigidbody>().isKinematic = false;
                 currentlyHolding = false;
             }
+            else // Just in case clicked is null and it can never switch the  currently holding value
+                currentlyHolding = false;
         }
     }
     GameObject InteractWithClosetGameObject()
