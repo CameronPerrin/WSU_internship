@@ -109,9 +109,9 @@ public class ScavengerHunt : MonoBehaviour
         temp.GetComponent<InfoPopUp>().SetSpawnInfo(info);
         temp.GetComponent<InfoPopUp>().text = Instantiate(textObject);
         temp.GetComponent<InfoPopUp>().text.transform.parent = textObject.transform.parent;
-        InventoryInfo inventoryInfo = new InventoryInfo(info, temp.GetComponent<ObjectInformation>());
+        //InventoryInfo inventoryInfo = new InventoryInfo(info, temp.GetComponent<ObjectInformation>());
 
-        inventoryObject.GetComponent<Inventory>().AddToList(inventoryInfo);
+        //inventoryObject.GetComponent<Inventory>().AddToList(inventoryInfo);
         spawnInfo.Add(info);
        // isReady = false;
     }
