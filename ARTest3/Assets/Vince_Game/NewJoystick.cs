@@ -18,7 +18,7 @@ public class NewJoystick : MonoBehaviour
     public float x;
     public float y;
     [SerializeField] public GameObject joystick;
-    private Vector3 rotate;
+    [SerializeField] private Vector3 rotate;
 
 
     [SerializeField] private KeyCode check;
@@ -28,13 +28,22 @@ public class NewJoystick : MonoBehaviour
     [SerializeField] public GameObject success1;
     [SerializeField] public GameObject success2;
 
+    [SerializeField] public GameObject Camera;
+
+    [SerializeField] public GameObject ThisGameWindow;
 
 
     void Start()
     {
         GenWinning();
+
     }
-    
+
+    private void Awake()
+    {
+        Camera.GetComponent<ScannerMove>().enabled = false;
+    }
+
     private void Update()
     {
         Leds();
@@ -66,8 +75,12 @@ public class NewJoystick : MonoBehaviour
         //check if you have won 3 times
         if (Successes == 3)
         {
+
             playerSource.PlayOneShot(victory);
-            //load other scene
+            Successes = 0;
+            Camera.GetComponent<ScannerMove>().enabled = false;
+            ThisGameWindow.SetActive(false);
+
         }
     }
 
@@ -77,9 +90,25 @@ public class NewJoystick : MonoBehaviour
         switch (Successes)
         {
             case 0:
-                rotate = new Vector3(0, 0, Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y)));
-                PositionAngle = Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y) / 45f);
+                if (x == 0 && y == 0)
+                {
+                    rotate = new Vector3(0, 0, 0);
+                    PositionAngle = 1;
+                }
+                else if (y < 0)
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 45);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 45f);
+                }
+                else
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 45);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 45f);
+                }
+                
                 break;
+
+
 
             case 1:
                 rotate = new Vector3(0, 0, Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y)));

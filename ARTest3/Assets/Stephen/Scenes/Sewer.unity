@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 18096838}
   - component: {fileID: 18096837}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 30937573}
   - component: {fileID: 30937572}
   m_Layer: 0
-  m_Name: Image
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 46908679}
   - component: {fileID: 46908678}
   m_Layer: 0
-  m_Name: Image
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -354,7 +354,7 @@ GameObject:
   - component: {fileID: 49029091}
   - component: {fileID: 49029090}
   m_Layer: 0
-  m_Name: Image (6)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 247876945}
   - component: {fileID: 247876944}
   m_Layer: 0
-  m_Name: Image (7)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 370425163}
   - component: {fileID: 370425162}
   m_Layer: 0
-  m_Name: Image (10)
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 391160213}
   - component: {fileID: 391160212}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -863,7 +863,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 443723373}
   - component: {fileID: 443723372}
   m_Layer: 0
-  m_Name: Image (4)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,7 +937,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -966,7 +966,7 @@ GameObject:
   - component: {fileID: 448430102}
   - component: {fileID: 448430101}
   m_Layer: 0
-  m_Name: Image (3)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 457072332}
   - component: {fileID: 457072331}
   m_Layer: 0
-  m_Name: Image (3)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1085,7 +1085,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 458387112}
   - component: {fileID: 458387111}
   m_Layer: 0
-  m_Name: Image (12)
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1188,7 +1188,7 @@ GameObject:
   - component: {fileID: 500200765}
   - component: {fileID: 500200764}
   m_Layer: 0
-  m_Name: Image (11)
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1452,7 +1452,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3074642979211975630, guid: c0223397e8788244ea3497bd9de0920c,
+  m_Sprite: {fileID: -6347352515412360263, guid: c0223397e8788244ea3497bd9de0920c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1485,10 +1485,13 @@ MonoBehaviour:
   x: 0
   y: 0
   joystick: {fileID: 516448024}
+  rotate: {x: 0, y: 0, z: 0}
   check: 32
   success0: {fileID: 1069199940}
   success1: {fileID: 1534793371}
   success2: {fileID: 1974103357}
+  Camera: {fileID: 357547064}
+  ThisGameWindow: {fileID: 1753653526}
 --- !u!1 &528245419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,7 +1557,7 @@ GameObject:
   - component: {fileID: 550530183}
   - component: {fileID: 550530182}
   m_Layer: 0
-  m_Name: Image (17)
+  m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1674,7 +1677,7 @@ GameObject:
   - component: {fileID: 579428694}
   - component: {fileID: 579428693}
   m_Layer: 0
-  m_Name: Image (4)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1748,7 +1751,7 @@ GameObject:
   - component: {fileID: 585534459}
   - component: {fileID: 585534458}
   m_Layer: 0
-  m_Name: Image (13)
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1906,7 +1909,7 @@ GameObject:
   - component: {fileID: 611810681}
   - component: {fileID: 611810680}
   m_Layer: 0
-  m_Name: Image (11)
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1980,7 +1983,7 @@ GameObject:
   - component: {fileID: 620354792}
   - component: {fileID: 620354791}
   m_Layer: 0
-  m_Name: Image (9)
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,7 +2057,7 @@ GameObject:
   - component: {fileID: 673712502}
   - component: {fileID: 673712501}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2128,7 +2131,7 @@ GameObject:
   - component: {fileID: 727253727}
   - component: {fileID: 727253726}
   m_Layer: 0
-  m_Name: Image (15)
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2202,7 +2205,7 @@ GameObject:
   - component: {fileID: 752728263}
   - component: {fileID: 752728262}
   m_Layer: 0
-  m_Name: Image (18)
+  m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2276,7 +2279,7 @@ GameObject:
   - component: {fileID: 754178571}
   - component: {fileID: 754178570}
   m_Layer: 0
-  m_Name: Image (5)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2444,7 +2447,7 @@ GameObject:
   - component: {fileID: 782667742}
   - component: {fileID: 782667741}
   m_Layer: 0
-  m_Name: Image (8)
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2518,7 +2521,7 @@ GameObject:
   - component: {fileID: 849804460}
   - component: {fileID: 849804459}
   m_Layer: 0
-  m_Name: Image (13)
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2592,7 +2595,7 @@ GameObject:
   - component: {fileID: 873558108}
   - component: {fileID: 873558107}
   m_Layer: 0
-  m_Name: Image (10)
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2666,7 +2669,7 @@ GameObject:
   - component: {fileID: 911733132}
   - component: {fileID: 911733131}
   m_Layer: 0
-  m_Name: Image (15)
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2740,7 +2743,7 @@ GameObject:
   - component: {fileID: 977990553}
   - component: {fileID: 977990552}
   m_Layer: 0
-  m_Name: Image (23)
+  m_Name: 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2814,7 +2817,7 @@ GameObject:
   - component: {fileID: 1042525240}
   - component: {fileID: 1042525239}
   m_Layer: 0
-  m_Name: Image (14)
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2888,7 +2891,7 @@ GameObject:
   - component: {fileID: 1049985996}
   - component: {fileID: 1049985995}
   m_Layer: 0
-  m_Name: Image (12)
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2960,12 +2963,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1069199941}
   m_Layer: 0
-  m_Name: LedObject
+  m_Name: LedObject1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1069199941
 Transform:
   m_ObjectHideFlags: 0
@@ -3079,7 +3082,7 @@ GameObject:
   - component: {fileID: 1085278995}
   - component: {fileID: 1085278994}
   m_Layer: 0
-  m_Name: Image (4)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3153,7 +3156,7 @@ GameObject:
   - component: {fileID: 1088844197}
   - component: {fileID: 1088844196}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3227,7 +3230,7 @@ GameObject:
   - component: {fileID: 1106272328}
   - component: {fileID: 1106272327}
   m_Layer: 0
-  m_Name: Image (22)
+  m_Name: 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3301,7 +3304,7 @@ GameObject:
   - component: {fileID: 1115064493}
   - component: {fileID: 1115064492}
   m_Layer: 0
-  m_Name: Image (3)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3375,7 +3378,7 @@ GameObject:
   - component: {fileID: 1157674527}
   - component: {fileID: 1157674526}
   m_Layer: 0
-  m_Name: Image
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3748,10 +3751,13 @@ MonoBehaviour:
   x: 0
   y: 0
   joystick: {fileID: 0}
+  rotate: {x: 0, y: 0, z: 0}
   check: 0
   success0: {fileID: 0}
   success1: {fileID: 0}
   success2: {fileID: 0}
+  Camera: {fileID: 0}
+  ThisGameWindow: {fileID: 0}
 --- !u!1 &1228129034
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,7 +3770,7 @@ GameObject:
   - component: {fileID: 1228129037}
   - component: {fileID: 1228129036}
   m_Layer: 0
-  m_Name: Image (14)
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4029,7 +4035,7 @@ GameObject:
   - component: {fileID: 1326885588}
   - component: {fileID: 1326885587}
   m_Layer: 0
-  m_Name: Image (5)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4103,7 +4109,7 @@ GameObject:
   - component: {fileID: 1358564923}
   - component: {fileID: 1358564922}
   m_Layer: 0
-  m_Name: Image (6)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4177,7 +4183,7 @@ GameObject:
   - component: {fileID: 1417884356}
   - component: {fileID: 1417884355}
   m_Layer: 0
-  m_Name: Image (21)
+  m_Name: 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4251,7 +4257,7 @@ GameObject:
   - component: {fileID: 1518298236}
   - component: {fileID: 1518298235}
   m_Layer: 0
-  m_Name: Image (20)
+  m_Name: 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4323,7 +4329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534793372}
   m_Layer: 0
-  m_Name: LedObject (1)
+  m_Name: LedObject2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4371,7 +4377,7 @@ GameObject:
   - component: {fileID: 1561718027}
   - component: {fileID: 1561718026}
   m_Layer: 0
-  m_Name: Image (6)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4416,7 +4422,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4445,7 +4451,7 @@ GameObject:
   - component: {fileID: 1573506292}
   - component: {fileID: 1573506291}
   m_Layer: 0
-  m_Name: Image (9)
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4599,7 +4605,7 @@ GameObject:
   - component: {fileID: 1809995156}
   - component: {fileID: 1809995155}
   m_Layer: 0
-  m_Name: Image (19)
+  m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4783,7 +4789,7 @@ GameObject:
   - component: {fileID: 1815757428}
   - component: {fileID: 1815757427}
   m_Layer: 0
-  m_Name: Image (7)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4828,7 +4834,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4857,7 +4863,7 @@ GameObject:
   - component: {fileID: 1852367475}
   - component: {fileID: 1852367474}
   m_Layer: 0
-  m_Name: Image (16)
+  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5278,7 +5284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974103358}
   m_Layer: 0
-  m_Name: LedObject (2)
+  m_Name: LedObject3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5334,7 +5340,7 @@ GameObject:
   - component: {fileID: 2030689955}
   - component: {fileID: 2030689954}
   m_Layer: 0
-  m_Name: Image (5)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5379,7 +5385,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5408,7 +5414,7 @@ GameObject:
   - component: {fileID: 2034950709}
   - component: {fileID: 2034950708}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5453,7 +5459,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a2d1d2dc6e8e315458915199df6bd06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5482,7 +5488,7 @@ GameObject:
   - component: {fileID: 2039237272}
   - component: {fileID: 2039237271}
   m_Layer: 0
-  m_Name: Image (7)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5556,7 +5562,7 @@ GameObject:
   - component: {fileID: 2092733650}
   - component: {fileID: 2092733649}
   m_Layer: 0
-  m_Name: Image (8)
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5630,7 +5636,7 @@ GameObject:
   - component: {fileID: 2133626521}
   - component: {fileID: 2133626520}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
