@@ -42,6 +42,8 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         prefabTemp.transform.position = vec;
         temp.transform.position = vec;
         temp.transform.parent = prefabTemp.transform;
+        //Added line to make sure items are proper size for fatberg
+        prefabTemp.transform.localScale = new Vector3(5f, 5f, 5f);
         ScannerMove move = Camera.main.gameObject.GetComponent<ScannerMove>();
         move.items.Add(temp); 
     }

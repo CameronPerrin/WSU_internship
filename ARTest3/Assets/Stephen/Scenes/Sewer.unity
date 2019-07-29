@@ -570,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357547064}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.21845485, y: 5.011406, z: 35.472794}
+  m_LocalPosition: {x: 0.22, y: 5.011406, z: 35.472794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -594,8 +594,8 @@ MonoBehaviour:
   camStartRot: {x: 0, y: 0, z: 0, w: 0}
   camStartPos: {fileID: 357547067}
   distance: 10
-  shift: -3
-  shiftV: 1
+  shift: -2
+  shiftV: 0.5
   items: []
   one: {fileID: 0}
   two: {fileID: 0}
@@ -4524,7 +4524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1753653527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5214,7 +5214,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ac1bd67d81800d2458030da360e2d2ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ac1bd67d81800d2458030da360e2d2ac,
         type: 3}

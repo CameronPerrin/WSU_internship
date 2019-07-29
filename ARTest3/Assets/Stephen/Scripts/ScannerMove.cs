@@ -74,7 +74,8 @@ public class ScannerMove : MonoBehaviour
             temp.transform.parent = GameObject.FindGameObjectWithTag("Reticles").transform;
             temp.GetComponent<ArrowPoint>().target = items[i];
             temp.transform.position = arrowPrefab.transform.position;
-            items[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+            //items[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);  REMOVED THIS LINE AS IT WAS CAUSING ERRORS IN SEWER SCENE SCALING
+            temp.transform.localScale = new Vector3(1f, 1f, 1f);
             arrows.Add(temp);
             
         }
