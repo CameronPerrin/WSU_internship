@@ -15,7 +15,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         // We are getting the inventory by finding the tag
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         //List<InventoryInfo> inven = inventory.inventory.OrderBy(s => s.objInfo.name).ToList();
-        
+
         for (int i = 0; i < inventory.inventory.Count; i++)
         {
             SpawnAtRandomPointsInsideGameObject(i);
@@ -84,18 +84,21 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         }
 
         //Various checks to make items proper rotation when in fatberg/UI
-        //NEED TO ADD CAR
-        if(objectName == "Ketchup")
+        if(objectName == "Ketchup" || objectName == "Syrn")
         {
             prefabTemp.transform.rotation = new Quaternion(90f, 0f ,0f , 0f);
         }
+        else if(objectName == "Car")
+        {
+            prefabTemp.transform.rotation = new Quaternion(180f, 0f, -90f, 0f);
+        }
 
         ScannerMove move = Camera.main.gameObject.GetComponent<ScannerMove>();
-        move.items.Add(temp); 
+        move.items.Add(temp);
     }
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressureIncrease: 5
-  name: Shell
-  description: 
+  name: Egg Shell
+  description: Bad.
   flushable: 0
   plane: {fileID: 0}
   hasCollided: 0
@@ -117,8 +117,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: Shell
-  desc: 
+  itemName: Egg Shell
+  desc: Bad.
 --- !u!114 &-4186716222271315156
 MonoBehaviour:
   m_ObjectHideFlags: 0

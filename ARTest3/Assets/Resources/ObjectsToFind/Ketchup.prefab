@@ -58,8 +58,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
-  desc: 
+  itemName: Sauce Packets
+  desc: Just no.
 --- !u!114 &5054165704671497831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,8 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressureIncrease: 5
-  name: 
-  description: 
+  name: Sauce Packets
+  description: Just no.
   flushable: 0
   plane: {fileID: 0}
   hasCollided: 0

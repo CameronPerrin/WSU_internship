@@ -17,7 +17,7 @@ public class ObjectInformation : MonoBehaviour
     bool hasWaited;
     void Awake()
     {
-        objectInfo.name = transform.name;
+        objectInfo.name = name;
         objectInfo.information = description;
         objectInfo.flushable = flushable;
         StartCoroutine(Delay());
