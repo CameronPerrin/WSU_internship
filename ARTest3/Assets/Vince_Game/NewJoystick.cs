@@ -31,21 +31,29 @@ public class NewJoystick : MonoBehaviour
 
     [SerializeField] public GameObject ThisGameWindow;
 
+    //Variable for new game check
+    public bool newGame;
+
 
     void Start()
     {
         GenWinning();
-
     }
 
     private void Awake()
     {
-        Camera.GetComponent<ScannerMove>().enabled = false;
+        //Camera.GetComponent<ScannerMove>().enabled = false;
     }
 
     private void Update()
     {
         Leds();
+        //Check for new game to reset the game for each object
+        if(newGame == true)
+        {
+            GenWinning();
+            newGame = false;
+        }
 
         //joystick input
         y = Input.GetAxisRaw("PS X");
@@ -64,7 +72,7 @@ public class NewJoystick : MonoBehaviour
         }
 
         //check to see if on the winning angle
-        if (Input.GetKeyDown("Submit") && PositionAngle == winningPosition)
+        if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition)
         {
             Successes += 1;
             GenWinning();
@@ -77,9 +85,9 @@ public class NewJoystick : MonoBehaviour
 
             playerSource.PlayOneShot(victory);
             Successes = 0;
-            Camera.GetComponent<ScannerMove>().enabled = false;
+            //Camera.GetComponent<ScannerMove>().enabled = false;
             ThisGameWindow.SetActive(false);
-
+            newGame = true;
         }
     }
 

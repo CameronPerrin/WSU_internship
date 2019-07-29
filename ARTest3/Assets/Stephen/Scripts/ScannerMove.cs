@@ -18,13 +18,8 @@ public class ScannerMove : MonoBehaviour
     public float shift;
     public float shiftV;
 
-    //List and varaibles used to house locations of objects in fatberg
+    //List to house Fatberg objects
     public List<GameObject> items;
-    public GameObject one;
-    public GameObject two;
-    public GameObject three;
-    public GameObject four;
-    public GameObject five;
 
     //Variable used for testing 
     public float away;
@@ -34,6 +29,7 @@ public class ScannerMove : MonoBehaviour
     public Text desc;
     public GameObject descContainer;
     public GameObject textBoxContainer;
+    public GameObject GamePanel;
 
     //Scanner objects: reticle and arrows
     public GameObject indicator;
@@ -110,6 +106,7 @@ public class ScannerMove : MonoBehaviour
                 oldPos = clicked.transform.position;
                 oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
+                GamePanel.SetActive(true);
 
                 /* 
                 //Position to move selected object to in front of camera position when clicked
