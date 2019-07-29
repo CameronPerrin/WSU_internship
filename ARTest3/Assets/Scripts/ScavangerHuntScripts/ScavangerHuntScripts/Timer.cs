@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     public Text text;
     public Slider slider;
 
-    void Start()
+    void Awake()
     {
         slider.maxValue = endTime;
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class ArtifactController : MonoBehaviour
 {
@@ -13,17 +14,25 @@ public class ArtifactController : MonoBehaviour
 
     public float distance;
     public float throwForce;
+    public float radius;
     public Transform cam;
 
     public Text textBox;
 	public Text nameBox;
 	public GameObject textBoxContainer;
+    bool currentlyHolding;
+    
 
     void Start()
     {
         other = false;
     }
 
+    struct ClosestObject
+    {
+        public GameObject obj;
+        public float dist;
+    }
 
     void Update()
     {
@@ -35,44 +44,48 @@ public class ArtifactController : MonoBehaviour
             clicked.GetComponent<MeshRenderer>().material.color = origColor;
             clicked = null;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (!currentlyHolding)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.DrawRay(ray.origin,ray.direction,Color.blue);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //Debug.DrawRay(ray.origin,ray.direction,Color.blue);
+            // RaycastHit hit;
+            if (Input.GetKeyDown(KeyCode.E))
             {
+                GameObject hit = InteractWithClosetGameObject();
                 //Check if other item has been clicked, drop current item and replace with new item
-                if (other && hit.transform.gameObject != clicked && clicked != null)
+                if (hit != null)
                 {
-                    clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                    clicked.transform.parent = null;
-                    clicked.GetComponent<Rigidbody>().isKinematic = false;
-                }
-                clicked = hit.transform.gameObject;
+                    if (other && hit.transform.gameObject != clicked && clicked != null)
+                    {
+                        clicked.GetComponent<MeshRenderer>().material.color = origColor;
+                        clicked.transform.parent = null;
+                        clicked.GetComponent<Rigidbody>().isKinematic = false;
+                    }
+                    clicked = hit.transform.gameObject;
 
-                //If item not "highlighted" save it original color to revert back when needed (also note that an item has been clicked)
-                if (hit.transform.gameObject.GetComponent<MeshRenderer>().material.color != color)
-                {
-                    origColor = hit.transform.gameObject.GetComponent<ItemInfo>().origColor;
-                    other = true;
-                }
+                    //If item not "highlighted" save it original color to revert back when needed (also note that an item has been clicked)
+                    if (hit.transform.gameObject.GetComponent<MeshRenderer>().material.color != color)
+                    {
+                        origColor = hit.transform.gameObject.GetComponent<ItemInfo>().origColor;
+                        other = true;
+                    }
 
-                //Check if something is hit and is not "highlighted" then change its color to "highlighted" and parent to camera
-                //Else if clicked off current item, revert color to it's original, unparent, and change isKinematic back to false
-                if (hit.transform != null && hit.transform.gameObject.GetComponent<MeshRenderer>().material.color == origColor)
-                {     
-                    //Debug statement to check click is working               
-                    Debug.Log(hit.transform.gameObject);
-                    hit.transform.gameObject.GetComponent<MeshRenderer>().material.color = color;
-                    clicked.GetComponent<Rigidbody>().isKinematic = true;
-                    clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
-                    clicked.transform.parent = Camera.main.transform;
-                    
-                    //textBoxContainer.SetActive(true);
-                    //nameBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().itemName;
-                    //textBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().desc;
+                    //Check if something is hit and is not "highlighted" then change its color to "highlighted" and parent to camera
+                    //Else if clicked off current item, revert color to it's original, unparent, and change isKinematic back to false
+                    if (hit.transform != null && hit.transform.gameObject.GetComponent<MeshRenderer>().material.color == origColor)
+                    {
+                        //Debug statement to check click is working               
+                        Debug.Log(hit.transform.gameObject);
+                        hit.transform.gameObject.GetComponent<MeshRenderer>().material.color = color;
+                        clicked.GetComponent<Rigidbody>().isKinematic = true;
+                        clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
+                        clicked.transform.parent = Camera.main.transform;
+                        currentlyHolding = true;
+
+                        //textBoxContainer.SetActive(true);
+                        //nameBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().itemName;
+                        //textBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().desc;
+                    }
                 }
                 else
                 {
@@ -86,8 +99,8 @@ public class ArtifactController : MonoBehaviour
                     }
                     */
                     clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                    clicked.transform.parent = null;
-                    clicked.GetComponent<Rigidbody>().isKinematic = false;
+                    //clicked.transform.parent = null;
+                    //clicked.GetComponent<Rigidbody>().isKinematic = false;
                     //textBoxContainer.SetActive(false);
                     //nameBox.text = " ";
                     //textBox.text = " ";
@@ -105,19 +118,54 @@ public class ArtifactController : MonoBehaviour
                 }
                 */
                 //If no item is clicked, but one was previously clicked, revert to original color, unparent, and set isKinematic back to false
-                if(clicked)
+                if (clicked)
                 {
                     clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                    clicked.transform.parent = null;
-                    clicked.GetComponent<Rigidbody>().isKinematic = false;
+                    //clicked.transform.parent = null;
+                    //clicked.GetComponent<Rigidbody>().isKinematic = false;
+                    currentlyHolding = false;
                 }
                 //textBoxContainer.SetActive(false);
                 //nameBox.text = " ";
                 //textBox.text = " ";
-            }  
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.E) || clicked == null)
+        {
+            if (clicked)
+            {
+                clicked.GetComponent<MeshRenderer>().material.color = origColor;
+                clicked.transform.parent = null;
+                clicked.GetComponent<Rigidbody>().isKinematic = false;
+                currentlyHolding = false;
+            }
+            else // Just in case clicked is null and it can never switch the  currently holding value
+                currentlyHolding = false;
         }
     }
+    GameObject InteractWithClosetGameObject()
+    {
+        List<ClosestObject> closetObjects = new List<ClosestObject>();
+        Collider[] col = Physics.OverlapSphere(transform.position, radius);
+        foreach(Collider a in col)
+        {
+            if (a.GetComponent<ObjectInformation>())
+            {
+                ClosestObject close = new ClosestObject();
+                close.obj = a.gameObject;
+                close.dist = Vector3.Distance(transform.position, a.gameObject.transform.position);
+                closetObjects.Add(close);
+            }
+            else
+                continue;
+        }
+        closetObjects = closetObjects.OrderBy(s => s.dist).ToList();
+        if (closetObjects[0].obj != null)
+            return closetObjects[0].obj;
+        else
+            return null;
 
+    }
     void PrintName(GameObject go)
     {
         print(go.name);

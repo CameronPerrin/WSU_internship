@@ -28,7 +28,6 @@ public class ScavengerHunt : MonoBehaviour
     [HideInInspector]
     public bool readyToSpawn;
     public List<SpawnedInformation> spawnInfo;
-    bool isReady;
     public bool hasClicked;
     // Update is called once per frame
      void Awake()
@@ -105,14 +104,15 @@ public class ScavengerHunt : MonoBehaviour
         temp.transform.position = pos;
         temp.GetComponent<ObjectInformation>().plane = this.gameObject;
         temp.GetComponent<ObjectInformation>().hunt = this;
+        temp.GetComponent<ObjectInformation>().name = objectName;
         temp.AddComponent<InfoPopUp>();
         temp.GetComponent<InfoPopUp>().SetSpawnInfo(info);
         temp.GetComponent<InfoPopUp>().text = Instantiate(textObject);
         temp.GetComponent<InfoPopUp>().text.transform.parent = textObject.transform.parent;
-        InventoryInfo inventoryInfo = new InventoryInfo(info, temp.GetComponent<ObjectInformation>());
+        //InventoryInfo inventoryInfo = new InventoryInfo(info, temp.GetComponent<ObjectInformation>());
 
-        inventoryObject.GetComponent<Inventory>().AddToList(inventoryInfo);
+        //inventoryObject.GetComponent<Inventory>().AddToList(inventoryInfo);
         spawnInfo.Add(info);
-        isReady = false;
+       // isReady = false;
     }
 }

@@ -19,6 +19,8 @@ public class FPController : MonoBehaviour
     bool isLerping;
     float timer;
     float yPos;
+    float mouseRotation;
+    float verticalLookRotation = 0f;
     void Start()
     {
         yPos = transform.position.y;
@@ -43,29 +45,38 @@ public class FPController : MonoBehaviour
         vec.y = 0;
         movePos = (vec + movement + transform.position); // So i know where we want to move if we are colliding
         transform.position += (vec + movement);
-        if (!isLerping)
-        {
-            timer = 0.0f;
-            //Vector3 newPos = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-            rotation.y += Input.GetAxis("Mouse X");
-            rotation.x += -Input.GetAxis("Mouse Y");
-            isLerping = true;
-        }
-        timer += Time.deltaTime;
-        if (isLerping)
-        {
-            Vector3 deltaMovement = camera.transform.eulerAngles;
-            deltaMovement.z = 0;
-            Vector3 inputMovement = Quaternion.Euler(rotation.x * rotSpeed, rotation.y * rotSpeed, 0).eulerAngles;
-            Debug.Log(deltaMovement - inputMovement);
-            camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, Quaternion.Euler(rotation.x * rotSpeed,rotation.y * rotSpeed,0), timer);
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rotation.x * rotSpeed, rotation.y * rotSpeed, 0), timer);
-            camera.transform.eulerAngles = new Vector3(camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, 0);
-            transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-            transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
-            if (timer >= lerpTime)
-                isLerping = false;
-        }
+        //mouse movement 
+        transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * rotSpeed);
+        verticalLookRotation += Input.GetAxis("Mouse Y") * rotSpeed;
+        verticalLookRotation = Mathf.Clamp(verticalLookRotation, -60, 60);
+        camera.transform.localEulerAngles = Vector3.left * verticalLookRotation;
+
+
+        //apply camera rotation
+
+        /*   if (!isLerping)
+           {
+               timer = 0.0f;
+               //Vector3 newPos = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+               rotation.y += Input.GetAxis("Mouse X");
+               rotation.x += -Input.GetAxis("Mouse Y");
+               isLerping = true;
+           }
+           timer += Time.deltaTime;
+           if (isLerping)
+           {
+               Vector3 deltaMovement = camera.transform.eulerAngles;
+               deltaMovement.z = 0;
+               Vector3 inputMovement = Quaternion.Euler(rotation.x * rotSpeed, rotation.y * rotSpeed, 0).eulerAngles;
+               Debug.Log(deltaMovement - inputMovement);
+               camera.transform.rotation = Quaternion.Lerp(camera.transform.rotation, Quaternion.Euler(rotation.x * rotSpeed,rotation.y * rotSpeed,0), timer);
+               transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(rotation.x * rotSpeed, rotation.y * rotSpeed, 0), timer);
+               camera.transform.eulerAngles = new Vector3(camera.transform.eulerAngles.x, camera.transform.eulerAngles.y, 0);
+               transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+               transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
+               if (timer >= lerpTime)
+                   isLerping = false;
+           }*/
         //Debug.DrawRay(transform.position, transform.forward);
         //Debug.Log(Vector3.Distance(currentPos, transform.position));
         if (Vector3.Distance(currentPos, transform.position) < .01f)

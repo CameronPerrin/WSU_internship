@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Base path: D:/Program Files/Unity/2019.1.7f1/Editor/Data
 Cmd: initializeCompiler
 Cmd: compileSnippet
@@ -59,3 +60,7 @@ Cmd: compileComputeKernel
   api=4 insize=18299 outsize=8693 ok=1
 Cmd: compileComputeKernel
   api=4 insize=18299 outsize=10769 ok=1
+=======
+Base path: C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data
+Cmd: initializeCompiler
+>>>>>>> db1c726fadf9f03ad4326efa8a70ac39e632712f

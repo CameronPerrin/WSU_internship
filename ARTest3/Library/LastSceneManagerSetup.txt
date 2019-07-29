@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/BrendansStuff/Scenes/VFX Testing.unity
+=======
+- path: Assets/Stephen/Scenes/Sewer.unity
+>>>>>>> db1c726fadf9f03ad4326efa8a70ac39e632712f
   isLoaded: 1
   isActive: 1
   isSubScene: 0

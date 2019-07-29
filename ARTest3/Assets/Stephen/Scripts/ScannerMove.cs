@@ -18,13 +18,8 @@ public class ScannerMove : MonoBehaviour
     public float shift;
     public float shiftV;
 
-    //List and varaibles used to house locations of objects in fatberg
+    //List to house Fatberg objects
     public List<GameObject> items;
-    public GameObject one;
-    public GameObject two;
-    public GameObject three;
-    public GameObject four;
-    public GameObject five;
 
     //Variable used for testing 
     public float away;
@@ -34,10 +29,12 @@ public class ScannerMove : MonoBehaviour
     public Text desc;
     public GameObject descContainer;
     public GameObject textBoxContainer;
+    public GameObject GamePanel;
 
     //Scanner objects: reticle and arrows
     public GameObject indicator;
     public List<GameObject> arrows;
+    public GameObject arrowPrefab;
 
     //Variable for currently selected item
     public GameObject clicked;
@@ -58,16 +55,28 @@ public class ScannerMove : MonoBehaviour
     {
         cam = Camera.main.transform;
         camStartRot = cam.rotation;
-        newPos = camStartPos.position + camStartPos.forward * distance 
-                                            + camStartPos.right * shift 
+        newPos = camStartPos.position + camStartPos.forward * distance
+                                            + camStartPos.right * shift
                                             + camStartPos.up * shiftV;
-        items.Add(one);
-        items.Add(two);
-        items.Add(three);
-        items.Add(four);
-        items.Add(five);
+        SetUp();
     }
 
+    void SetUp()
+    {
+        arrows = new List<GameObject>();
+        for (int i = 0; i < items.Count; i++)
+        {
+            GameObject temp = Instantiate(arrowPrefab);
+            temp.transform.parent = GameObject.FindGameObjectWithTag("Reticles").transform;
+            temp.GetComponent<ArrowPoint>().target = items[i];
+            temp.transform.position = arrowPrefab.transform.position;
+            //items[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);  REMOVED THIS LINE AS IT WAS CAUSING ERRORS IN SEWER SCENE SCALING
+            temp.transform.localScale = new Vector3(1f, 1f, 1f);
+            arrows.Add(temp);
+            
+        }
+        arrowPrefab.SetActive(false);
+    }
     void Update()
     {
         if (!clicked)
@@ -97,6 +106,7 @@ public class ScannerMove : MonoBehaviour
                 oldPos = clicked.transform.position;
                 oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
+                GamePanel.SetActive(true);
 
                 /* 
                 //Position to move selected object to in front of camera position when clicked
