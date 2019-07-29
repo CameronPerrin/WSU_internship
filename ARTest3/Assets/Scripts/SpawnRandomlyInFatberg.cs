@@ -15,7 +15,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         // We are getting the inventory by finding the tag
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         //List<InventoryInfo> inven = inventory.inventory.OrderBy(s => s.objInfo.name).ToList();
-        
+
         for (int i = 0; i < inventory.inventory.Count; i++)
         {
             SpawnAtRandomPointsInsideGameObject(i);
@@ -94,11 +94,11 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         }
 
         ScannerMove move = Camera.main.gameObject.GetComponent<ScannerMove>();
-        move.items.Add(temp); 
+        move.items.Add(temp);
     }
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
