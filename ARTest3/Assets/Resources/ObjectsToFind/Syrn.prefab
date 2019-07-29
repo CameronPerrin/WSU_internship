@@ -58,8 +58,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
-  desc: 
+  itemName: Syringe
+  desc: Very unsafe.
 --- !u!114 &3687005036631851757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,8 +85,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  pressureIncrease: 5
+  name: Syringe
+  description: Very unsafe.
   flushable: 0
   plane: {fileID: 0}
   hasCollided: 0

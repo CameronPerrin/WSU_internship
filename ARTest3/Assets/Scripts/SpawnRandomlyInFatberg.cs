@@ -84,10 +84,13 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         }
 
         //Various checks to make items proper rotation when in fatberg/UI
-        //NEED TO ADD CAR
-        if(objectName == "Ketchup")
+        if(objectName == "Ketchup" || objectName == "Syrn")
         {
             prefabTemp.transform.rotation = new Quaternion(90f, 0f ,0f , 0f);
+        }
+        else if(objectName == "Car")
+        {
+            prefabTemp.transform.rotation = new Quaternion(180f, 0f, -90f, 0f);
         }
 
         ScannerMove move = Camera.main.gameObject.GetComponent<ScannerMove>();

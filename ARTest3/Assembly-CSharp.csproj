@@ -73,6 +73,7 @@
      <Compile Include="Assets\Stephen\Scripts\IgnoreRaycast.cs" />
      <Compile Include="Assets\Stephen\Scripts\ItemInfo.cs" />
      <Compile Include="Assets\Stephen\Scripts\MadeToss.cs" />
+     <Compile Include="Assets\Stephen\Scripts\MenuButtons.cs" />
      <Compile Include="Assets\Stephen\Scripts\Puzzle.cs" />
      <Compile Include="Assets\Stephen\Scripts\PuzzleManager.cs" />
      <Compile Include="Assets\Stephen\Scripts\PuzzleStatus.cs" />

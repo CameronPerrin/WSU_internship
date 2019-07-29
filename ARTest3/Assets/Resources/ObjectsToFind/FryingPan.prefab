@@ -68,8 +68,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  pressureIncrease: 5
+  name: Grease
+  description: Poor idea.
   flushable: 0
   plane: {fileID: 0}
   hasCollided: 0
@@ -89,8 +90,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
-  desc: 
+  itemName: Grease
+  desc: Poor idea.
 --- !u!1001 &330721587925239449
 PrefabInstance:
   m_ObjectHideFlags: 0

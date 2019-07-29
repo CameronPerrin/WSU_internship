@@ -71,9 +71,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
-  desc: 
-  trueScale: {x: 0, y: 0, z: 0}
+  itemName: Flushable Wipes
+  desc: Very bad.
 --- !u!114 &-1590930711091127477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,8 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressureIncrease: 5
-  name: 
-  description: 
+  name: Flushable Wipes
+  description: Very bad.
   flushable: 0
   plane: {fileID: 0}
   hasCollided: 0

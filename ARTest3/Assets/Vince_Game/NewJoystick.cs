@@ -34,6 +34,9 @@ public class NewJoystick : MonoBehaviour
     //Variable for new game check
     public bool newGame;
 
+    //Holder for item description text
+    public GameObject descText;
+
 
     void Start()
     {
@@ -51,6 +54,7 @@ public class NewJoystick : MonoBehaviour
         //Check for new game to reset the game for each object
         if(newGame == true)
         {
+            descText.SetActive(false);
             GenWinning();
             newGame = false;
         }
@@ -87,6 +91,8 @@ public class NewJoystick : MonoBehaviour
             Successes = 0;
             //Camera.GetComponent<ScannerMove>().enabled = false;
             ThisGameWindow.SetActive(false);
+            //Reveals item information after winning game
+            descText.SetActive(true);
             newGame = true;
         }
     }

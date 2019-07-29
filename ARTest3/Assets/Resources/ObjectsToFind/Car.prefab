@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 9147546669034474092}
   - component: {fileID: 1806624632233420929}
   m_Layer: 0
-  m_Name: Car
+  m_Name: Toy Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,13 +31,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5574082406958165639}
-  m_LocalRotation: {x: 0.47158977, y: 0.53540987, z: 0.53160304, w: 0.45644024}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 19.084835, y: 40.088, z: 1.88}
   m_LocalScale: {x: 0.017846486, y: 0.017846486, z: 0.017846486}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -7.9750004, y: 91.048004, z: 90.578}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!33 &3832451928163626832
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -95,8 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  pressureIncrease: 5
+  name: Toy Car
+  description: Why?
   flushable: 0
   plane: {fileID: 0}
   hasCollided: 0
@@ -116,8 +117,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
-  desc: 
+  itemName: Toy Car
+  desc: Why?
 --- !u!114 &-4331677974087467215
 MonoBehaviour:
   m_ObjectHideFlags: 0
