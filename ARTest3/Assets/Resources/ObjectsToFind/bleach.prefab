@@ -58,7 +58,7 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
+  itemName: Bleach
   desc: 
 --- !u!114 &4293832402295526512
 MonoBehaviour:
@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pressureIncrease: 5
   name: Bleach
   description: 
   flushable: 0

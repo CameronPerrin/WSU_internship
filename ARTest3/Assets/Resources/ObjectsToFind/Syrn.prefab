@@ -58,7 +58,7 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
+  itemName: Syrn
   desc: 
 --- !u!114 &3687005036631851757
 MonoBehaviour:
@@ -85,7 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  pressureIncrease: 5
+  name: Syrn
   description: 
   flushable: 0
   plane: {fileID: 0}

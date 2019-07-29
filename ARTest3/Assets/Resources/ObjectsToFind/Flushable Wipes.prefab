@@ -71,9 +71,8 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
+  itemName: Wipes
   desc: 
-  trueScale: {x: 0, y: 0, z: 0}
 --- !u!114 &-1590930711091127477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pressureIncrease: 5
-  name: 
+  name: Wipes
   description: 
   flushable: 0
   plane: {fileID: 0}

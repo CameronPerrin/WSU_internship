@@ -68,7 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  pressureIncrease: 5
+  name: Floss
   description: 
   flushable: 0
   plane: {fileID: 0}
@@ -89,7 +90,7 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
+  itemName: Floss
   desc: 
 --- !u!1001 &7862279392310195820
 PrefabInstance:

@@ -71,7 +71,7 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: 
+  itemName: PillBottle
   desc: 
 --- !u!114 &8335891084193940686
 MonoBehaviour:
@@ -85,7 +85,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  pressureIncrease: 5
+  name: PillBottle
   description: 
   flushable: 0
   plane: {fileID: 0}
