@@ -87,6 +87,7 @@
     <Compile Include="Assets\Stephen\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Vince_Game\GameScript.cs" />
     <Compile Include="Assets\Vince_Game\JoystickSpriteChange.cs" />
+    <Compile Include="Assets\Vince_Game\LedChecker.cs" />
     <Compile Include="Assets\Vince_Game\NewJoystick.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
