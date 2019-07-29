@@ -8,7 +8,7 @@ public class NewJoystick : MonoBehaviour
 
     public int winningPosition;
     public int Successes = 0;
-    [SerializeField] private float PositionAngle;
+    [SerializeField] public float PositionAngle;
 
     public AudioClip bell;
     public AudioClip victory;
@@ -18,23 +18,31 @@ public class NewJoystick : MonoBehaviour
     public float x;
     public float y;
     [SerializeField] public GameObject joystick;
-    private Vector3 rotate;
+    [SerializeField] private Vector3 rotate;
 
-
-    [SerializeField] private KeyCode check;
+    
 
     //these will target objects that have the rings of leds.
     [SerializeField] public GameObject success0;
     [SerializeField] public GameObject success1;
     [SerializeField] public GameObject success2;
 
+    [SerializeField] public GameObject Camera;
+
+    [SerializeField] public GameObject ThisGameWindow;
 
 
     void Start()
     {
         GenWinning();
+
     }
-    
+
+    private void Awake()
+    {
+        Camera.GetComponent<ScannerMove>().enabled = false;
+    }
+
     private void Update()
     {
         Leds();
@@ -56,7 +64,7 @@ public class NewJoystick : MonoBehaviour
         }
 
         //check to see if on the winning angle
-        if (Input.GetKeyDown(check) && PositionAngle == winningPosition)
+        if (Input.GetKeyDown("Submit") && PositionAngle == winningPosition)
         {
             Successes += 1;
             GenWinning();
@@ -66,8 +74,12 @@ public class NewJoystick : MonoBehaviour
         //check if you have won 3 times
         if (Successes == 3)
         {
+
             playerSource.PlayOneShot(victory);
-            //load other scene
+            Successes = 0;
+            Camera.GetComponent<ScannerMove>().enabled = false;
+            ThisGameWindow.SetActive(false);
+
         }
     }
 
@@ -77,18 +89,62 @@ public class NewJoystick : MonoBehaviour
         switch (Successes)
         {
             case 0:
-                rotate = new Vector3(0, 0, Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y)));
-                PositionAngle = Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y) / 45f);
+                if (x == 0 && y == 0)
+                {
+                    rotate = new Vector3(0, 0, 0);
+                    PositionAngle = 1;
+                }
+                else if (y < 0)
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 45);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 45f);
+                }
+                else
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 45);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 45f);
+                }
+                
                 break;
 
+
+
             case 1:
-                rotate = new Vector3(0, 0, Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y)));
-                PositionAngle = Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y) / 22.5f);
+                if (x == 0 && y == 0)
+                {
+                    rotate = new Vector3(0, 0, 0);
+                    PositionAngle = 1;
+                }
+                else if (y < 0)
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 22.5f);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 22.5f);
+                }
+                else
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 22.5f);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 22.5f);
+                }
+
                 break;
 
             case 2:
-                rotate = new Vector3(0, 0, Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y)));
-                PositionAngle = Mathf.Round(Mathf.Rad2Deg * Mathf.Atan(x / y) / 15f);
+                if (x == 0 && y == 0)
+                {
+                    rotate = new Vector3(0, 0, 0);
+                    PositionAngle = 1;
+                }
+                else if (y < 0)
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 15f);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 15f);
+                }
+                else
+                {
+                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 15f);
+                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 15f);
+                }
+
                 break;
 
             default:
