@@ -9,10 +9,14 @@ public class ItemInfo : MonoBehaviour
     public string itemName;
     [TextArea (3,10)]
     public string desc;
+    private Vector3 trueScale;
 
     void Awake()
     {
         //rend = this.GetComponent<MeshRenderer>();
         //origColor = rend.material.color;
+        //Used to check item was proper scale for Sewer scene
+        trueScale = this.transform.localScale;
+
     }
 }
