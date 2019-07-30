@@ -82,6 +82,7 @@
     <Compile Include="Assets\Stephen\Scripts\IgnoreRaycast.cs" />
     <Compile Include="Assets\Stephen\Scripts\ItemInfo.cs" />
     <Compile Include="Assets\Stephen\Scripts\MadeToss.cs" />
+    <Compile Include="Assets\Stephen\Scripts\MenuButtons.cs" />
     <Compile Include="Assets\Stephen\Scripts\Puzzle.cs" />
     <Compile Include="Assets\Stephen\Scripts\PuzzleManager.cs" />
     <Compile Include="Assets\Stephen\Scripts\PuzzleStatus.cs" />
@@ -135,6 +136,9 @@
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.XR.ARFoundation.Editor">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
     </Reference>
@@ -159,6 +163,9 @@
     <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
@@ -168,11 +175,17 @@
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
@@ -194,18 +207,6 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualEffectGraph.Runtime">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualEffectGraph.Editor">
-      <HintPath>C:/WSUProject/WSU_internship/ARTest3/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
