@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Stephen/Scenes/Sewer.unity
+- path: Assets/Cameron_Game/drag_n_drop.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
