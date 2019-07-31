@@ -118,7 +118,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Coffee Grounds
-  desc: 
+  desc1: Flushable & Biodegradable.
+  desc2: Not an issue for Fatberg
+  desc3: Go ahead.
 --- !u!114 &493832495976183102
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,8 +71,10 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: Wipes
-  desc: 
+  itemName: Flushable Wipes
+  desc1: Flushable, but not biodegradable.
+  desc2: Biggest problem for Fatberg.
+  desc3: Not for toilet.
 --- !u!114 &-1590930711091127477
 MonoBehaviour:
   m_ObjectHideFlags: 0

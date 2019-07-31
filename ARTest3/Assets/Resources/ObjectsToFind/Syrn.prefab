@@ -58,8 +58,10 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: Syrn
-  desc: 
+  itemName: Syringe
+  desc1: WOW Really?
+  desc2: Fatberg hates these.
+  desc3: Not for toilets.
 --- !u!114 &3687005036631851757
 MonoBehaviour:
   m_ObjectHideFlags: 0

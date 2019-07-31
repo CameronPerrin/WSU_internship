@@ -72,7 +72,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Toliet Paper
-  desc: 
+  desc1: Flushable
+  desc2: Sewer can handle it.
+  desc3: Go ahead.
 --- !u!114 &7063735654371362251
 MonoBehaviour:
   m_ObjectHideFlags: 0

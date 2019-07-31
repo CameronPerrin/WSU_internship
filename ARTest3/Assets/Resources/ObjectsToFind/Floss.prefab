@@ -91,7 +91,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Floss
-  desc: 
+  desc1: Flushable, but not biodegradable.
+  desc2: Problem for Fatberg.
+  desc3: Not for toilets.
 --- !u!1001 &7862279392310195820
 PrefabInstance:
   m_ObjectHideFlags: 0

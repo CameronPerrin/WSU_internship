@@ -71,8 +71,10 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: PillBottle
-  desc: 
+  itemName: Pill Bottle
+  desc1: Not biodegradable.
+  desc2: Only if the fish have a cold.
+  desc3: Do not throw in toilet.
 --- !u!114 &8335891084193940686
 MonoBehaviour:
   m_ObjectHideFlags: 0

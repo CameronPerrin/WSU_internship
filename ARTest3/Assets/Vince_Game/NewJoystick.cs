@@ -35,7 +35,10 @@ public class NewJoystick : MonoBehaviour
     public bool newGame;
 
     //Holder for item description text
-    public GameObject descText;
+    public GameObject descText1;
+    public GameObject descText2;
+    public GameObject descText3;
+
 
 
     void Start()
@@ -45,7 +48,7 @@ public class NewJoystick : MonoBehaviour
 
     private void Awake()
     {
-        //Camera.GetComponent<ScannerMove>().enabled = false;
+        
     }
 
     private void Update()
@@ -54,7 +57,10 @@ public class NewJoystick : MonoBehaviour
         //Check for new game to reset the game for each object
         if(newGame == true)
         {
-            descText.SetActive(false);
+            Successes = 0;
+            descText1.SetActive(false);
+            descText2.SetActive(false);
+            descText3.SetActive(false);
             GenWinning();
             newGame = false;
         }
@@ -75,24 +81,41 @@ public class NewJoystick : MonoBehaviour
             StartCoroutine(PlaySound());
         }
 
-        //check to see if on the winning angle
-        if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition)
+        //check to see if on the winning angle first time
+        if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition && Successes == 0)
         {
+            descText1.SetActive(true);
+            Successes += 1;
+            GenWinning();
+            StartCoroutine(PlaySuccess());
+
+        }
+
+        //check to see if on the winning angle second time
+        if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition && Successes == 1)
+        {
+            descText2.SetActive(true);
             Successes += 1;
             GenWinning();
             StartCoroutine(PlaySuccess());
         }
+
+        //check to see if on the winning angle third time
+        if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition && Successes == 2)
+        {
+            descText3.SetActive(true);
+            Successes += 1;
+            GenWinning();
+            StartCoroutine(PlaySuccess());
+        }
+        
 
         //check if you have won 3 times
         if (Successes == 3)
         {
 
             playerSource.PlayOneShot(victory);
-            Successes = 0;
-            //Camera.GetComponent<ScannerMove>().enabled = false;
             ThisGameWindow.SetActive(false);
-            //Reveals item information after winning game
-            descText.SetActive(true);
             newGame = true;
         }
     }

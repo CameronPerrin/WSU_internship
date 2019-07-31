@@ -117,8 +117,10 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: ToyCar
-  desc: 
+  itemName: Toy Car
+  desc1: Not flushable.
+  desc2: Problem for Fatberg.
+  desc3: Not for toilets.
 --- !u!114 &-4331677974087467215
 MonoBehaviour:
   m_ObjectHideFlags: 0

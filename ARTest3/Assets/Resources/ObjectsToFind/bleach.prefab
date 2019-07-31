@@ -59,7 +59,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Bleach
-  desc: 
+  desc1: Flushable
+  desc2: Not a Fatberg
+  desc3: Into the toilet
 --- !u!114 &4293832402295526512
 MonoBehaviour:
   m_ObjectHideFlags: 0

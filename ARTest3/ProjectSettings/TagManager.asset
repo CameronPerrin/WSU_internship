@@ -11,6 +11,7 @@ TagManager:
   - Controller
   - Inventory
   - Reticles
+  - Button
   layers:
   - Default
   - TransparentFX

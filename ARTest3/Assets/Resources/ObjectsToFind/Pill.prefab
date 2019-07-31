@@ -91,7 +91,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Pill
-  desc: 
+  desc1: Flushable and biodegradable.
+  desc2: Only if the fish have a cold.
+  desc3: Do not throw in toilet.
 --- !u!1001 &5838121577389497581
 PrefabInstance:
   m_ObjectHideFlags: 0

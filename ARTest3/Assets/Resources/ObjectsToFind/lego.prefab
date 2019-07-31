@@ -118,7 +118,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Lego
-  desc: 
+  desc1: Not flushable.
+  desc2: Problem for Fatberg.
+  desc3: Not for toilets.
 --- !u!114 &7923693300105485115
 MonoBehaviour:
   m_ObjectHideFlags: 0

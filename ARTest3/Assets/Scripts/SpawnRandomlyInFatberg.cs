@@ -8,6 +8,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
     public int spawnedAmount;
     public GameObject spawnedPrefab;
     public Inventory inventory;
+    public int totalItems;
     public List<GameObject> spawnedObjects;
     // Start is called before the first frame update
     void Awake()
@@ -20,6 +21,8 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         {
             SpawnAtRandomPointsInsideGameObject(i);
         }
+
+        totalItems = inventory.inventory.Count;
 
     }
     void SpawnAtRandomPointsInsideGameObject(int i)
@@ -37,8 +40,10 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         GameObject prefabTemp = Instantiate(spawnedPrefab);
         temp.GetComponent<Rigidbody>().useGravity = false;
         temp.GetComponent<Rigidbody>().isKinematic = true;
-        prefabTemp.GetComponent<ItemInfo>().desc = invenTemp.objInfo.description;
-        prefabTemp.GetComponent<ItemInfo>().itemName = invenTemp.objInfo.name;
+        prefabTemp.GetComponent<ItemInfo>().desc1 = temp.GetComponent<ItemInfo>().desc1;
+        prefabTemp.GetComponent<ItemInfo>().desc2 = temp.GetComponent<ItemInfo>().desc2;
+        prefabTemp.GetComponent<ItemInfo>().desc3 = temp.GetComponent<ItemInfo>().desc3;
+        prefabTemp.GetComponent<ItemInfo>().itemName = temp.GetComponent<ItemInfo>().itemName;
         prefabTemp.transform.position = vec;
         temp.transform.position = vec;
         temp.transform.parent = prefabTemp.transform;

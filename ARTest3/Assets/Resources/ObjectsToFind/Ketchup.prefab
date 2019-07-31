@@ -59,7 +59,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Sauce Packets
-  desc: Just no.
+  desc1: Flushable, but not biodegradable.
+  desc2: Problem for Fatberg.
+  desc3: Not for toilets.
 --- !u!114 &5054165704671497831
 MonoBehaviour:
   m_ObjectHideFlags: 0

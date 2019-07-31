@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScannerMove : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class ScannerMove : MonoBehaviour
     public float shift;
     public float shiftV;
 
+    //Item rotation speed
+    public float rotSpeed;
+
     //List to house Fatberg objects
     public List<GameObject> items;
 
@@ -27,7 +31,9 @@ public class ScannerMove : MonoBehaviour
 
     //Text boxes and variables for text itself
     public Text itemName;
-    public Text desc;
+    public Text desc1;
+    public Text desc2;
+    public Text desc3;
     public GameObject descContainer;
     public GameObject textBoxContainer;
     public GameObject GamePanel;
@@ -48,9 +54,15 @@ public class ScannerMove : MonoBehaviour
     public float speed;
     public float framesleft;
 
+    //Raycast
     private Ray ray;
     public RaycastHit hit;
 
+    //Variables for turning off info when minigame finished
+    public GameObject minigame;
+    public int timePassed;
+    public GameObject oldArrow;
+    public GameObject arrowTarget;
 
     void Start()
     {
@@ -71,12 +83,45 @@ public class ScannerMove : MonoBehaviour
             temp.transform.parent = GameObject.FindGameObjectWithTag("Reticles").transform;
             temp.GetComponent<ArrowPoint>().target = items[i];
             temp.transform.position = arrowPrefab.transform.position;
-            //items[i].transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);  REMOVED THIS LINE AS IT WAS CAUSING ERRORS IN SEWER SCENE SCALING
             temp.transform.localScale = new Vector3(1f, 1f, 1f);
             arrows.Add(temp);
             
         }
         arrowPrefab.SetActive(false);
+    }
+
+    void FixedUpdate()
+    {
+        //Timer to leave information open before destroying object and moving to next minigame
+        if (minigame.GetComponent<NewJoystick>().Successes == 3)
+        {
+            timePassed = timePassed + 1;
+            if (timePassed >= 100)
+            {
+                timePassed = 0;
+                minigame.GetComponent<NewJoystick>().Successes = 0;
+                //Removes arrow associated with clicked object
+                foreach (var arrow in arrows)
+                {
+                    arrowTarget = clicked.transform.GetChild(0).gameObject;
+                    if(arrow.GetComponent<ArrowPoint>().target == arrowTarget)
+                    {
+                        Destroy(arrow);
+                    }
+                }
+                items.Remove(clicked);
+                Destroy(clicked.gameObject);
+                textBoxContainer.SetActive(true);
+                clicked = null;
+                descContainer.SetActive(false);
+                itemName.text = "";
+                desc1.text = "";
+                desc2.text = "";
+                desc3.text = "";
+            }
+        }
+        
+        
     }
     void Update()
     {
@@ -87,6 +132,12 @@ public class ScannerMove : MonoBehaviour
             x = Input.GetAxisRaw("PS Y");
             rotate = new Vector3(x * -1, y * -1, 0);
             transform.eulerAngles = transform.eulerAngles - rotate;
+
+            //Loads EndScreen when all objects have been removed from the fatberg
+            if(items.Count == 0)
+            {
+                SceneManager.LoadScene("EndScreen");
+            }
         }
 
         ray = new Ray(cam.position, cam.forward);
@@ -121,13 +172,18 @@ public class ScannerMove : MonoBehaviour
                 textBoxContainer.SetActive(false);
                 descContainer.SetActive(true);
                 itemName.text = clicked.GetComponent<ItemInfo>().itemName;
-                desc.text = clicked.GetComponent<ItemInfo>().desc;
+                desc1.text = clicked.GetComponent<ItemInfo>().desc1;
+                desc2.text = clicked.GetComponent<ItemInfo>().desc2;
+                desc3.text = clicked.GetComponent<ItemInfo>().desc3;
             }
         }
         else
         {
             //Distance check for changing reticle color when searching FB
             indicator.GetComponent<SpriteRenderer>().color = Color.white;
+
+            items.RemoveAll(GameObject => GameObject == null);
+            arrows.RemoveAll(GameObject => GameObject == null);
 
             foreach (var item in items)
             {
@@ -167,18 +223,31 @@ public class ScannerMove : MonoBehaviour
             clicked.transform.rotation = oldRot;
             framesleft--;
         }
+
+        if (clicked && framesleft == 0 && (clicked.GetComponent<ItemInfo>().itemName == "Toy Car" || clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
+        {
+            clicked.transform.Rotate(Vector3.down * rotSpeed * Time.deltaTime);
+        }
+        else if (clicked && framesleft == 0 && clicked.GetComponent<ItemInfo>().itemName != "Toy Car")
+        {
+            clicked.transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
+        }
         
         //Puts item back when circle is pressed
         if (Input.GetButtonDown("Cancel") && clicked && framesleft == 0)
         {
-                clicked.transform.parent = null;
-                clicked.transform.position = oldPos;
-                clicked.transform.rotation = oldRot;
-                textBoxContainer.SetActive(true);
-                clicked = null;
-                descContainer.SetActive(false);
-                itemName.text = "";
-                desc.text = "";
+            clicked.transform.parent = null;
+            clicked.transform.position = oldPos;
+            clicked.transform.rotation = oldRot;
+            textBoxContainer.SetActive(true);
+            clicked = null;
+            descContainer.SetActive(false);
+            itemName.text = "";
+            desc1.text = "";
+            desc2.text = "";
+            desc3.text = "";
         }
+
+        
     }
 }

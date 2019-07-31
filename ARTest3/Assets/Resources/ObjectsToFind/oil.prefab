@@ -59,7 +59,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Oil
-  desc: 
+  desc1: Flushable, but not biodegradable.
+  desc2: Biggest problem for Fatberg.
+  desc3: Not for toilets.
 --- !u!114 &-29088500963508157
 MonoBehaviour:
   m_ObjectHideFlags: 0
