@@ -20,7 +20,8 @@ public class ArtifactController : MonoBehaviour
     public Text textBox;
 	public Text nameBox;
 	public GameObject textBoxContainer;
-    bool currentlyHolding;
+    [HideInInspector]
+    public bool currentlyHolding;
     
 
     void Start()

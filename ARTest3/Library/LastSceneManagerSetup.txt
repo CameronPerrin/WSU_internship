@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Cameron_Game/drag_n_drop.unity
+- path: Assets/GregsStuff/Phase1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
