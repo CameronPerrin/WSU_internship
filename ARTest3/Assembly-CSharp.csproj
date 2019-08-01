@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\BrendansStuff\ChangeMaterial.cs" />
     <Compile Include="Assets\BrendansStuff\RotateObject.cs" />
+    <Compile Include="Assets\Cameron_Game\BoardMaster.cs" />
     <Compile Include="Assets\Cameron_Game\DragMaster.cs" />
     <Compile Include="Assets\Cameron_Game\PickUpMaster.cs" />
     <Compile Include="Assets\Cameron_Game\SelectorMaster.cs" />

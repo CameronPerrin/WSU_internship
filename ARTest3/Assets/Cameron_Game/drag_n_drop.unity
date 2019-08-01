@@ -218,10 +218,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9343b96cada3d9849862b8add51f4a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  solution: []
   dropable: {fileID: 2686076021391152468, guid: 1b6ad55209424a644b2ca50406521f27,
     type: 3}
   selector: {fileID: 1161564397183148056, guid: 59e9f9deb903d4542991de9bf2e8200d,
     type: 3}
+  board: {fileID: 1350380858162477039, guid: dc8b76592a4e0e546b8a061dea9e842b, type: 3}
+  rows: 2
+  columns: 3
 --- !u!114 &63708544
 MonoBehaviour:
   m_ObjectHideFlags: 0
