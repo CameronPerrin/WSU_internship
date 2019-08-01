@@ -12,6 +12,9 @@ TagManager:
   - Inventory
   - Reticles
   - Button
+  - Board
+  - pickUp
+  - Filled
   layers:
   - Default
   - TransparentFX
