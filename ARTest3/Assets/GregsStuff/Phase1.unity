@@ -22954,6 +22954,7 @@ MonoBehaviour:
   textBox: {fileID: 0}
   nameBox: {fileID: 0}
   textBoxContainer: {fileID: 0}
+  currentlyHolding: 0
 --- !u!114 &1513573475
 MonoBehaviour:
   m_ObjectHideFlags: 0
