@@ -20,7 +20,8 @@ public class ArtifactController : MonoBehaviour
     public Text textBox;
 	public Text nameBox;
 	public GameObject textBoxContainer;
-    bool currentlyHolding;
+    [HideInInspector]
+    public bool currentlyHolding;
     
 
     void Start()
@@ -36,7 +37,7 @@ public class ArtifactController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space") && clicked && clicked.transform.parent != null)
+        if (Input.GetKeyDown("space") && clicked && clicked.transform.parent != null || Input.GetKeyDown(KeyCode.Joystick1Button7) && clicked && clicked.transform.parent != null)
         {
             clicked.GetComponent<Rigidbody>().isKinematic = false;
             clicked.transform.parent = null;
@@ -49,7 +50,7 @@ public class ArtifactController : MonoBehaviour
             // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             //Debug.DrawRay(ray.origin,ray.direction,Color.blue);
             // RaycastHit hit;
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
                 GameObject hit = InteractWithClosetGameObject();
                 //Check if other item has been clicked, drop current item and replace with new item
@@ -130,7 +131,7 @@ public class ArtifactController : MonoBehaviour
                 //textBox.text = " ";
             }
         }
-        else if (Input.GetKeyDown(KeyCode.E) || clicked == null)
+        else if (Input.GetKeyDown(KeyCode.E)|| Input.GetKeyDown(KeyCode.Joystick1Button1) || clicked == null)
         {
             if (clicked)
             {

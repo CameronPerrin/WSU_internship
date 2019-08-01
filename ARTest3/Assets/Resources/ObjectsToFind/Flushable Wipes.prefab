@@ -71,8 +71,10 @@ MonoBehaviour:
   origColor:
     serializedVersion: 2
     rgba: 0
-  itemName: Wipes
-  desc: 
+  itemName: Flushable Wipes
+  desc1: Flushable, but not biodegradable.
+  desc2: Biggest problem for Fatberg.
+  desc3: Not for toilet.
 --- !u!114 &-1590930711091127477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +94,20 @@ MonoBehaviour:
   plane: {fileID: 0}
   hasCollided: 0
   hunt: {fileID: 0}
+--- !u!114 &2076538999486917434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163818841135120281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowDistance: 3
+  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
 --- !u!1001 &6397866225334265488
 PrefabInstance:
   m_ObjectHideFlags: 0

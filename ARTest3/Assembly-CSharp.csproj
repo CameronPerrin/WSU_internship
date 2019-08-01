@@ -64,6 +64,10 @@
   <ItemGroup>
     <Compile Include="Assets\BrendansStuff\ChangeMaterial.cs" />
     <Compile Include="Assets\BrendansStuff\RotateObject.cs" />
+    <Compile Include="Assets\Cameron_Game\BoardMaster.cs" />
+    <Compile Include="Assets\Cameron_Game\DragMaster.cs" />
+    <Compile Include="Assets\Cameron_Game\PickUpMaster.cs" />
+    <Compile Include="Assets\Cameron_Game\SelectorMaster.cs" />
     <Compile Include="Assets\Scripts\Player\FirstPersonCont.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\CheckIfInside.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\FPController.cs" />
@@ -79,6 +83,7 @@
     <Compile Include="Assets\Stephen\Scripts\ArrowPoint.cs" />
     <Compile Include="Assets\Stephen\Scripts\ArtifactController.cs" />
     <Compile Include="Assets\Stephen\Scripts\Buttons.cs" />
+    <Compile Include="Assets\Stephen\Scripts\EndButtons.cs" />
     <Compile Include="Assets\Stephen\Scripts\IgnoreRaycast.cs" />
     <Compile Include="Assets\Stephen\Scripts\ItemInfo.cs" />
     <Compile Include="Assets\Stephen\Scripts\MadeToss.cs" />
@@ -86,6 +91,7 @@
     <Compile Include="Assets\Stephen\Scripts\Puzzle.cs" />
     <Compile Include="Assets\Stephen\Scripts\PuzzleManager.cs" />
     <Compile Include="Assets\Stephen\Scripts\PuzzleStatus.cs" />
+    <Compile Include="Assets\Stephen\Scripts\RestartController.cs" />
     <Compile Include="Assets\Stephen\Scripts\ScannerMove.cs" />
     <Compile Include="Assets\Stephen\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Vince_Game\GameScript.cs" />

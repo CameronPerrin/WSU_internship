@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 715926410377370320}
   - component: {fileID: -7389997536769285719}
   - component: {fileID: 4082651854982395061}
+  - component: {fileID: -3277286652144195173}
   m_Layer: 0
   m_Name: Coffee Grounds
   m_TagString: Untagged
@@ -118,7 +119,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Coffee Grounds
-  desc: 
+  desc1: Flushable & Biodegradable.
+  desc2: Not an issue for Fatberg
+  desc3: Go ahead.
 --- !u!114 &493832495976183102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +178,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 864655442555115140, guid: 49df8204545e12440b11b47217bb27e2, type: 3}
+--- !u!114 &-3277286652144195173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7075388853053662121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowDistance: 3
+  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
