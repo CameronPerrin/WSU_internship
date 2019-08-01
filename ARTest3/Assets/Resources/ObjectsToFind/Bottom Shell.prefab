@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -5468396348033372946}
   - component: {fileID: -1405265564560034793}
   - component: {fileID: 1192347425850130735}
+  - component: {fileID: 2487351449069926842}
   m_Layer: 0
   m_Name: Bottom Shell
   m_TagString: Untagged
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 239378781582670930, guid: 49df8204545e12440b11b47217bb27e2, type: 3}
+  - {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,3 +178,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: -3276528489365845787, guid: 49df8204545e12440b11b47217bb27e2, type: 3}
+--- !u!114 &2487351449069926842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391697835323089661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowDistance: 3
+  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
