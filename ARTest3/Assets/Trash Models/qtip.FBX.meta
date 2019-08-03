@@ -3,7 +3,12 @@ guid: 5e94ff9cdddf74548a52f7feef245246
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: qtip texture
+    second: {fileID: 2800000, guid: 4f3d10fe538bf3f47ba077963a784b86, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

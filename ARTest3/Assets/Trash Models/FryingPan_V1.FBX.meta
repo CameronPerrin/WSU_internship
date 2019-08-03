@@ -3,7 +3,12 @@ guid: 25187f0837de63e4a88c63124b6d73e3
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Master Texture
+    second: {fileID: 2800000, guid: 154dddba09c2aec4ea77a50827211a6c, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
