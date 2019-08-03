@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: gradient map
+    second: {fileID: 2800000, guid: f2592747352fdb34cbca415f10aa586b, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
