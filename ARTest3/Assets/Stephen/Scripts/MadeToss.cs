@@ -41,7 +41,7 @@ public class MadeToss : MonoBehaviour
     IEnumerator Delay()
     {
         hasWaited = false;
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(1.5f);
         hasWaited = true;
     }
 }
