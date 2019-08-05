@@ -53,7 +53,7 @@ public class FPController : MonoBehaviour
         //ControllerMovment
         transform.Rotate(Vector3.up * Input.GetAxis("RightJoyStickHor") * rotSpeed);
         verticalLookRotation += Input.GetAxis("RightJoyStickVert") * rotSpeed;
-        Debug.Log(Input.GetAxis("RightJoyStickVert") + "  " + Input.GetAxis("RightJoyStickHor"));
+       // Debug.Log(Input.GetAxis("RightJoyStickVert") + "  " + Input.GetAxis("RightJoyStickHor"));
         verticalLookRotation = Mathf.Clamp(verticalLookRotation, -60, 60);
         camera.transform.localEulerAngles = Vector3.left * verticalLookRotation;
 

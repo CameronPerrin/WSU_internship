@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3785839407181548942}
   m_Layer: 0
   m_Name: pick_up
-  m_TagString: Untagged
+  m_TagString: pickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 6884269439680139160, guid: 59e9f9deb903d4542991de9bf2e8200d, type: 3}
   speed: 10
+  movable: 1
 --- !u!61 &-7818789908767323417
 BoxCollider2D:
   m_ObjectHideFlags: 0
