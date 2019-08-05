@@ -1232,3 +1232,13 @@ E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\obj\Debug\Assembly-
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.dll
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.pdb
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Postprocessing.Editor.dll
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Postprocessing.Runtime.dll
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.VisualEffectGraph.Editor.dll
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.VisualEffectGraph.Runtime.dll
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Vuforia.UnityExtensions.dll
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.VisualEffectGraph.Runtime.pdb
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Postprocessing.Editor.pdb
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Postprocessing.Runtime.pdb
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.VisualEffectGraph.Editor.pdb
+E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Vuforia.UnityExtensions.xml
