@@ -27,7 +27,6 @@ public class ObjectInformation : MonoBehaviour
     {
         if(collision.transform.tag == "NoSpawn" && !hasWaited)
         {
-            GameObject.FindGameObjectWithTag("Controller").GetComponent<Timer>().AddSliderVal(pressureIncrease);
             hunt.SpawnItems();
             hunt.spawnInfo.Remove(objectInfo);
             Destroy(this.gameObject);                

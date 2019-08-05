@@ -32,12 +32,16 @@ public class MadeToss : MonoBehaviour
 
 
             }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
     IEnumerator Delay()
     {
         hasWaited = false;
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0f);
         hasWaited = true;
     }
 }
