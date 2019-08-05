@@ -23085,7 +23085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d505cc4ff9474991c59af7bf30eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 160
+  endTime: 30
   text: {fileID: 0}
   slider: {fileID: 355422561}
 --- !u!1 &1321447561

@@ -20,16 +20,17 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         for (int i = 0; i < inventory.inventory.Count; i++)
         {
             SpawnAtRandomPointsInsideGameObject(i);
+            i++;
         }
 
-        totalItems = inventory.inventory.Count;
+        totalItems = inventory.inventory.Count/2;
 
     }
     void SpawnAtRandomPointsInsideGameObject(int i)
     {
         //random positions in the FatBerg
         float maxX = GetComponent<MeshRenderer>().bounds.extents.x * .65f;
-        float maxY = GetComponent<MeshRenderer>().bounds.extents.y * .75f;
+        float maxY = GetComponent<MeshRenderer>().bounds.extents.y * .55f;
         float maxZ = GetComponent<MeshRenderer>().bounds.extents.z * .3f;
         Vector3 vec = new Vector3(Random.Range(-maxX, maxX), Random.Range(-maxY,maxY), Random.Range(-maxZ, maxZ));
         vec += GetComponent<MeshRenderer>().bounds.center; // the random position
