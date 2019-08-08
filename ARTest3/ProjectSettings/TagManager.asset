@@ -15,6 +15,7 @@ TagManager:
   - Board
   - pickUp
   - Filled
+  - Glow
   layers:
   - Default
   - TransparentFX

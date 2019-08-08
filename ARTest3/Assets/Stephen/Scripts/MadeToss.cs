@@ -30,6 +30,11 @@ public class MadeToss : MonoBehaviour
                 InventoryInfo inventoryInfo = new InventoryInfo(GetComponent<ObjectInformation>().objectInfo,GetComponent<ObjectInformation>());
                 inven.GetComponent<Inventory>().AddToList(inventoryInfo);
 
+                if (other.gameObject.GetComponentInChildren<ParticleSystem>() != null)
+                {
+                    other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
+
 
             }
             else
