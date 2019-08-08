@@ -77,6 +77,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -94,6 +96,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/GregsStuff/Phase1.unity:
     - Class: 1
@@ -914,18 +918,6 @@ ScriptsOnlyBuild:
     className: NetworkTransform
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
-  - hash:
-      serializedVersion: 2
       Hash: f69046177050bb7ac9ddc2756640daca
     assemblyName: Unity.RenderPipelines.HighDefinition.Runtime.dll
     namespaceName: UnityEngine.Experimental.Rendering.HDPipeline
@@ -1556,7 +1548,7 @@ ScriptsOnlyBuild:
     className: VuforiaBehaviour
   - hash:
       serializedVersion: 2
-      Hash: fe10de86e42ce80dc24cf76ac1c87c2a
+      Hash: ffd8816d88b11c11d24af998cf7f948a
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: VuforiaConfiguration
@@ -1784,7 +1776,7 @@ ScriptsOnlyBuild:
     className: VuforiaBehaviour
   - hash:
       serializedVersion: 2
-      Hash: fe10de86e42ce80dc24cf76ac1c87c2a
+      Hash: ffd8816d88b11c11d24af998cf7f948a
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: VuforiaConfiguration
@@ -2798,7 +2790,7 @@ ScriptsOnlyBuild:
     className: VuforiaBehaviour
   - hash:
       serializedVersion: 2
-      Hash: fe10de86e42ce80dc24cf76ac1c87c2a
+      Hash: ffd8816d88b11c11d24af998cf7f948a
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: VuforiaConfiguration
@@ -3074,7 +3066,7 @@ ScriptsOnlyBuild:
     className: VuforiaBehaviour
   - hash:
       serializedVersion: 2
-      Hash: fe10de86e42ce80dc24cf76ac1c87c2a
+      Hash: ffd8816d88b11c11d24af998cf7f948a
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: VuforiaConfiguration
@@ -3126,10 +3118,34 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: 
+    className: DefaultModelRecoEventHandlerPlaceHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: 
+    className: DefaultModelRecoEventHandlerPlaceHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: 
+    className: DefaultModelRecoEventHandlerPlaceHolder
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Vuforia.UnityExtensions.dll
+    namespaceName: 
+    className: DefaultModelRecoEventHandlerPlaceHolder
   platform: 19
   scenePathNames:
   - Assets/Stephen/Scenes/TitleScreen.unity
   - Assets/GregsStuff/Phase1.unity
   - Assets/Stephen/Scenes/Sewer.unity
   - Assets/Stephen/Scenes/EndScreen.unity
-  playerPath: C:/Users/Gregory/Desktop/WSU/ARTest3.exe
+  playerPath: C:/Users/Greg/Desktop/WSUGameV2/ARTest3.exe
