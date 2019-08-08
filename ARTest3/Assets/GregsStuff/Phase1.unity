@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1513573470}
-  speed: 0.05
-  rotSpeed: 1
+  speed: 0.02
+  rotSpeed: 1.1
   hasCollided: 0
   lerpTime: 0.1
 --- !u!65 &181697075
@@ -23085,7 +23085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d505cc4ff9474991c59af7bf30eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 30
+  endTime: 140
   text: {fileID: 0}
   slider: {fileID: 355422561}
 --- !u!1 &1321447561
