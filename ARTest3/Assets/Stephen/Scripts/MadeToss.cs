@@ -29,8 +29,6 @@ public class MadeToss : MonoBehaviour
                 Inventory inven = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
                 InventoryInfo inventoryInfo = new InventoryInfo(GetComponent<ObjectInformation>().objectInfo,GetComponent<ObjectInformation>());
                 inven.GetComponent<Inventory>().AddToList(inventoryInfo);
-
-
             }
             else
             {
