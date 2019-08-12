@@ -1044,7 +1044,6 @@ E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unit
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Analytics.Tracker.dll
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.CollabProxy.Editor.dll
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Locator.dll
-E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.PackageManagerUI.Editor.dll
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.Editor.dll
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.Runtime.dll
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.Core.ShaderLibrary.dll
@@ -1150,7 +1149,6 @@ E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unit
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.TextMeshPro.Editor.pdb
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.XR.ARFoundation.pdb
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.XR.ARCore.Editor.pdb
-E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.PackageManagerUI.Editor.pdb
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.Timeline.pdb
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.CollabProxy.Editor.pdb
 E:\WSUGithubProject\NewWSU_Internship\WSU_internship\ARTest3\Temp\bin\Debug\Unity.RenderPipelines.HighDefinition.Runtime.pdb
