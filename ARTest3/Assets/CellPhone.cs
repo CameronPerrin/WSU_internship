@@ -63,20 +63,20 @@ public class CellPhone : MonoBehaviour
     //Used to call the cell phone after you called it the first time
     public void CallPhone()
     {
-        //textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
+      // textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
         rotate = false;
-        GetComponent<Animator>().enabled = true;
+      // GetComponent<Animator>().enabled = true;
         playerHasSeenTextMessage = false;
     }
     IEnumerator StopScreenAni()
     {
-        normSize = textMessage.GetComponent<RectTransform>().sizeDelta;
-        Vector3 pos = new Vector2(-1.22f, 2.54f);
-        Debug.Log(pos);
-        textMessage.GetComponent<Animator>().enabled = true;
-        yield return new WaitForSeconds(textMessage.GetComponent<Animation>().clip.length);
-        textMessage.GetComponent<Animator>().enabled = false;
-        textMessage.GetComponent<RectTransform>().sizeDelta = new Vector2(132.51f, 111.61f);
-        textMessage.GetComponent<RectTransform>().localPosition = pos;
+       // normSize = textMessage.GetComponent<RectTransform>().sizeDelta;
+       // Vector3 pos = new Vector2(-1.22f, 2.54f);
+       // Debug.Log(pos);
+       // textMessage.GetComponent<Animator>().enabled = true;
+        yield return new WaitForSeconds(.3f);
+       // textMessage.GetComponent<Animator>().enabled = false;
+       // textMessage.GetComponent<RectTransform>().sizeDelta = new Vector2(132.51f, 111.61f);
+       // textMessage.GetComponent<RectTransform>().localPosition = pos;
     }
 }
