@@ -64,6 +64,8 @@
   <ItemGroup>
     <Compile Include="Assets\AutoTypeText.cs" />
     <Compile Include="Assets\BrendansStuff\ChangeMaterial.cs" />
+    <Compile Include="Assets\BrendansStuff\FindCenter.cs" />
+    <Compile Include="Assets\BrendansStuff\GlowIntensityWave.cs" />
     <Compile Include="Assets\BrendansStuff\RotateObject.cs" />
     <Compile Include="Assets\Cameron_Game\BoardMaster.cs" />
     <Compile Include="Assets\Cameron_Game\DragMaster.cs" />
