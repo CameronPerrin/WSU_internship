@@ -410,9 +410,6 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>E:/WSUGithubProject/NewWSU_Internship/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>E:/WSUGithubProject/NewWSU_Internship/WSU_internship/ARTest3/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>

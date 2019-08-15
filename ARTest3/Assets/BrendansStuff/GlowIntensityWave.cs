@@ -13,6 +13,6 @@ public class GlowIntensityWave : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Renderer>().material.
+        //GetComponent<Renderer>().material.
     }
 }

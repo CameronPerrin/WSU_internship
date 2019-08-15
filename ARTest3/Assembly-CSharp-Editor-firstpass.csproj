@@ -384,9 +384,6 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>E:/WSUGithubProject/NewWSU_Internship/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>E:/WSUGithubProject/NewWSU_Internship/WSU_internship/ARTest3/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>E:/WSUGithubProject/NewWSU_Internship/WSU_internship/ARTest3/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
