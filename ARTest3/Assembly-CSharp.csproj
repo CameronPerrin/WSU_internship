@@ -407,9 +407,6 @@
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>D:/Users/Brendan/source/repos/DB/WSU_internship/ARTest3/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>D:/Users/Brendan/source/repos/DB/WSU_internship/ARTest3/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>D:/Program Files/Unity/2019.1.14f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>

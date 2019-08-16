@@ -191,4 +191,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowDistance: 3
-  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
+  glowMaterial: {fileID: 2100000, guid: 678ae834f133a764ea29bac8db49aed6, type: 2}
