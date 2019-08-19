@@ -27,9 +27,10 @@ public class GuageTimer : MonoBehaviour
         //float fillIncrease = timeForFill * Time.deltaTime;
         meter.GetComponent<Image>().fillAmount = timeForFill;
        
-        float zPer = 100f - percentage;
+        float zPer = 100f - (percentage * 100f);
+        Debug.Log(zPer + " : " + percentage);
         arrow.GetComponent<Transform>().eulerAngles = new Vector3(arrow.transform.eulerAngles.x, arrow.transform.eulerAngles.y,
-            zPer * 240f);
+            (zPer/100) * 245f);
 
     }
 }
