@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 6412860983751337011}
   - component: {fileID: 8737799023246796477}
   m_Layer: 0
-  m_Name: ToyCar
+  m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -191,4 +191,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowDistance: 3
-  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
+  glowMaterial: {fileID: 2100000, guid: 678ae834f133a764ea29bac8db49aed6, type: 2}

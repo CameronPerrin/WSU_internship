@@ -56,7 +56,11 @@ public class ChangeMaterial : MonoBehaviour
             foreach (GameObject obj in glowEffects)
             {
                 if (obj.GetComponent<ParticleSystem>().isPlaying)
+                {
                     obj.GetComponent<ParticleSystem>().Stop();
+                    obj.GetComponent<ParticleSystem>().Clear();
+                }
+                    
             }
         }
     }
