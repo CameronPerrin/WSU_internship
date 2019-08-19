@@ -224,11 +224,11 @@ public class ScannerMove : MonoBehaviour
             framesleft--;
         }
 
-        if (clicked && framesleft == 0 && (clicked.GetComponent<ItemInfo>().itemName == "Toy Car" || clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
+        if (clicked && framesleft == 0 && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
         {
             clicked.transform.Rotate(Vector3.down * rotSpeed * Time.deltaTime);
         }
-        else if (clicked && framesleft == 0 && clicked.GetComponent<ItemInfo>().itemName != "Toy Car")
+        else if (clicked && framesleft == 0 && clicked.GetComponent<ItemInfo>().itemName != "Syringe")
         {
             clicked.transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
         }

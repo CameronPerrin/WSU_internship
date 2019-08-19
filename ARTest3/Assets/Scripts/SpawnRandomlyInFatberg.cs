@@ -50,7 +50,6 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         temp.transform.parent = prefabTemp.transform;
 
         //Various item checks to change item locations for better placement in UI when clicked
-        //Possibly NEED TO ADD BOTTOM SHELL
         if (objectName == "Flushable Wipes")
         {
             //Prefect
@@ -64,7 +63,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         else if(objectName == "Car")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, 0.1f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.1f, 0f, 0f);
         }
         else if(objectName == "oil")
         {
@@ -94,10 +93,10 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         {
             prefabTemp.transform.rotation = new Quaternion(90f, 0f ,0f , 0f);
         }
-        else if(objectName == "Car")
-        {
-            prefabTemp.transform.rotation = new Quaternion(180f, 0f, -90f, 0f);
-        }
+        //else if(objectName == "Toy Car")
+        //{
+        //    prefabTemp.transform.rotation = new Quaternion(180f, 0f, -90f, 0f);
+        //}
 
         ScannerMove move = Camera.main.gameObject.GetComponent<ScannerMove>();
         move.items.Add(temp);
