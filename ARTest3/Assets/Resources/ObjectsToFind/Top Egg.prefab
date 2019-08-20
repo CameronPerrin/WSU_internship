@@ -29,7 +29,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
-  m_Mesh: {fileID: 2972190140182253599, guid: 49df8204545e12440b11b47217bb27e2, type: 3}
+  m_Mesh: {fileID: 4272310913602709669, guid: 787def849e510834c8c4d933e630651c, type: 3}
 --- !u!65 &1311482085546277075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42,7 +42,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2964064, y: 1.339417, z: 1.3185798}
-  m_Center: {x: -1.5697517, y: 0.000004529954, z: -0.98096466}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-5919903126446433701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,12 +118,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 787def849e510834c8c4d933e630651c,
         type: 3}
       propertyPath: m_Name
-      value: TopEgg
+      value: Top Egg
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 787def849e510834c8c4d933e630651c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.010872
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 787def849e510834c8c4d933e630651c,
         type: 3}

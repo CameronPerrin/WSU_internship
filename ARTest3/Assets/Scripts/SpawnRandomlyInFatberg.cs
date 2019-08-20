@@ -53,50 +53,85 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         if (objectName == "Flushable Wipes")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.1f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.13f);
+        }
+        else if(objectName == "Bottom Shell")
+        {
+            //Prefect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, 0.05f);
+        }
+        else if (objectName == "Top Egg")
+        {
+            //Prefect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.06f, 0.35f, -0.09f);
         }
         else if(objectName == "bleach")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.25f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.28f);
         }
         else if(objectName == "Car")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.1f, 0f, 0f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.1f, -0.05f, -0.05f);
         }
         else if(objectName == "oil")
         {
             //Perfect
             temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.15f);
         }
-        else if (objectName == "FryingPan" || objectName == "Coffee Grounds" || objectName == "Pill")
+        else if (objectName == "Pill" || objectName == "lego")
         {
             //Prefect
             temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.05f);
         }
-
-        //Various cehcks to make sure items are proper size for fatberg
-        if(objectName == "FryingPan")
+        else if (objectName == "Coffee Grounds")
         {
             //Perfect
-            prefabTemp.transform.localScale = new Vector3(4f, 4f, 4f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.06f);
+        }
+        else if (objectName =="FryingPan")
+        {
+            //Perfect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.1f, 0f, -0.1f);
+        }
+        else if(objectName == "Ketchup")
+        {
+            //Perfect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.055f, -0.025f, 0f);
+        }
+        else if (objectName == "Syrn")
+        {
+            //Perfect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, -0.05f, 0f);
+        }
+        else if (objectName == "Floss" || objectName == "PillBottle")
+        {
+            //Perfect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.025f);
+        }
+
+        //Various cehcks to make sure items are proper size for fatberg
+        if(objectName == "FryingPan" || objectName == "bleach")
+        {
+            //Perfect
+            prefabTemp.transform.localScale = new Vector3(3f, 3f, 3f);
+        }
+        else if (objectName == "Pill")
+        {
+            prefabTemp.transform.localScale = new Vector3(6f, 6f, 6f);
         }
         else
         {
-            //Perfect: Maybe adjust some smaller objects
+            //Perfect: MAYBE ADJUST CAR SIZE TO BE SMALLER
             prefabTemp.transform.localScale = new Vector3(5f, 5f, 5f);
         }
 
         //Various checks to make items proper rotation when in fatberg/UI
-        if(objectName == "Ketchup" || objectName == "Syrn")
+        if(objectName == "Syrn" || objectName == "Ketchup")
         {
-            prefabTemp.transform.rotation = new Quaternion(90f, 0f ,0f , 0f);
+            prefabTemp.transform.rotation = new Quaternion(0f, 0f ,0f , 0f);
         }
-        //else if(objectName == "Toy Car")
-        //{
-        //    prefabTemp.transform.rotation = new Quaternion(180f, 0f, -90f, 0f);
-        //}
 
         ScannerMove move = Camera.main.gameObject.GetComponent<ScannerMove>();
         move.items.Add(temp);

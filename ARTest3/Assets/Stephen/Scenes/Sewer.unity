@@ -675,7 +675,7 @@ Transform:
   m_LocalPosition: {x: 0.22, y: 5.011406, z: 35.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 143971177}
+  - {fileID: 968635385}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -697,8 +697,8 @@ MonoBehaviour:
   camStartRot: {x: 0, y: 0, z: 0, w: 0}
   camStartPos: {fileID: 357547067}
   distance: 10
-  shift: -1.5
-  shiftV: 1
+  shift: -2.65
+  shiftV: 1.5
   rotSpeed: 50
   items: []
   away: 0
@@ -717,8 +717,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   arrowPrefab: {fileID: 528245419}
+  scanner: {fileID: 968635384}
+  scannerDown: {x: -0.00000003090862, y: 0.70710677, z: -0.70710677, w: -0.00000003090862}
   clicked: {fileID: 0}
-  speed: 10
+  speed: 5
   framesleft: 0
   minigame: {fileID: 516448024}
   timePassed: 0
@@ -8022,6 +8024,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911733129}
   m_CullTransparentMesh: 0
+--- !u!1 &968635384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 968635385}
+  m_Layer: 0
+  m_Name: Scanner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &968635385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968635384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 143971177}
+  m_Father: {fileID: 357547067}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &977990550
 GameObject:
   m_ObjectHideFlags: 0
@@ -9717,7 +9750,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 357547067}
+    m_TransformParent: {fileID: 968635385}
     m_Modifications:
     - target: {fileID: 220584387946313021, guid: dcfaf702347d92748993757bff7359e9,
         type: 3}
@@ -9732,12 +9765,12 @@ PrefabInstance:
     - target: {fileID: 4397272580561920567, guid: dcfaf702347d92748993757bff7359e9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.38
+      value: -0.3800001
       objectReference: {fileID: 0}
     - target: {fileID: 4397272580561920567, guid: dcfaf702347d92748993757bff7359e9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.37
+      value: 2.369999
       objectReference: {fileID: 0}
     - target: {fileID: 4397272580561920567, guid: dcfaf702347d92748993757bff7359e9,
         type: 3}
