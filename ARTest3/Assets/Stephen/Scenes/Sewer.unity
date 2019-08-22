@@ -511,7 +511,7 @@ MonoBehaviour:
   LaunchOnStart: 1
   timeOut: 5
   Charstype: 0
-  ORIGINAL_TEXT: 
+  ORIGINAL_TEXT: a
 --- !u!4 &143971177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4397272580561920567, guid: dcfaf702347d92748993757bff7359e9,
@@ -720,12 +720,13 @@ MonoBehaviour:
   scanner: {fileID: 968635384}
   scannerDown: {x: -0.00000003090862, y: 0.70710677, z: -0.70710677, w: -0.00000003090862}
   clicked: {fileID: 0}
-  speed: 5
+  speed: 3.5
   framesleft: 0
   minigame: {fileID: 516448024}
   timePassed: 0
   oldArrow: {fileID: 0}
   arrowTarget: {fileID: 0}
+  testRot: {x: 0, y: 0, z: 0}
 --- !u!114 &357547069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1379,7 +1380,7 @@ MonoBehaviour:
   LaunchOnStart: 1
   timeOut: 5
   Charstype: 5
-  ORIGINAL_TEXT: 
+  ORIGINAL_TEXT: a
 --- !u!1 &500200762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2170,7 +2171,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 542580133f6c3e04ea2ca6318108d07b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.49019608}
   m_FlipX: 0
@@ -7637,7 +7638,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 6f909ea10264e6140aa390b563e07e20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9357,7 +9358,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_TargetDisplay: 0
 --- !u!224 &1268752620
 RectTransform:
@@ -11020,7 +11021,7 @@ MonoBehaviour:
   LaunchOnStart: 1
   timeOut: 5
   Charstype: 0
-  ORIGINAL_TEXT: 
+  ORIGINAL_TEXT: a
 --- !u!1 &1974103357
 GameObject:
   m_ObjectHideFlags: 0
