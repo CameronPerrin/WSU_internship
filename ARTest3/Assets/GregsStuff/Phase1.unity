@@ -5017,8 +5017,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1513573470}
-  speed: 0.02
-  rotSpeed: 1.1
+  speed: 0.1
+  rotSpeed: 5
   hasCollided: 0
   lerpTime: 0.1
 --- !u!65 &181697075

@@ -42,6 +42,8 @@ public class ScannerMove : MonoBehaviour
     public GameObject indicator;
     public List<GameObject> arrows;
     public GameObject arrowPrefab;
+    public GameObject scanner;
+    public Quaternion scannerDown;
 
     //Variable for currently selected item
     public GameObject clicked;
@@ -218,6 +220,7 @@ public class ScannerMove : MonoBehaviour
         //Moves item from fatberg to correct location in the "UI" as well as resets camera to original position
         if(framesleft > 0)
         {
+            scanner.transform.rotation = Quaternion.Lerp(scanner.transform.rotation, scannerDown, Time.deltaTime * speed);
             transform.rotation = Quaternion.Lerp(transform.rotation, camStartRot, Time.deltaTime * speed);
             clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
             clicked.transform.rotation = oldRot;
@@ -226,7 +229,7 @@ public class ScannerMove : MonoBehaviour
 
         if (clicked && framesleft == 0 && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
         {
-            clicked.transform.Rotate(Vector3.down * rotSpeed * Time.deltaTime);
+            clicked.transform.Rotate(Vector3.up * rotSpeed * Time.deltaTime);
         }
         else if (clicked && framesleft == 0 && clicked.GetComponent<ItemInfo>().itemName != "Syringe")
         {
@@ -239,6 +242,7 @@ public class ScannerMove : MonoBehaviour
             clicked.transform.parent = null;
             clicked.transform.position = oldPos;
             clicked.transform.rotation = oldRot;
+            scanner.transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
             textBoxContainer.SetActive(true);
             clicked = null;
             descContainer.SetActive(false);
