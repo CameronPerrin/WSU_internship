@@ -10,7 +10,7 @@ Material:
   m_Name: FatbergMAT
   m_Shader: {fileID: -6465566751694194690, guid: f381d719aab8fac4f9739404f3c384fb,
     type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -123,8 +123,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_38007D36: 0.1
-    - Vector1_E102B318: 0
+    - Vector1_38007D36: 0.62
+    - Vector1_E102B318: 3.25
     - Vector1_E69A5E7B: 0.2
     - _AORemapMax: 1
     - _AORemapMin: 0
