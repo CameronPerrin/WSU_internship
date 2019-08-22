@@ -20566,6 +20566,7 @@ MonoBehaviour:
   score: 0
   text: {fileID: 605284019}
   phaseThreeSceneNum: 2
+  guage: {fileID: 1996232345}
 --- !u!4 &731003709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1f20049ba6db51e419d6be9680f6d991,
@@ -27192,7 +27193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e478b21bdf8b9a84d812affd24d56e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWall: 0
+  isWall: 1
 --- !u!64 &1050466065
 MeshCollider:
   m_ObjectHideFlags: 0

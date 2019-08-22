@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public int score;
     public Text text;
     public int phaseThreeSceneNum;
+    public GameObject guage;
     int count;
     // Start is called before the first frame update
     // Update is called once per frame
@@ -21,7 +22,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         text.text = "You have removed: " + score.ToString() + " / " + count;
-        if(score >= count || GetComponent<Timer>().GetSliderVal() >= GetComponent<Timer>().slider.maxValue)
+        if(score >= count || guage.GetComponent<GuageTimer>().meter.GetComponent<Image>().fillAmount >= 1)
         {
             SceneManager.LoadScene(phaseThreeSceneNum);
         }
