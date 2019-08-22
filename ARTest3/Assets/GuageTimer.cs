@@ -14,7 +14,9 @@ public class GuageTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        time = GameObject.Find("GameController").GetComponent<Timer>().endTime;
         timeForFill = time * 0.01f; // Seconds...Since its 0 - 1 if we go by time .delta time
+        meter.GetComponent<Image>().fillAmount = 0;
         // arrow.transform.eulerAngles = new Vector3(arrow.transform.eulerAngles.x, arrow.transform.eulerAngles.y, 245);
     }
 
@@ -25,18 +27,12 @@ public class GuageTimer : MonoBehaviour
          timeInc += Time.deltaTime;  
       //  filled = meter.GetComponent<Image>().fillAmount + 0.15f;
         float percentage = timeInc / time;
-        timeForFill = percentage;
+        //timeForFill = percentage + offset;
         //float fillIncrease = timeForFill * Time.deltaTime;
         //if(offset != 0)
         //    meter.GetComponent<Image>().fillAmount = timeForFill + .15f;
         //  else
-        if (offset != 0)
-        {
-            meter.GetComponent<Image>().fillAmount += (Time.deltaTime + 0.15f);
-            offset = 0;
-        }
-        else
-            meter.GetComponent<Image>().fillAmount += (Time.deltaTime);
+               meter.GetComponent<Image>().fillAmount = (percentage);
         float zPer = 100 - (percentage * 100f);
         Debug.Log(zPer/100 + " : " + meter.GetComponent<Image>().fillAmount);
         arrow.GetComponent<Transform>().eulerAngles = new Vector3(arrow.transform.eulerAngles.x, arrow.transform.eulerAngles.y,
