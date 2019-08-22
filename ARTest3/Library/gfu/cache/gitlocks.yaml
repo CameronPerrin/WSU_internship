@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1265399648, guid: d3f0e5053b5d69a4e9f5b02672314bbc, type: 3}
+  m_Script: {fileID: 1265399648, guid: 24f9678c7fd67c44bae6734ba296c391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 7
-  lastUpdatedAtString: 2019-08-19T19:59:08.833-04:00
-  initializedAtString: 2019-08-19T18:55:51.823-04:00
+  lastUpdatedAtString: 2019-08-22T19:46:39.345-04:00
+  initializedAtString: 2019-08-22T18:34:39.054-04:00
   gitLocks: []
