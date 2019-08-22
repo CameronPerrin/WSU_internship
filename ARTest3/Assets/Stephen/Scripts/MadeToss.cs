@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MadeToss : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class MadeToss : MonoBehaviour
             {
                 GameController controller = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>();
                 controller.GetComponent<GameController>().score++;
-                GameObject.FindGameObjectWithTag("Controller").GetComponent<Timer>().AddSliderVal(5f);
+                GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().guage.GetComponent<GuageTimer>().AddToPercent(.5f);
                 Inventory inven = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
                 InventoryInfo inventoryInfo = new InventoryInfo(GetComponent<ObjectInformation>().objectInfo,GetComponent<ObjectInformation>());
                 inven.GetComponent<Inventory>().AddToList(inventoryInfo);

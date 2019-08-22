@@ -47,7 +47,8 @@ public class CellPhone : MonoBehaviour
         {
             Transform trans = player.transform;
             Vector3 vec = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
-            textMessage.transform.LookAt(vec);
+            textMessage.transform.LookAt(trans);
+            textMessage.transform.eulerAngles = new Vector3(textMessage.transform.eulerAngles.x - 40f, textMessage.transform.eulerAngles.y + 180f, textMessage.transform.eulerAngles.z);
             //textMessage.transform.localRotation.x = new Quaternion(0, 0, 0, 0);
            // textMessage.transform.rotation = new Quaternion(textMessage.transform.rotation.x, textMessage.transform.rotation.y + 180f,
           //  textMessage.transform.rotation.z, textMessage.transform.rotation.w);

@@ -1,5 +1,6 @@
 Base path: D:/Program Files/Unity/2019.1.14f1/Editor/Data
 Cmd: initializeCompiler
+<<<<<<< HEAD
 Cmd: preprocess
   insize=3608 outsize=1262 ok=1
 Cmd: preprocess
@@ -36,3 +37,5 @@ Cmd: preprocessCompute
   insize=1626 outsize=1628 ok=1
 Cmd: preprocess
   insize=220511 outsize=8565 ok=1
+=======
+>>>>>>> 88a9e050918fea39581b831a36138cb297624c94

@@ -28,10 +28,10 @@ public class bumb : MonoBehaviour
             shrink = true;
         }
 
-        if ((temp.x >= 63) && shrink)
+        if ((temp.x >= 67) && shrink)
         {
-            temp.x -= speed;
-            temp.y -= speed;
+            temp.x -= (speed * 2f);
+            temp.y -= (speed * 2f);
         }
         else
         {

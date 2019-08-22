@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/BrendansStuff/Scenes/Sewer Lights.unity
+=======
+- path: Assets/Stephen/Scenes/TitleScreen.unity
+>>>>>>> 88a9e050918fea39581b831a36138cb297624c94
   isLoaded: 1
   isActive: 1
   isSubScene: 0
