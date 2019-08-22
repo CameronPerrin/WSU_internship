@@ -66,6 +66,11 @@ public class ScannerMove : MonoBehaviour
     public GameObject oldArrow;
     public GameObject arrowTarget;
 
+
+    //test
+    public Vector3 testRot;
+
+
     void Start()
     {
         cam = Camera.main.transform;
@@ -134,7 +139,26 @@ public class ScannerMove : MonoBehaviour
             x = Input.GetAxisRaw("PS Y");
             rotate = new Vector3(x * -1, y * -1, 0);
             transform.eulerAngles = transform.eulerAngles - rotate;
-
+            testRot = transform.localEulerAngles;
+            //Constraints for camera rotation - PERFECT
+            if (transform.localEulerAngles.x < 17f && transform.localEulerAngles.x > 15f)
+            {
+                transform.localEulerAngles = new Vector3(15, transform.localEulerAngles.y, 0);
+            }
+            if (transform.localEulerAngles.x > 343f && transform.localEulerAngles.x < 345f)
+            {
+                transform.localEulerAngles = new Vector3(345, transform.localEulerAngles.y, 0);
+            }
+            if (transform.localEulerAngles.y > 210f)
+            {
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 210, 0);
+            }
+            if (transform.localEulerAngles.y < 150f)
+            {
+                transform.localEulerAngles = new Vector3(transform.localEulerAngles.x, 150, 0);
+            }
+            
+            
             //Loads EndScreen when all objects have been removed from the fatberg
             if(items.Count == 0)
             {
@@ -175,8 +199,11 @@ public class ScannerMove : MonoBehaviour
                 descContainer.SetActive(true);
                 itemName.text = clicked.GetComponent<ItemInfo>().itemName;
                 desc1.text = clicked.GetComponent<ItemInfo>().desc1;
+                desc1.GetComponent<TW_RandomText>().ORIGINAL_TEXT = clicked.GetComponent<ItemInfo>().desc1;
                 desc2.text = clicked.GetComponent<ItemInfo>().desc2;
+                desc2.GetComponent<TW_RandomText>().ORIGINAL_TEXT = clicked.GetComponent<ItemInfo>().desc2;
                 desc3.text = clicked.GetComponent<ItemInfo>().desc3;
+                desc3.GetComponent<TW_RandomText>().ORIGINAL_TEXT = clicked.GetComponent<ItemInfo>().desc3;
             }
         }
         else
@@ -227,17 +254,18 @@ public class ScannerMove : MonoBehaviour
             framesleft--;
         }
 
-        if (clicked && framesleft == 0 && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
+        //TOOK OUT FRAMESLEFT - still a delay til rotate
+        if (clicked && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
         {
             clicked.transform.Rotate(Vector3.up * rotSpeed * Time.deltaTime);
         }
-        else if (clicked && framesleft == 0 && clicked.GetComponent<ItemInfo>().itemName != "Syringe")
+        else if (clicked && clicked.GetComponent<ItemInfo>().itemName != "Syringe")
         {
             clicked.transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
         }
         
         //Puts item back when circle is pressed
-        if (Input.GetButtonDown("Cancel") && clicked && framesleft == 0)
+        if (Input.GetButtonDown("Cancel") && clicked && framesleft <= 0)
         {
             clicked.transform.parent = null;
             clicked.transform.position = oldPos;

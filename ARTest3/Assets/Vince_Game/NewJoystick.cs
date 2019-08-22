@@ -40,7 +40,6 @@ public class NewJoystick : MonoBehaviour
     public GameObject descText3;
 
 
-
     void Start()
     {
         GenWinning();
@@ -58,8 +57,11 @@ public class NewJoystick : MonoBehaviour
         if(newGame == true)
         {
             Successes = 0;
+            descText1.GetComponent<TW_RandomText>().enabled = false;
             descText1.SetActive(false);
+            descText2.GetComponent<TW_RandomText>().enabled = false;
             descText2.SetActive(false);
+            descText3.GetComponent<TW_RandomText>().enabled = false;
             descText3.SetActive(false);
             GenWinning();
             newGame = false;
@@ -85,6 +87,8 @@ public class NewJoystick : MonoBehaviour
         if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition && Successes == 0)
         {
             descText1.SetActive(true);
+            descText1.GetComponent<TW_RandomText>().enabled = true;
+            descText1.GetComponent<TW_RandomText>().StartTypewriter();
             Successes += 1;
             GenWinning();
             StartCoroutine(PlaySuccess());
@@ -95,6 +99,8 @@ public class NewJoystick : MonoBehaviour
         if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition && Successes == 1)
         {
             descText2.SetActive(true);
+            descText2.GetComponent<TW_RandomText>().enabled = true;
+            descText2.GetComponent<TW_RandomText>().StartTypewriter();
             Successes += 1;
             GenWinning();
             StartCoroutine(PlaySuccess());
@@ -104,6 +110,8 @@ public class NewJoystick : MonoBehaviour
         if (Input.GetButtonDown("Submit") && PositionAngle == winningPosition && Successes == 2)
         {
             descText3.SetActive(true);
+            descText3.GetComponent<TW_RandomText>().enabled = true;
+            descText3.GetComponent<TW_RandomText>().StartTypewriter();
             Successes += 1;
             GenWinning();
             StartCoroutine(PlaySuccess());
