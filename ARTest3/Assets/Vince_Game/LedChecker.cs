@@ -46,7 +46,8 @@ public class LedChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        LedPos = Mathf.FloorToInt(joystick.GetComponent<NewJoystick>().PositionAngle);
+        //Stephen: Added + 1 to fix orientation issues
+        LedPos = Mathf.FloorToInt(joystick.GetComponent<NewJoystick>().PositionAngle) + 1;
 
 
 

@@ -130,24 +130,26 @@ public class NewJoystick : MonoBehaviour
 
     void CurrentPosition()
     {
-        //Depending on how many wins there are this will change the snapping to deviding the 360 degrees
+        //Depending on how many wins there are this will change the snapping to dividing the 360 degrees
+        //Stephen: REMOVED (-1) from rotate position to fix orientation issues
         switch (Successes)
         {
             case 0:
-                if (x == 0 && y == 0)
+                //Stephen: Added x == -1 to keep at top for pushing up as well as no input
+                if ((x == 0 && y == 0) || x == -1)
                 {
                     rotate = new Vector3(0, 0, 0);
-                    PositionAngle = 1;
+                    PositionAngle = 0;
                 }
                 else if (y < 0)
                 {
-                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 45);
-                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 45f);
+                    rotate = new Vector3(0, 0, (PositionAngle) * 45);
+                    PositionAngle = Mathf.Round( (Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 45f);
                 }
                 else
                 {
-                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 45);
-                    PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 45f);
+                    rotate = new Vector3(0, 0, (PositionAngle) * 45);
+                    PositionAngle = Mathf.Round( (Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 45f);
                 }
                 
                 break;
@@ -158,16 +160,16 @@ public class NewJoystick : MonoBehaviour
                 if (x == 0 && y == 0)
                 {
                     rotate = new Vector3(0, 0, 0);
-                    PositionAngle = 1;
+                    PositionAngle = 0;
                 }
                 else if (y < 0)
                 {
-                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 22.5f);
+                    rotate = new Vector3(0, 0, (PositionAngle) * 22.5f);
                     PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 22.5f);
                 }
                 else
                 {
-                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 22.5f);
+                    rotate = new Vector3(0, 0, (PositionAngle) * 22.5f);
                     PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 22.5f);
                 }
 
@@ -177,16 +179,16 @@ public class NewJoystick : MonoBehaviour
                 if (x == 0 && y == 0)
                 {
                     rotate = new Vector3(0, 0, 0);
-                    PositionAngle = 1;
+                    PositionAngle = 0;
                 }
                 else if (y < 0)
                 {
-                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 15f);
+                    rotate = new Vector3(0, 0, (PositionAngle) * 15f);
                     PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 270) / 15f);
                 }
                 else
                 {
-                    rotate = new Vector3(0, 0, (PositionAngle - 1) * 15f);
+                    rotate = new Vector3(0, 0, (PositionAngle) * 15f);
                     PositionAngle = Mathf.Round((Mathf.Rad2Deg * Mathf.Atan(-x / -y) + 90) / 15f);
                 }
 

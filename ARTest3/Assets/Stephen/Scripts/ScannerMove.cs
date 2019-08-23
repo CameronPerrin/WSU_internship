@@ -36,7 +36,8 @@ public class ScannerMove : MonoBehaviour
     public Text desc3;
     public GameObject descContainer;
     public GameObject textBoxContainer;
-    public GameObject GamePanel;
+    public GameObject GamePanel1;
+    public GameObject GamePanel2;
 
     //Scanner objects: reticle and arrows
     public GameObject indicator;
@@ -61,10 +62,12 @@ public class ScannerMove : MonoBehaviour
     public RaycastHit hit;
 
     //Variables for turning off info when minigame finished
-    public GameObject minigame;
+    public GameObject minigame1;
+    public GameObject minigame2;
     public int timePassed;
     public GameObject oldArrow;
     public GameObject arrowTarget;
+    public GameObject A2continue;
 
 
     //test
@@ -99,14 +102,16 @@ public class ScannerMove : MonoBehaviour
 
     void FixedUpdate()
     {
+        //Change to "PRESS A TO CONTINUE"
         //Timer to leave information open before destroying object and moving to next minigame
-        if (minigame.GetComponent<NewJoystick>().Successes == 3)
+        if (minigame1.GetComponent<NewJoystick>().Successes == 3)
         {
+            A2continue.SetActive(true);
             timePassed = timePassed + 1;
-            if (timePassed >= 100)
+            if (timePassed >= 100 && Input.GetButtonDown("Submit"))
             {
                 timePassed = 0;
-                minigame.GetComponent<NewJoystick>().Successes = 0;
+                minigame1.GetComponent<NewJoystick>().Successes = 0;
                 //Removes arrow associated with clicked object
                 foreach (var arrow in arrows)
                 {
@@ -120,11 +125,12 @@ public class ScannerMove : MonoBehaviour
                 Destroy(clicked.gameObject);
                 textBoxContainer.SetActive(true);
                 clicked = null;
-                descContainer.SetActive(false);
                 itemName.text = "";
                 desc1.text = "";
                 desc2.text = "";
                 desc3.text = "";
+                descContainer.SetActive(false);
+                A2continue.SetActive(false);
             }
         }
         
@@ -180,11 +186,25 @@ public class ScannerMove : MonoBehaviour
             {
                 framesleft = 15 * speed;
 
+                int x = Random.Range(0, 2);
+
                 clicked = hit.transform.parent.gameObject;
                 oldPos = clicked.transform.position;
                 oldRot = clicked.transform.rotation;
                 clicked.transform.parent = cam;
-                GamePanel.SetActive(true);
+
+                //CHANGE FOR RANDOMIZE GAMES
+                GamePanel1.SetActive(true);
+                /* 
+                if (x == 0)
+                {
+                    GamePanel1.SetActive(true);
+                }
+                else if (x == 1)
+                {
+                    GamePanel2.SetActive(true);
+                }
+                */
 
                 /* 
                 //Position to move selected object to in front of camera position when clicked
@@ -254,7 +274,6 @@ public class ScannerMove : MonoBehaviour
             framesleft--;
         }
 
-        //TOOK OUT FRAMESLEFT - still a delay til rotate
         if (clicked && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
         {
             clicked.transform.Rotate(Vector3.up * rotSpeed * Time.deltaTime);
@@ -267,6 +286,8 @@ public class ScannerMove : MonoBehaviour
         //Puts item back when circle is pressed
         if (Input.GetButtonDown("Cancel") && clicked && framesleft <= 0)
         {
+            GamePanel1.SetActive(false);
+            GamePanel2.SetActive(false);
             clicked.transform.parent = null;
             clicked.transform.position = oldPos;
             clicked.transform.rotation = oldRot;
