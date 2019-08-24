@@ -12,6 +12,9 @@ public class CellPhone : MonoBehaviour
     [HideInInspector]
     public bool playerHasSeenTextMessage;
     Vector2 normSize;
+    public bool cellPhoneHasBeenDisabled;
+    AutoTypeText auto;
+    //Alright so the reason the object keeps disappearing is because the renderer is turned off when moving off screen.
     // Update is called once per frame
     void Update()
     {
@@ -28,14 +31,17 @@ public class CellPhone : MonoBehaviour
                 textMessage.SetActive(!textMessage.activeInHierarchy);
                 //playerHasSeenTextMessage = true;
                 StartCoroutine(StopScreenAni());
+                auto.RestartAutoType(textToText);
+
             }
         }
         else if(playerHasSeenTextMessage)
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
-                textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
+                //textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
                 textMessage.SetActive(false);
+                cellPhoneHasBeenDisabled = true;
             }
                 /*  if(textMessage.activeInHierarchy)
                       textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
@@ -43,17 +49,20 @@ public class CellPhone : MonoBehaviour
                       textMessage.SetActive(false);*/
         }
 
-        if(textMessage.activeInHierarchy)
+        if (textMessage.activeInHierarchy)
         {
+            cellPhoneHasBeenDisabled = false;
             Transform trans = player.transform;
             Vector3 vec = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
             textMessage.transform.LookAt(trans);
-            textMessage.transform.eulerAngles = new Vector3(textMessage.transform.eulerAngles.x - 40f, textMessage.transform.eulerAngles.y + 180f, textMessage.transform.eulerAngles.z);
+            textMessage.transform.eulerAngles = new Vector3(textMessage.transform.eulerAngles.x - 20f, textMessage.transform.eulerAngles.y + 180f, textMessage.transform.eulerAngles.z);
             //textMessage.transform.localRotation.x = new Quaternion(0, 0, 0, 0);
-           // textMessage.transform.rotation = new Quaternion(textMessage.transform.rotation.x, textMessage.transform.rotation.y + 180f,
-          //  textMessage.transform.rotation.z, textMessage.transform.rotation.w);
+            // textMessage.transform.rotation = new Quaternion(textMessage.transform.rotation.x, textMessage.transform.rotation.y + 180f,
+            //  textMessage.transform.rotation.z, textMessage.transform.rotation.w);
         }
 
+
+        Debug.Log(cellPhoneHasBeenDisabled);
 
     }
     bool CheckIfPlayerIsClose()
@@ -72,12 +81,15 @@ public class CellPhone : MonoBehaviour
         GetComponent<Animator>().enabled = false;
     }
     //Used to call the cell phone after you called it the first time
-    public void CallPhone()
+    public void CallPhone(string s)
     {
       // textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
         rotate = false;
       // GetComponent<Animator>().enabled = true;
         playerHasSeenTextMessage = false;
+        textMessage.GetComponentInChildren<Text>().text = s;
+        GetComponent<Animator>().enabled = true;
+        cellPhoneHasBeenDisabled = false;
     }
     IEnumerator StopScreenAni()
     {
