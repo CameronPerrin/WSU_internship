@@ -73,9 +73,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Bleach
-  desc1: Flushable
-  desc2: Not a Fatberg
-  desc3: Into the toilet
+  desc1: Used to create your dream bathroom.
+  desc2: Flushable and safe in the sewer.
+  desc3: Bacteria-killing cleaning agent.
 --- !u!114 &4293832402295526512
 MonoBehaviour:
   m_ObjectHideFlags: 0

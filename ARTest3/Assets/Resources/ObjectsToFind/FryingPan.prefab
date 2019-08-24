@@ -105,9 +105,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Grease
-  desc1: Flushable, but not biodegradable.
-  desc2: Biggest problem for Fatberg.
-  desc3: Not for toilet.
+  desc1: Used to cook McDonald's fries.
+  desc2: '"Flushable", but not safe. Dispose in the trash.'
+  desc3: Reacts with the pipe lining and solidifies.
 --- !u!1001 &330721587925239449
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -108,7 +108,7 @@ public class ScannerMove : MonoBehaviour
         {
             A2continue.SetActive(true);
             timePassed = timePassed + 1;
-            if (timePassed >= 100 && Input.GetButtonDown("Submit"))
+            if (timePassed >= 300 && Input.GetButtonDown("Submit"))
             {
                 timePassed = 0;
                 minigame1.GetComponent<NewJoystick>().Successes = 0;
@@ -267,7 +267,7 @@ public class ScannerMove : MonoBehaviour
         //Moves item from fatberg to correct location in the "UI" as well as resets camera to original position
         if(framesleft > 0)
         {
-            scanner.transform.rotation = Quaternion.Lerp(scanner.transform.rotation, scannerDown, Time.deltaTime * speed);
+            scanner.transform.rotation = Quaternion.Lerp(scanner.transform.rotation, scannerDown, Time.deltaTime * 2f);
             transform.rotation = Quaternion.Lerp(transform.rotation, camStartRot, Time.deltaTime * speed);
             clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
             clicked.transform.rotation = oldRot;

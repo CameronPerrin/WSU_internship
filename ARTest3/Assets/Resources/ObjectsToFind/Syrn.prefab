@@ -73,9 +73,10 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Syringe
-  desc1: WOW Really?
-  desc2: Fatberg hates these.
-  desc3: Not for toilets.
+  desc1: WOW, Really???
+  desc2: Mr. Fatberg HATES these; Do not flush.
+  desc3: The Occupational Safety and Health Administration (OSHA) mandates that sharps
+    be collected in "sharp containers"!
 --- !u!114 &3687005036631851757
 MonoBehaviour:
   m_ObjectHideFlags: 0

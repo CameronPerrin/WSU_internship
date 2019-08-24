@@ -86,9 +86,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Oil
-  desc1: Flushable, but not biodegradable.
-  desc2: Biggest problem for Fatberg.
-  desc3: Not for toilets.
+  desc1: Used to cook McDonald's fries.
+  desc2: '"Flushable", but not safe. Dispose in the trash.'
+  desc3: Reacts with the pipe lining and solidifies.
 --- !u!114 &7043876748539245488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: c8b9325be776a864ebd33924c6a8796b,
         type: 3}
       propertyPath: m_Name
-      value: oil (1) Variant
+      value: oil
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c8b9325be776a864ebd33924c6a8796b,
         type: 3}
