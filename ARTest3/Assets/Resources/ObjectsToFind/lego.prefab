@@ -119,9 +119,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Lego
-  desc1: Not flushable.
-  desc2: Problem for Fatberg.
-  desc3: Not for toilets.
+  desc1: Play with them instead!
+  desc2: Will not break down and can easily clog drains!
+  desc3: Donate old toys or share them with a friend!
 --- !u!114 &-6448705419530972015
 MonoBehaviour:
   m_ObjectHideFlags: 0

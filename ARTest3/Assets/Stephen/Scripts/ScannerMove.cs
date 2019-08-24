@@ -108,7 +108,7 @@ public class ScannerMove : MonoBehaviour
         {
             A2continue.SetActive(true);
             timePassed = timePassed + 1;
-            if (timePassed >= 100 && Input.GetButtonDown("Submit"))
+            if (timePassed >= 300 && Input.GetButtonDown("Submit"))
             {
                 timePassed = 0;
                 minigame1.GetComponent<NewJoystick>().Successes = 0;
@@ -141,9 +141,9 @@ public class ScannerMove : MonoBehaviour
         if (!clicked)
         {
             //Camera rotation input
-            y = Input.GetAxisRaw("PS X");
-            x = Input.GetAxisRaw("PS Y");
-            rotate = new Vector3(x * -1, y * -1, 0);
+            y = Input.GetAxisRaw("Horizontal");
+            x = Input.GetAxisRaw("Vertical");
+            rotate = new Vector3(x * 1, y * -1, 0);
             transform.eulerAngles = transform.eulerAngles - rotate;
             testRot = transform.localEulerAngles;
             //Constraints for camera rotation - PERFECT
@@ -267,7 +267,7 @@ public class ScannerMove : MonoBehaviour
         //Moves item from fatberg to correct location in the "UI" as well as resets camera to original position
         if(framesleft > 0)
         {
-            scanner.transform.rotation = Quaternion.Lerp(scanner.transform.rotation, scannerDown, Time.deltaTime * speed);
+            scanner.transform.rotation = Quaternion.Lerp(scanner.transform.rotation, scannerDown, Time.deltaTime * 2f);
             transform.rotation = Quaternion.Lerp(transform.rotation, camStartRot, Time.deltaTime * speed);
             clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
             clicked.transform.rotation = oldRot;
@@ -283,6 +283,8 @@ public class ScannerMove : MonoBehaviour
             clicked.transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
         }
         
+        /* 
+        //REMOVED BECAUSE NO NEED TO CANCEL GAME
         //Puts item back when circle is pressed
         if (Input.GetButtonDown("Cancel") && clicked && framesleft <= 0)
         {
@@ -300,6 +302,8 @@ public class ScannerMove : MonoBehaviour
             desc2.text = "";
             desc3.text = "";
         }
+        */
+
 
         
     }

@@ -72,9 +72,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Flushable Wipes
-  desc1: Flushable, but not biodegradable.
-  desc2: Biggest problem for Fatberg.
-  desc3: Not for toilet.
+  desc1: These are gross when clean - grosser after wiping and flushing.
+  desc2: Do not flush; even if they claim to be "FLUSH"able.
+  desc3: Largest component (by volume) in Fatberg.
 --- !u!114 &-1590930711091127477
 MonoBehaviour:
   m_ObjectHideFlags: 0

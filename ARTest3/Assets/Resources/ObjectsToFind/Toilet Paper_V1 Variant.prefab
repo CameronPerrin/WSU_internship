@@ -72,9 +72,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Toliet Paper
-  desc1: Flushable
-  desc2: Sewer can handle it.
-  desc3: Go ahead.
+  desc1: Lucky you - born after the invention of Toilet Paper in 1857.
+  desc2: This CAN be flushed - but limit the panels in single flush.
+  desc3: Our research shows quick decomposition in sewer.
 --- !u!114 &7063735654371362251
 MonoBehaviour:
   m_ObjectHideFlags: 0
