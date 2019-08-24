@@ -141,9 +141,9 @@ public class ScannerMove : MonoBehaviour
         if (!clicked)
         {
             //Camera rotation input
-            y = Input.GetAxisRaw("PS X");
-            x = Input.GetAxisRaw("PS Y");
-            rotate = new Vector3(x * -1, y * -1, 0);
+            y = Input.GetAxisRaw("Horizontal");
+            x = Input.GetAxisRaw("Vertical");
+            rotate = new Vector3(x * 1, y * -1, 0);
             transform.eulerAngles = transform.eulerAngles - rotate;
             testRot = transform.localEulerAngles;
             //Constraints for camera rotation - PERFECT
@@ -283,6 +283,8 @@ public class ScannerMove : MonoBehaviour
             clicked.transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
         }
         
+        /* 
+        //REMOVED BECAUSE NO NEED TO CANCEL GAME
         //Puts item back when circle is pressed
         if (Input.GetButtonDown("Cancel") && clicked && framesleft <= 0)
         {
@@ -300,6 +302,8 @@ public class ScannerMove : MonoBehaviour
             desc2.text = "";
             desc3.text = "";
         }
+        */
+
 
         
     }
