@@ -4924,6 +4924,80 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &62316156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 62316159}
+  - component: {fileID: 62316158}
+  - component: {fileID: 62316157}
+  m_Layer: 5
+  m_Name: FadeToBlack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &62316157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62316156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &62316158
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62316156}
+  m_CullTransparentMesh: 0
+--- !u!224 &62316159
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62316156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2129099156}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.445, y: 1.35}
+  m_SizeDelta: {x: 800.89, y: 452.7}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &140203904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 746654c49d25a99489b5c4f582fe554a,
@@ -10236,6 +10310,7 @@ MonoBehaviour:
   player: {fileID: 1648372601}
   closeEnoughDist: 0.3
   playerHasSeenTextMessage: 0
+  cellPhoneHasBeenDisabled: 0
 --- !u!64 &301150856
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10452,6 +10527,55 @@ MonoBehaviour:
   kernelSize: 5
   lightAngle: 1
   maxDepthBias: 0.001
+--- !u!1 &345915112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345915114}
+  - component: {fileID: 345915113}
+  m_Layer: 0
+  m_Name: TransistionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &345915113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345915112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7b031b46d50cb84bae050f9e5c504ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayForScreenToBlack: 0.1
+  amountToAdd: 0.1
+  image: {fileID: 62316157}
+  cellPhone: {fileID: 0}
+  textToText: Your numbers still caused the fatberg to be created
+  timeline: {fileID: 0}
+--- !u!4 &345915114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345915112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 270.00006, y: 966.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &355422559
 GameObject:
   m_ObjectHideFlags: 0
@@ -20548,7 +20672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120d505cc4ff9474991c59af7bf30eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endTime: 40
+  endTime: 20
   text: {fileID: 0}
   slider: {fileID: 355422561}
 --- !u!114 &665820713
@@ -20567,6 +20691,8 @@ MonoBehaviour:
   text: {fileID: 605284019}
   phaseThreeSceneNum: 2
   guage: {fileID: 1996232345}
+  transistion: {fileID: 345915113}
+  cell: {fileID: 301150855}
 --- !u!4 &731003709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1f20049ba6db51e419d6be9680f6d991,
@@ -69537,6 +69663,7 @@ RectTransform:
   - {fileID: 849896231}
   - {fileID: 1996232346}
   - {fileID: 1152458291}
+  - {fileID: 62316159}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour
     public int phaseThreeSceneNum;
     public GameObject guage;
     int count;
+    public TransistionPhase transistion;
+    public CellPhone cell;
+    bool isThere = false;
     // Start is called before the first frame update
     // Update is called once per frame
     private void Start()
@@ -24,7 +27,12 @@ public class GameController : MonoBehaviour
         text.text = "You have removed: " + score.ToString() + " / " + count;
         if(score >= count || guage.GetComponent<GuageTimer>().meter.GetComponent<Image>().fillAmount >= 1)
         {
-            SceneManager.LoadScene(phaseThreeSceneNum);
+            
+            //SceneManager.LoadScene(phaseThreeSceneNum);
+            //Transistion to the next scene
+            if(!isThere)
+                transistion.Transition(cell);
+            isThere = true;
         }
     }
 }
