@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CellPhone : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class CellPhone : MonoBehaviour
     Vector2 normSize;
     public bool cellPhoneHasBeenDisabled;
     AutoTypeText auto;
+    string transText;
+    bool secondRun;
     //Alright so the reason the object keeps disappearing is because the renderer is turned off when moving off screen.
     // Update is called once per frame
     void Update()
@@ -31,8 +34,11 @@ public class CellPhone : MonoBehaviour
                 textMessage.SetActive(!textMessage.activeInHierarchy);
                 //playerHasSeenTextMessage = true;
                 StartCoroutine(StopScreenAni());
-                if(GameObject.FindObjectOfType(typeof(AutoTypeText))
-                auto.RestartAutoType(textToText);
+                if (!auto && secondRun)
+                {
+                    auto = textMessage.GetComponentInChildren<AutoTypeText>();
+                    auto.RestartAutoType(transText);
+                }
 
             }
         }
@@ -43,6 +49,8 @@ public class CellPhone : MonoBehaviour
                 //textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
                 textMessage.SetActive(false);
                 cellPhoneHasBeenDisabled = true;
+                if (secondRun)
+                    SceneManager.LoadScene(2);
             }
                 /*  if(textMessage.activeInHierarchy)
                       textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
@@ -56,7 +64,7 @@ public class CellPhone : MonoBehaviour
             Transform trans = player.transform;
             Vector3 vec = new Vector3(player.transform.position.x, player.transform.position.y, player.transform.position.z);
             textMessage.transform.LookAt(trans);
-            textMessage.transform.eulerAngles = new Vector3(textMessage.transform.eulerAngles.x - 20f, textMessage.transform.eulerAngles.y + 180f, textMessage.transform.eulerAngles.z);
+            textMessage.transform.eulerAngles = new Vector3(textMessage.transform.eulerAngles.x - 40f, textMessage.transform.eulerAngles.y + 180f, textMessage.transform.eulerAngles.z);
             //textMessage.transform.localRotation.x = new Quaternion(0, 0, 0, 0);
             // textMessage.transform.rotation = new Quaternion(textMessage.transform.rotation.x, textMessage.transform.rotation.y + 180f,
             //  textMessage.transform.rotation.z, textMessage.transform.rotation.w);
@@ -84,13 +92,16 @@ public class CellPhone : MonoBehaviour
     //Used to call the cell phone after you called it the first time
     public void CallPhone(string s)
     {
+        secondRun = true;
       // textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
         rotate = false;
       // GetComponent<Animator>().enabled = true;
         playerHasSeenTextMessage = false;
-        textMessage.GetComponentInChildren<Text>().text = s;
+        textMessage.GetComponentInChildren<Text>().text = "";
         GetComponent<Animator>().enabled = true;
         cellPhoneHasBeenDisabled = false;
+        
+        transText = s;
     }
     IEnumerator StopScreenAni()
     {
