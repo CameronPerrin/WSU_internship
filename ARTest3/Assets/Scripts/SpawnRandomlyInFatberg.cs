@@ -73,17 +73,22 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         else if(objectName == "Car")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.1f, -0.05f, -0.05f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.1f, -0.05f, -0.075f);
         }
         else if(objectName == "oil")
         {
             //Perfect
             temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.15f);
         }
-        else if (objectName == "Pill" || objectName == "lego")
+        else if (objectName == "Pill")
         {
             //Prefect
             temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.05f);
+        }
+        else if (objectName == "lego")
+        {
+            //Prefect
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.04f);
         }
         else if (objectName == "Coffee Grounds")
         {
@@ -117,9 +122,13 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
             //Perfect
             prefabTemp.transform.localScale = new Vector3(3f, 3f, 3f);
         }
-        else if (objectName == "Pill")
+        else if (objectName == "Pill" || objectName == "lego")
         {
             prefabTemp.transform.localScale = new Vector3(6f, 6f, 6f);
+        }
+        else if (objectName == "Car")
+        {
+            prefabTemp.transform.localScale = new Vector3(4f, 4f, 4f);
         }
         else
         {
