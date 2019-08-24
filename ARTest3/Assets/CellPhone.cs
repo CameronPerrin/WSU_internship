@@ -31,6 +31,7 @@ public class CellPhone : MonoBehaviour
                 textMessage.SetActive(!textMessage.activeInHierarchy);
                 //playerHasSeenTextMessage = true;
                 StartCoroutine(StopScreenAni());
+                if(GameObject.FindObjectOfType(typeof(AutoTypeText))
                 auto.RestartAutoType(textToText);
 
             }
