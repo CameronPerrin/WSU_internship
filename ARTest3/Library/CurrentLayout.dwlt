@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 494}
   m_MaxSize: {x: 14002, y: 14044}
   vertical: 0
-  controlID: 12090
+  controlID: 1481
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 12091
+  controlID: 1487
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 222}
   m_MaxSize: {x: 8004, y: 4022}
   vertical: 0
-  controlID: 12092
+  controlID: 1488
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,9 +382,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8e5affff90deffffb8dfffffeef8ffff0a660000fef9000008fa0000
+      m_SelectedIDs: 745d0000
+      m_LastClickedID: 23924
+      m_ExpandedIDs: 38e5ffffbeebffff465d0000505d0000745d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -444,9 +444,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 886.88306, y: 490.9614, z: -149.5}
+    m_Target: {x: 860.4223, y: 515.5708, z: -33143.75}
     speed: 2
-    m_Value: {x: 886.88306, y: 490.9614, z: -149.5}
+    m_Value: {x: 860.4223, y: 515.5708, z: -33143.75}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -479,9 +479,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1238
+    m_Target: 1233.8035
     speed: 2
-    m_Value: 1238
+    m_Value: 1233.8035
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -570,20 +570,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Stephen/Scenes
+    - Assets/Art Assets/End Screen
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Stephen/Scenes
+  - Assets/Art Assets/End Screen
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\wperrin\Documents\wsu\ARTest3
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 240}
-    m_SelectedIDs: 063d0000
-    m_LastClickedID: 15622
-    m_ExpandedIDs: 00000000e43a0000843c00002a3e00002a3f0000ee3f0000e4400000b04100007043000072430000c84300001c440000864500007c4600005e490000e2490000624c00001e4f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 965d0000
+    m_LastClickedID: 23958
+    m_ExpandedIDs: 00000000163d00009c3d0000ac3e0000484000004641000004420000e8420000b44300006e45000070450000c64500001a4600007647000068480000424b0000c84b00003a4e0000d450000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -611,7 +611,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e43a0000843c00002a3e00002a3f0000ee3f0000e4400000b04100007043000072430000c84300001c440000864500007c4600005e490000e2490000624c00001e4f000000ca9a3b
+    m_ExpandedIDs: 00000000163d0000ac3e0000484000004641000004420000e8420000b44300006e45000070450000c64500001a4600007647000068480000424b0000c84b00003a4e0000d450000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

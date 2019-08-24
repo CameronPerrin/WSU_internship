@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/BrendansStuff/Scenes/Phase1_VFX.unity
+- path: Assets/Stephen/Scenes/EndScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
