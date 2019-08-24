@@ -18,7 +18,7 @@ public class bumb : MonoBehaviour
     {
         temp = transform.localScale;
 
-        if ((temp.x < 73) && !shrink)
+        if ((temp.x < 72) && !shrink)
         {
             temp.x += speed;
             temp.y += speed;
@@ -28,7 +28,7 @@ public class bumb : MonoBehaviour
             shrink = true;
         }
 
-        if ((temp.x >= 67) && shrink)
+        if ((temp.x >= 68) && shrink)
         {
             temp.x -= (speed * 2f);
             temp.y -= (speed * 2f);
