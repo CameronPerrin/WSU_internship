@@ -9,13 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 995438498, guid: 24f9678c7fd67c44bae6734ba296c391, type: 3}
+  m_Script: {fileID: 995438498, guid: b9aae84819d7761409a17427be19e676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-08-22T19:46:39.276-04:00
-  initializedAtString: 2019-08-22T18:34:39.519-04:00
+  lastUpdatedAtString: 2019-08-23T20:47:53.118-04:00
+  initializedAtString: 2019-08-23T18:26:36.079-04:00
   entries:
+  - path: ARTest3\ARTest3.sln
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\ARTest3.sln
+    projectPath: ARTest3.sln
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ARTest3\Assembly-CSharp.csproj
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
@@ -28,41 +34,51 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Assets\BrendansStuff\Scenes\Sewer Lights.unity
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\Sewer
-      Lights.unity
-    projectPath: Assets\BrendansStuff\Scenes\Sewer Lights.unity
+  - path: ARTest3\Assets\BrendansStuff\Scenes\Phase1_VFX.unity
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\Phase1_VFX.unity
+    projectPath: Assets\BrendansStuff\Scenes\Phase1_VFX.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Assets\BrendansStuff\Scenes\Phase1_VFX\Camera Profile.asset
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\Phase1_VFX\Camera
+      Profile.asset
+    projectPath: Assets\BrendansStuff\Scenes\Phase1_VFX\Camera Profile.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Assets\BrendansStuff\Scenes\Sewer Lights.unity.meta
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\Sewer
-      Lights.unity.meta
-    projectPath: Assets\BrendansStuff\Scenes\Sewer Lights.unity.meta
+  - path: ARTest3\Assets\BrendansStuff\Scenes\Phase1_VFX\Camera Profile.asset.meta
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\Phase1_VFX\Camera
+      Profile.asset.meta
+    projectPath: Assets\BrendansStuff\Scenes\Phase1_VFX\Camera Profile.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Assets\BrendansStuff\Textures\FOG.png
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Textures\FOG.png
-    projectPath: Assets\BrendansStuff\Textures\FOG.png
+  - path: ARTest3\Assets\BrendansStuff\Scenes\VFX Testing_Profiles\GameObject Profile.asset
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\VFX
+      Testing_Profiles\GameObject Profile.asset
+    projectPath: Assets\BrendansStuff\Scenes\VFX Testing_Profiles\GameObject Profile.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: ARTest3\Assets\BrendansStuff\Scenes\VFX Testing_Profiles\GameObject Profile.asset.meta
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\VFX
+      Testing_Profiles\GameObject Profile.asset.meta
+    projectPath: Assets\BrendansStuff\Scenes\VFX Testing_Profiles\GameObject Profile.asset.meta
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: ARTest3\Assets\BrendansStuff\Scenes\VFX Testing_Profiles\PostProcessing.asset
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\VFX
+      Testing_Profiles\PostProcessing.asset
+    projectPath: Assets\BrendansStuff\Scenes\VFX Testing_Profiles\PostProcessing.asset
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Assets\BrendansStuff\Textures\FOG.png.meta
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Textures\FOG.png.meta
-    projectPath: Assets\BrendansStuff\Textures\FOG.png.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Assets\BrendansStuff\Textures\FOG_Texture3D.asset
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Textures\FOG_Texture3D.asset
-    projectPath: Assets\BrendansStuff\Textures\FOG_Texture3D.asset
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Assets\BrendansStuff\Textures\FOG_Texture3D.asset.meta
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Textures\FOG_Texture3D.asset.meta
-    projectPath: Assets\BrendansStuff\Textures\FOG_Texture3D.asset.meta
+  - path: ARTest3\Assets\BrendansStuff\Scenes\VFX Testing_Profiles\PostProcessing.asset.meta
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Assets\BrendansStuff\Scenes\VFX
+      Testing_Profiles\PostProcessing.asset.meta
+    projectPath: Assets\BrendansStuff\Scenes\VFX Testing_Profiles\PostProcessing.asset.meta
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -198,12 +214,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\EditorUserBuildSettings.asset
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\EditorUserBuildSettings.asset
-    projectPath: Library\EditorUserBuildSettings.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: ARTest3\Library\gfu\cache\branches.yaml
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -234,261 +244,93 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\01\014f715cfa5c0e2478e44ae3559f6fc4
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\01\014f715cfa5c0e2478e44ae3559f6fc4
-    projectPath: Library\metadata\01\014f715cfa5c0e2478e44ae3559f6fc4
+  - path: ARTest3\Library\InspectorExpandedItems.asset
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\06\06b62bc846e71f44f825b040c5a590b4.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\06\06b62bc846e71f44f825b040c5a590b4.info
-    projectPath: Library\metadata\06\06b62bc846e71f44f825b040c5a590b4.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\07\07d8fb03cf759f845be84568eb4ba5bf
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\07\07d8fb03cf759f845be84568eb4ba5bf
-    projectPath: Library\metadata\07\07d8fb03cf759f845be84568eb4ba5bf
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\07\07d8fb03cf759f845be84568eb4ba5bf.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\07\07d8fb03cf759f845be84568eb4ba5bf.info
-    projectPath: Library\metadata\07\07d8fb03cf759f845be84568eb4ba5bf.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\08\08f86587da87378499bb84064d901333
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\08\08f86587da87378499bb84064d901333
-    projectPath: Library\metadata\08\08f86587da87378499bb84064d901333
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\08\08f86587da87378499bb84064d901333.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\08\08f86587da87378499bb84064d901333.info
-    projectPath: Library\metadata\08\08f86587da87378499bb84064d901333.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\09\09ee1f6a2446f6047832b8b42cbb43d0
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\09\09ee1f6a2446f6047832b8b42cbb43d0
-    projectPath: Library\metadata\09\09ee1f6a2446f6047832b8b42cbb43d0
+  - path: ARTest3\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+    projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\0d\0d96916ce6b4b7e46b24709e6f4af51a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\0d\0d96916ce6b4b7e46b24709e6f4af51a
-    projectPath: Library\metadata\0d\0d96916ce6b4b7e46b24709e6f4af51a
+  - path: ARTest3\Library\metadata\0c\0cc430df033058b48907d53446461a4a
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\0c\0cc430df033058b48907d53446461a4a
+    projectPath: Library\metadata\0c\0cc430df033058b48907d53446461a4a
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\10\10196bf913fbf32449b23359f53d1f17
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\10\10196bf913fbf32449b23359f53d1f17
-    projectPath: Library\metadata\10\10196bf913fbf32449b23359f53d1f17
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ARTest3\Library\metadata\10\10196bf913fbf32449b23359f53d1f17.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\10\10196bf913fbf32449b23359f53d1f17.info
     projectPath: Library\metadata\10\10196bf913fbf32449b23359f53d1f17.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\12\1209882203c10c547a065b44cc930db5
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\12\1209882203c10c547a065b44cc930db5
-    projectPath: Library\metadata\12\1209882203c10c547a065b44cc930db5
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\12\1209882203c10c547a065b44cc930db5.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\12\1209882203c10c547a065b44cc930db5.info
-    projectPath: Library\metadata\12\1209882203c10c547a065b44cc930db5.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\12\122100547caa1b24b85829e046607ffd.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\12\122100547caa1b24b85829e046607ffd.info
-    projectPath: Library\metadata\12\122100547caa1b24b85829e046607ffd.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\12\128e987d567d4e2c824d754223b3f3b0
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\12\128e987d567d4e2c824d754223b3f3b0
-    projectPath: Library\metadata\12\128e987d567d4e2c824d754223b3f3b0
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\13\13e03e3b93d9b0748873cd572f1cbc0d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\13\13e03e3b93d9b0748873cd572f1cbc0d
-    projectPath: Library\metadata\13\13e03e3b93d9b0748873cd572f1cbc0d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\13\13f94cca7097a5743b223bb1eaa8783a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\13\13f94cca7097a5743b223bb1eaa8783a.info
-    projectPath: Library\metadata\13\13f94cca7097a5743b223bb1eaa8783a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\15\15e327f750b786c46a9ec3995f60c81f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\15\15e327f750b786c46a9ec3995f60c81f
-    projectPath: Library\metadata\15\15e327f750b786c46a9ec3995f60c81f
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: ARTest3\Library\metadata\15\15e327f750b786c46a9ec3995f60c81f.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\15\15e327f750b786c46a9ec3995f60c81f.info
-    projectPath: Library\metadata\15\15e327f750b786c46a9ec3995f60c81f.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\16\16d1e714ef2f3a64fbf9f3a98144bb3d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\16\16d1e714ef2f3a64fbf9f3a98144bb3d
-    projectPath: Library\metadata\16\16d1e714ef2f3a64fbf9f3a98144bb3d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\19\194cf69ac6172874c90b2e976a34b55c
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\19\194cf69ac6172874c90b2e976a34b55c
-    projectPath: Library\metadata\19\194cf69ac6172874c90b2e976a34b55c
+  - path: ARTest3\Library\metadata\11\117249c8fdd452f4a8716052e25bfca2
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\11\117249c8fdd452f4a8716052e25bfca2
+    projectPath: Library\metadata\11\117249c8fdd452f4a8716052e25bfca2
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: ARTest3\Library\metadata\11\117249c8fdd452f4a8716052e25bfca2.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\11\117249c8fdd452f4a8716052e25bfca2.info
+    projectPath: Library\metadata\11\117249c8fdd452f4a8716052e25bfca2.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
+    projectPath: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\13\136dc24f151211d438acee17aff4e934
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\13\136dc24f151211d438acee17aff4e934
+    projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+    projectPath: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ARTest3\Library\metadata\19\194cf69ac6172874c90b2e976a34b55c.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\19\194cf69ac6172874c90b2e976a34b55c.info
     projectPath: Library\metadata\19\194cf69ac6172874c90b2e976a34b55c.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\19\19e5a138c07e971438b2b18c8e716479
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\19\19e5a138c07e971438b2b18c8e716479
-    projectPath: Library\metadata\19\19e5a138c07e971438b2b18c8e716479
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: ARTest3\Library\metadata\19\19e5a138c07e971438b2b18c8e716479.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\19\19e5a138c07e971438b2b18c8e716479.info
-    projectPath: Library\metadata\19\19e5a138c07e971438b2b18c8e716479.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\1a\1a07614d89a84e748bdedfa7b4355eb1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1a\1a07614d89a84e748bdedfa7b4355eb1
-    projectPath: Library\metadata\1a\1a07614d89a84e748bdedfa7b4355eb1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\1a\1a07614d89a84e748bdedfa7b4355eb1.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1a\1a07614d89a84e748bdedfa7b4355eb1.info
-    projectPath: Library\metadata\1a\1a07614d89a84e748bdedfa7b4355eb1.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\1b\1b6ad55209424a644b2ca50406521f27.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1b\1b6ad55209424a644b2ca50406521f27.info
-    projectPath: Library\metadata\1b\1b6ad55209424a644b2ca50406521f27.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b.info
-    projectPath: Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\1d\1d4177f404bc54946af4770f1f225593
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1d\1d4177f404bc54946af4770f1f225593
-    projectPath: Library\metadata\1d\1d4177f404bc54946af4770f1f225593
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\1e\1e108ae5f2133934f948edded555f03e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1e\1e108ae5f2133934f948edded555f03e
-    projectPath: Library\metadata\1e\1e108ae5f2133934f948edded555f03e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\1e\1e108ae5f2133934f948edded555f03e.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1e\1e108ae5f2133934f948edded555f03e.info
-    projectPath: Library\metadata\1e\1e108ae5f2133934f948edded555f03e.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\1e\1e3b057af24249748ff873be7fafee47
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1e\1e3b057af24249748ff873be7fafee47
-    projectPath: Library\metadata\1e\1e3b057af24249748ff873be7fafee47
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\1e\1e3f055a9b7f89940b51daf81ebdaad9
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1e\1e3f055a9b7f89940b51daf81ebdaad9
-    projectPath: Library\metadata\1e\1e3f055a9b7f89940b51daf81ebdaad9
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\1f\1f730618ad6b6694fb408669d01633b8
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\1f\1f730618ad6b6694fb408669d01633b8
-    projectPath: Library\metadata\1f\1f730618ad6b6694fb408669d01633b8
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\20\202271410b3085f488e01f0c01820f8c
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\20\202271410b3085f488e01f0c01820f8c
-    projectPath: Library\metadata\20\202271410b3085f488e01f0c01820f8c
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\20\202271410b3085f488e01f0c01820f8c.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\20\202271410b3085f488e01f0c01820f8c.info
-    projectPath: Library\metadata\20\202271410b3085f488e01f0c01820f8c.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\20\205a6191ba6943d4299d968b416a1ec3.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\20\205a6191ba6943d4299d968b416a1ec3.info
-    projectPath: Library\metadata\20\205a6191ba6943d4299d968b416a1ec3.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\20\205f8ccb0e55a8b4b80c452ba35bf71e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\20\205f8ccb0e55a8b4b80c452ba35bf71e
-    projectPath: Library\metadata\20\205f8ccb0e55a8b4b80c452ba35bf71e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: ARTest3\Library\metadata\21\219a5e1e24860d840b3b0b2ef07ea8fd.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\21\219a5e1e24860d840b3b0b2ef07ea8fd.info
     projectPath: Library\metadata\21\219a5e1e24860d840b3b0b2ef07ea8fd.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\22\22aeaa7024d1ea244aa0b5be9c0dbe4a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\22\22aeaa7024d1ea244aa0b5be9c0dbe4a
-    projectPath: Library\metadata\22\22aeaa7024d1ea244aa0b5be9c0dbe4a
+  - path: ARTest3\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+    projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\24\24f9678c7fd67c44bae6734ba296c391
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\24\24f9678c7fd67c44bae6734ba296c391
-    projectPath: Library\metadata\24\24f9678c7fd67c44bae6734ba296c391
+  - path: ARTest3\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
+    projectPath: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\24\24f9678c7fd67c44bae6734ba296c391.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\24\24f9678c7fd67c44bae6734ba296c391.info
-    projectPath: Library\metadata\24\24f9678c7fd67c44bae6734ba296c391.info
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\2a\2a43dbc8764c3d146af2e7e310f5342f.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2a\2a43dbc8764c3d146af2e7e310f5342f.info
+    projectPath: Library\metadata\2a\2a43dbc8764c3d146af2e7e310f5342f.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ARTest3\Library\metadata\2a\2a92821e50517734a81d1a1bcbeb62f4.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2a\2a92821e50517734a81d1a1bcbeb62f4.info
     projectPath: Library\metadata\2a\2a92821e50517734a81d1a1bcbeb62f4.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\2a\2ae66d922c5e8c546bd55d8102f3e4dc
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2a\2ae66d922c5e8c546bd55d8102f3e4dc
-    projectPath: Library\metadata\2a\2ae66d922c5e8c546bd55d8102f3e4dc
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -498,279 +340,93 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f
-    projectPath: Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f.info
-    projectPath: Library\metadata\2f\2f02b8764d7e3d0478249c300d6b8b6f.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\2f\2f03fc491806b5a418f64e983dce2dcb
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2f\2f03fc491806b5a418f64e983dce2dcb
-    projectPath: Library\metadata\2f\2f03fc491806b5a418f64e983dce2dcb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\2f\2f4b0f99a54cdc34591cf4d19bffeb5a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\2f\2f4b0f99a54cdc34591cf4d19bffeb5a.info
-    projectPath: Library\metadata\2f\2f4b0f99a54cdc34591cf4d19bffeb5a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\31\31c643d680c9efc4daabb2284f8442b2.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\31\31c643d680c9efc4daabb2284f8442b2.info
-    projectPath: Library\metadata\31\31c643d680c9efc4daabb2284f8442b2.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\32\323d8cec4bc5c1c4bbbf2a368fccad8c
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\32\323d8cec4bc5c1c4bbbf2a368fccad8c
-    projectPath: Library\metadata\32\323d8cec4bc5c1c4bbbf2a368fccad8c
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: ARTest3\Library\metadata\32\327a48b79ca038b4391e23fa6f5a8e7e.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\32\327a48b79ca038b4391e23fa6f5a8e7e.info
     projectPath: Library\metadata\32\327a48b79ca038b4391e23fa6f5a8e7e.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\32\32a40d8686e001d41841f552c4fbe881
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\32\32a40d8686e001d41841f552c4fbe881
-    projectPath: Library\metadata\32\32a40d8686e001d41841f552c4fbe881
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ARTest3\Library\metadata\32\32a40d8686e001d41841f552c4fbe881.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\32\32a40d8686e001d41841f552c4fbe881.info
     projectPath: Library\metadata\32\32a40d8686e001d41841f552c4fbe881.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\33\33d54171a3b80e9409a73da91fca2147
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\33\33d54171a3b80e9409a73da91fca2147
-    projectPath: Library\metadata\33\33d54171a3b80e9409a73da91fca2147
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\34\346e7acb2dac57d4b9b3d068327e1a0a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\34\346e7acb2dac57d4b9b3d068327e1a0a
-    projectPath: Library\metadata\34\346e7acb2dac57d4b9b3d068327e1a0a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\35\35898ca2fdf50fa48949d92a59297038.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\35\35898ca2fdf50fa48949d92a59297038.info
-    projectPath: Library\metadata\35\35898ca2fdf50fa48949d92a59297038.info
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: ARTest3\Library\metadata\35\35a14a3603a573340ab0515f5a7c440b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\35\35a14a3603a573340ab0515f5a7c440b
-    projectPath: Library\metadata\35\35a14a3603a573340ab0515f5a7c440b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\35\35fea17054116224eb88bbfaf4efa789.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\35\35fea17054116224eb88bbfaf4efa789.info
-    projectPath: Library\metadata\35\35fea17054116224eb88bbfaf4efa789.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\38\381dcb09d5029d14897e55f98031fca5
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\38\381dcb09d5029d14897e55f98031fca5
-    projectPath: Library\metadata\38\381dcb09d5029d14897e55f98031fca5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\3a\3a424769673dc6b409c9d3bae3fa4baf
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3a\3a424769673dc6b409c9d3bae3fa4baf
-    projectPath: Library\metadata\3a\3a424769673dc6b409c9d3bae3fa4baf
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\3a\3a4407173701c75468742b9c31e460fb
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3a\3a4407173701c75468742b9c31e460fb
-    projectPath: Library\metadata\3a\3a4407173701c75468742b9c31e460fb
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\3d\3ddf75b624dbee24d83df56d30eb5236.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3d\3ddf75b624dbee24d83df56d30eb5236.info
-    projectPath: Library\metadata\3d\3ddf75b624dbee24d83df56d30eb5236.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\3e\3e316f08c6c3fe345ba8d537a11b19d6
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3e\3e316f08c6c3fe345ba8d537a11b19d6
-    projectPath: Library\metadata\3e\3e316f08c6c3fe345ba8d537a11b19d6
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\3f\3f5f5599776179d4c840b85e307746af
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3f\3f5f5599776179d4c840b85e307746af
-    projectPath: Library\metadata\3f\3f5f5599776179d4c840b85e307746af
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\3f\3f5f5599776179d4c840b85e307746af.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3f\3f5f5599776179d4c840b85e307746af.info
-    projectPath: Library\metadata\3f\3f5f5599776179d4c840b85e307746af.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d
-    projectPath: Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d.info
-    projectPath: Library\metadata\40\40c0b1ac77831462ab0f27d9bd64dc7d.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\42\4287410f583bf3f4f88f67678dc5f511
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\42\4287410f583bf3f4f88f67678dc5f511
-    projectPath: Library\metadata\42\4287410f583bf3f4f88f67678dc5f511
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\43\43ad86e41d4128f41b5931f608905e8a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\43\43ad86e41d4128f41b5931f608905e8a
-    projectPath: Library\metadata\43\43ad86e41d4128f41b5931f608905e8a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\46\464c62a212b81aa40805f3cb3d6a808f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\46\464c62a212b81aa40805f3cb3d6a808f
-    projectPath: Library\metadata\46\464c62a212b81aa40805f3cb3d6a808f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\46\465f3481f398ecf4493eb245c767bdb8
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\46\465f3481f398ecf4493eb245c767bdb8
-    projectPath: Library\metadata\46\465f3481f398ecf4493eb245c767bdb8
+  - path: ARTest3\Library\metadata\34\346b517f2c05fda4ab84c6b1c6211992
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\34\346b517f2c05fda4ab84c6b1c6211992
+    projectPath: Library\metadata\34\346b517f2c05fda4ab84c6b1c6211992
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\46\465f3481f398ecf4493eb245c767bdb8.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\46\465f3481f398ecf4493eb245c767bdb8.info
-    projectPath: Library\metadata\46\465f3481f398ecf4493eb245c767bdb8.info
+  - path: ARTest3\Library\metadata\34\346b517f2c05fda4ab84c6b1c6211992.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\34\346b517f2c05fda4ab84c6b1c6211992.info
+    projectPath: Library\metadata\34\346b517f2c05fda4ab84c6b1c6211992.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\48\48bb5f55d8670e349b6e614913f9d910
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\48\48bb5f55d8670e349b6e614913f9d910
-    projectPath: Library\metadata\48\48bb5f55d8670e349b6e614913f9d910
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\49\49116c4a06a9d4340bf9362f2a8ac1c1.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\49\49116c4a06a9d4340bf9362f2a8ac1c1.info
-    projectPath: Library\metadata\49\49116c4a06a9d4340bf9362f2a8ac1c1.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\4d\4dcec32c03e970246996d25aa47b1e4b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\4d\4dcec32c03e970246996d25aa47b1e4b
-    projectPath: Library\metadata\4d\4dcec32c03e970246996d25aa47b1e4b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\54\542580133f6c3e04ea2ca6318108d07b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\54\542580133f6c3e04ea2ca6318108d07b
-    projectPath: Library\metadata\54\542580133f6c3e04ea2ca6318108d07b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    projectPath: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\57\57990f7efb63ce64f837807506a21f2a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\57\57990f7efb63ce64f837807506a21f2a
-    projectPath: Library\metadata\57\57990f7efb63ce64f837807506a21f2a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\59\59e9f9deb903d4542991de9bf2e8200d.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\59\59e9f9deb903d4542991de9bf2e8200d.info
-    projectPath: Library\metadata\59\59e9f9deb903d4542991de9bf2e8200d.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\5a\5a43fbedb09da3742819a4f623d788c1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5a\5a43fbedb09da3742819a4f623d788c1
-    projectPath: Library\metadata\5a\5a43fbedb09da3742819a4f623d788c1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\5a\5a4b354a3393911459ca2025410b0c02
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5a\5a4b354a3393911459ca2025410b0c02
-    projectPath: Library\metadata\5a\5a4b354a3393911459ca2025410b0c02
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\5a\5a4b354a3393911459ca2025410b0c02.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5a\5a4b354a3393911459ca2025410b0c02.info
-    projectPath: Library\metadata\5a\5a4b354a3393911459ca2025410b0c02.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\5b\5b018fcf51be0884d8e3d1c1f3324984.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5b\5b018fcf51be0884d8e3d1c1f3324984.info
-    projectPath: Library\metadata\5b\5b018fcf51be0884d8e3d1c1f3324984.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\5d\5d344bfd1c9b89a40ae4efbd50673bf7
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5d\5d344bfd1c9b89a40ae4efbd50673bf7
-    projectPath: Library\metadata\5d\5d344bfd1c9b89a40ae4efbd50673bf7
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\62\622bfe3d087dca14ca7358ed483a72da
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\62\622bfe3d087dca14ca7358ed483a72da
-    projectPath: Library\metadata\62\622bfe3d087dca14ca7358ed483a72da
+  - path: ARTest3\Library\metadata\3d\3d9755424eabd8844a4b15c11063e3bb
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3d\3d9755424eabd8844a4b15c11063e3bb
+    projectPath: Library\metadata\3d\3d9755424eabd8844a4b15c11063e3bb
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\62\622bfe3d087dca14ca7358ed483a72da.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\62\622bfe3d087dca14ca7358ed483a72da.info
-    projectPath: Library\metadata\62\622bfe3d087dca14ca7358ed483a72da.info
+  - path: ARTest3\Library\metadata\3d\3d9755424eabd8844a4b15c11063e3bb.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\3d\3d9755424eabd8844a4b15c11063e3bb.info
+    projectPath: Library\metadata\3d\3d9755424eabd8844a4b15c11063e3bb.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\64\64381fdc4906ae34db9664e9ebf2adbc.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\64\64381fdc4906ae34db9664e9ebf2adbc.info
-    projectPath: Library\metadata\64\64381fdc4906ae34db9664e9ebf2adbc.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\65\650876b7e8631814f80aa83ec97feead
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\65\650876b7e8631814f80aa83ec97feead
-    projectPath: Library\metadata\65\650876b7e8631814f80aa83ec97feead
+  - path: ARTest3\Library\metadata\40\405b9b51bb344a128608d968297df79c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\40\405b9b51bb344a128608d968297df79c
+    projectPath: Library\metadata\40\405b9b51bb344a128608d968297df79c
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\66\66d0233b10ec0c84b98b14db150bffea
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\66\66d0233b10ec0c84b98b14db150bffea
-    projectPath: Library\metadata\66\66d0233b10ec0c84b98b14db150bffea
+  - path: ARTest3\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    projectPath: Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    projectPath: Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    projectPath: Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    projectPath: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\metadata\58\5831d9df9f7ca214ea4990993dcd4099
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\58\5831d9df9f7ca214ea4990993dcd4099
+    projectPath: Library\metadata\58\5831d9df9f7ca214ea4990993dcd4099
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\66\66d0233b10ec0c84b98b14db150bffea.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\66\66d0233b10ec0c84b98b14db150bffea.info
-    projectPath: Library\metadata\66\66d0233b10ec0c84b98b14db150bffea.info
+  - path: ARTest3\Library\metadata\58\5831d9df9f7ca214ea4990993dcd4099.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\58\5831d9df9f7ca214ea4990993dcd4099.info
+    projectPath: Library\metadata\58\5831d9df9f7ca214ea4990993dcd4099.info
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\5b\5bb502b778a66424a96be8ccf43d08b2
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5b\5bb502b778a66424a96be8ccf43d08b2
+    projectPath: Library\metadata\5b\5bb502b778a66424a96be8ccf43d08b2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\5b\5bb502b778a66424a96be8ccf43d08b2.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\5b\5bb502b778a66424a96be8ccf43d08b2.info
+    projectPath: Library\metadata\5b\5bb502b778a66424a96be8ccf43d08b2.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -780,321 +436,51 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\67\6737fb616948a604d8a7210a83e06e3e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\67\6737fb616948a604d8a7210a83e06e3e
-    projectPath: Library\metadata\67\6737fb616948a604d8a7210a83e06e3e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\67\6737fb616948a604d8a7210a83e06e3e.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\67\6737fb616948a604d8a7210a83e06e3e.info
-    projectPath: Library\metadata\67\6737fb616948a604d8a7210a83e06e3e.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\67\675ef869754027a4cad59996c6807e9d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\67\675ef869754027a4cad59996c6807e9d
-    projectPath: Library\metadata\67\675ef869754027a4cad59996c6807e9d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\67\6773218c52347f545a718e1c6cdea4c0
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\67\6773218c52347f545a718e1c6cdea4c0
-    projectPath: Library\metadata\67\6773218c52347f545a718e1c6cdea4c0
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\68\68e6db2ebdc24f95958faec2be5558d6
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\68\68e6db2ebdc24f95958faec2be5558d6
-    projectPath: Library\metadata\68\68e6db2ebdc24f95958faec2be5558d6
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\68\68eb1be5d9a959f45bd65b476cfb9f47.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\68\68eb1be5d9a959f45bd65b476cfb9f47.info
-    projectPath: Library\metadata\68\68eb1be5d9a959f45bd65b476cfb9f47.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\69\69282e50b91362242a5689175599c1d5
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\69\69282e50b91362242a5689175599c1d5
-    projectPath: Library\metadata\69\69282e50b91362242a5689175599c1d5
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\69\69e823286e71b5b48bd3e14f8e4e6358
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\69\69e823286e71b5b48bd3e14f8e4e6358
-    projectPath: Library\metadata\69\69e823286e71b5b48bd3e14f8e4e6358
+  - path: ARTest3\Library\metadata\73\73ed434fc648e4f478ebeb7c52940d1a
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\73\73ed434fc648e4f478ebeb7c52940d1a
+    projectPath: Library\metadata\73\73ed434fc648e4f478ebeb7c52940d1a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\69\69e823286e71b5b48bd3e14f8e4e6358.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\69\69e823286e71b5b48bd3e14f8e4e6358.info
-    projectPath: Library\metadata\69\69e823286e71b5b48bd3e14f8e4e6358.info
+  - path: ARTest3\Library\metadata\73\73ed434fc648e4f478ebeb7c52940d1a.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\73\73ed434fc648e4f478ebeb7c52940d1a.info
+    projectPath: Library\metadata\73\73ed434fc648e4f478ebeb7c52940d1a.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524
-    projectPath: Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524.info
-    projectPath: Library\metadata\6a\6a6b6bef66b30cf4da56a85e98aa9524.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\6d\6d70520106a844b4f9399e2931aba4ac
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6d\6d70520106a844b4f9399e2931aba4ac
-    projectPath: Library\metadata\6d\6d70520106a844b4f9399e2931aba4ac
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\6d\6df885f63f375dc4d9051be415825074
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6d\6df885f63f375dc4d9051be415825074
-    projectPath: Library\metadata\6d\6df885f63f375dc4d9051be415825074
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\6d\6df885f63f375dc4d9051be415825074.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6d\6df885f63f375dc4d9051be415825074.info
-    projectPath: Library\metadata\6d\6df885f63f375dc4d9051be415825074.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\6e\6e0d6ac0038c5b34b81025df4e9631af.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6e\6e0d6ac0038c5b34b81025df4e9631af.info
-    projectPath: Library\metadata\6e\6e0d6ac0038c5b34b81025df4e9631af.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\6e\6e59c59b81ab47f9b6ec5781fa725d2c
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6e\6e59c59b81ab47f9b6ec5781fa725d2c
-    projectPath: Library\metadata\6e\6e59c59b81ab47f9b6ec5781fa725d2c
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd
-    projectPath: Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd.info
-    projectPath: Library\metadata\6e\6e86519b2ed7ece4cae901fc31de93cd.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\6f\6f2b8b67209559c43a70aa1812fd651d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6f\6f2b8b67209559c43a70aa1812fd651d
-    projectPath: Library\metadata\6f\6f2b8b67209559c43a70aa1812fd651d
+  - path: ARTest3\Library\metadata\7a\7a3c001bdff46da4a9588e15a344c198
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\7a\7a3c001bdff46da4a9588e15a344c198
+    projectPath: Library\metadata\7a\7a3c001bdff46da4a9588e15a344c198
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\6f\6f2b8b67209559c43a70aa1812fd651d.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\6f\6f2b8b67209559c43a70aa1812fd651d.info
-    projectPath: Library\metadata\6f\6f2b8b67209559c43a70aa1812fd651d.info
+  - path: ARTest3\Library\metadata\7a\7a3c001bdff46da4a9588e15a344c198.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\7a\7a3c001bdff46da4a9588e15a344c198.info
+    projectPath: Library\metadata\7a\7a3c001bdff46da4a9588e15a344c198.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\71\710f298e6b03b4675b7af26a1765cc88
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\71\710f298e6b03b4675b7af26a1765cc88
-    projectPath: Library\metadata\71\710f298e6b03b4675b7af26a1765cc88
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\71\710f298e6b03b4675b7af26a1765cc88.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\71\710f298e6b03b4675b7af26a1765cc88.info
-    projectPath: Library\metadata\71\710f298e6b03b4675b7af26a1765cc88.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\78\78346d759d33d6547a5b3d22943fd3d9
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\78\78346d759d33d6547a5b3d22943fd3d9
-    projectPath: Library\metadata\78\78346d759d33d6547a5b3d22943fd3d9
+  - path: ARTest3\Library\metadata\80\80929f9dd285b7a4a93dfa3b9252be8c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\80\80929f9dd285b7a4a93dfa3b9252be8c
+    projectPath: Library\metadata\80\80929f9dd285b7a4a93dfa3b9252be8c
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\79\79452513268ebf04e9cc3ebd33f83185
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\79\79452513268ebf04e9cc3ebd33f83185
-    projectPath: Library\metadata\79\79452513268ebf04e9cc3ebd33f83185
+  - path: ARTest3\Library\metadata\80\80929f9dd285b7a4a93dfa3b9252be8c.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\80\80929f9dd285b7a4a93dfa3b9252be8c.info
+    projectPath: Library\metadata\80\80929f9dd285b7a4a93dfa3b9252be8c.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\79\79486b2d79e123c408faaf1e9ebf0bdc
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\79\79486b2d79e123c408faaf1e9ebf0bdc
-    projectPath: Library\metadata\79\79486b2d79e123c408faaf1e9ebf0bdc
+  - path: ARTest3\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+    projectPath: Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\7a\7a573b834e2608c4f982daf527bdb47a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\7a\7a573b834e2608c4f982daf527bdb47a.info
-    projectPath: Library\metadata\7a\7a573b834e2608c4f982daf527bdb47a.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\7c\7ca03f34fd816914d815ecb40380626d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\7c\7ca03f34fd816914d815ecb40380626d
-    projectPath: Library\metadata\7c\7ca03f34fd816914d815ecb40380626d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\7e\7e5e860022c6a604eaeb45ee2e81d71a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\7e\7e5e860022c6a604eaeb45ee2e81d71a.info
-    projectPath: Library\metadata\7e\7e5e860022c6a604eaeb45ee2e81d71a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\7f\7f1030f486013b44690326ba0739c942
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\7f\7f1030f486013b44690326ba0739c942
-    projectPath: Library\metadata\7f\7f1030f486013b44690326ba0739c942
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\81\814de4282cc2cd141bad617f8d9475e1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\81\814de4282cc2cd141bad617f8d9475e1
-    projectPath: Library\metadata\81\814de4282cc2cd141bad617f8d9475e1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\81\81d3f8f403f4088428117c0d833d281a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\81\81d3f8f403f4088428117c0d833d281a.info
-    projectPath: Library\metadata\81\81d3f8f403f4088428117c0d833d281a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\83\83d600b79cefc6f4a8ffca8da2cbb828.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\83\83d600b79cefc6f4a8ffca8da2cbb828.info
-    projectPath: Library\metadata\83\83d600b79cefc6f4a8ffca8da2cbb828.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\84\84a54d37843ca6849bde92e37d3e6c6d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\84\84a54d37843ca6849bde92e37d3e6c6d
-    projectPath: Library\metadata\84\84a54d37843ca6849bde92e37d3e6c6d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\85\85187c2149c549c5b33f0cdb02836b17
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\85\85187c2149c549c5b33f0cdb02836b17
-    projectPath: Library\metadata\85\85187c2149c549c5b33f0cdb02836b17
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47
-    projectPath: Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47.info
-    projectPath: Library\metadata\85\858b7542787a1a44d917d8b76b6a9b47.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\85\85e994911b41a2848a757a31a15b9f69.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\85\85e994911b41a2848a757a31a15b9f69.info
-    projectPath: Library\metadata\85\85e994911b41a2848a757a31a15b9f69.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\86\866d18b99a1dafc4c92c842b8b3d4f99.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\86\866d18b99a1dafc4c92c842b8b3d4f99.info
-    projectPath: Library\metadata\86\866d18b99a1dafc4c92c842b8b3d4f99.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\8a\8a9a760f95896c34689febc965510927
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\8a\8a9a760f95896c34689febc965510927
-    projectPath: Library\metadata\8a\8a9a760f95896c34689febc965510927
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\8a\8a9a760f95896c34689febc965510927.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\8a\8a9a760f95896c34689febc965510927.info
-    projectPath: Library\metadata\8a\8a9a760f95896c34689febc965510927.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\8d\8d3acc0e3bcd01c4e996d353f35e0cdc
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\8d\8d3acc0e3bcd01c4e996d353f35e0cdc
-    projectPath: Library\metadata\8d\8d3acc0e3bcd01c4e996d353f35e0cdc
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374
-    projectPath: Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374.info
-    projectPath: Library\metadata\8e\8e60d9f62b99c4a719cee93ab9c39374.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
-    projectPath: Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\93\9343b96cada3d9849862b8add51f4a53
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\93\9343b96cada3d9849862b8add51f4a53
-    projectPath: Library\metadata\93\9343b96cada3d9849862b8add51f4a53
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\94\9480b6ef3a346af418521fc9a9ecde9f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\94\9480b6ef3a346af418521fc9a9ecde9f
-    projectPath: Library\metadata\94\9480b6ef3a346af418521fc9a9ecde9f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\94\94eef9ae4adf1f5439d358c975251ae2
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\94\94eef9ae4adf1f5439d358c975251ae2
-    projectPath: Library\metadata\94\94eef9ae4adf1f5439d358c975251ae2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\9a\9a617822f7792d44aa5849d26dd0af6b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9a\9a617822f7792d44aa5849d26dd0af6b
-    projectPath: Library\metadata\9a\9a617822f7792d44aa5849d26dd0af6b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\9a\9a617822f7792d44aa5849d26dd0af6b.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9a\9a617822f7792d44aa5849d26dd0af6b.info
-    projectPath: Library\metadata\9a\9a617822f7792d44aa5849d26dd0af6b.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\9b\9b4217ee43ccdb5439dceb7e1e35b02d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9b\9b4217ee43ccdb5439dceb7e1e35b02d
-    projectPath: Library\metadata\9b\9b4217ee43ccdb5439dceb7e1e35b02d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\9b\9b4217ee43ccdb5439dceb7e1e35b02d.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9b\9b4217ee43ccdb5439dceb7e1e35b02d.info
-    projectPath: Library\metadata\9b\9b4217ee43ccdb5439dceb7e1e35b02d.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\9b\9bc0b0e9fe17b4642aa0a2c0963bdaab
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9b\9bc0b0e9fe17b4642aa0a2c0963bdaab
-    projectPath: Library\metadata\9b\9bc0b0e9fe17b4642aa0a2c0963bdaab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\9c\9c3659379631ba54ab4db409967a277e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9c\9c3659379631ba54ab4db409967a277e
-    projectPath: Library\metadata\9c\9c3659379631ba54ab4db409967a277e
+  - path: ARTest3\Library\metadata\87\877ef3585573ce44eab899298be23158.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\87\877ef3585573ce44eab899298be23158.info
+    projectPath: Library\metadata\87\877ef3585573ce44eab899298be23158.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1104,231 +490,69 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a0\a02a7d8c237544f1962732b55a9aebf1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a0\a02a7d8c237544f1962732b55a9aebf1
-    projectPath: Library\metadata\a0\a02a7d8c237544f1962732b55a9aebf1
+  - path: ARTest3\Library\metadata\9d\9dfd92c954f5c7d4e8330bf2de2589ea
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9d\9dfd92c954f5c7d4e8330bf2de2589ea
+    projectPath: Library\metadata\9d\9dfd92c954f5c7d4e8330bf2de2589ea
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a1\a16a2b3b569242f4f9b090785c89af11
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a1\a16a2b3b569242f4f9b090785c89af11
-    projectPath: Library\metadata\a1\a16a2b3b569242f4f9b090785c89af11
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\9d\9dfd92c954f5c7d4e8330bf2de2589ea.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\9d\9dfd92c954f5c7d4e8330bf2de2589ea.info
+    projectPath: Library\metadata\9d\9dfd92c954f5c7d4e8330bf2de2589ea.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a2\a2d1d2dc6e8e315458915199df6bd06b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a2\a2d1d2dc6e8e315458915199df6bd06b
-    projectPath: Library\metadata\a2\a2d1d2dc6e8e315458915199df6bd06b
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\a1\a1b1f05d90b0c6045bccfa7c034d5e29
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a1\a1b1f05d90b0c6045bccfa7c034d5e29
+    projectPath: Library\metadata\a1\a1b1f05d90b0c6045bccfa7c034d5e29
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a4\a4338d00ccd60554388df904cb428f04
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a4\a4338d00ccd60554388df904cb428f04
-    projectPath: Library\metadata\a4\a4338d00ccd60554388df904cb428f04
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\a1\a1b1f05d90b0c6045bccfa7c034d5e29.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a1\a1b1f05d90b0c6045bccfa7c034d5e29.info
+    projectPath: Library\metadata\a1\a1b1f05d90b0c6045bccfa7c034d5e29.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a4\a436fbc3efc63b24c9f9ff4eb2977165
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a4\a436fbc3efc63b24c9f9ff4eb2977165
-    projectPath: Library\metadata\a4\a436fbc3efc63b24c9f9ff4eb2977165
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\a2\a2a260de663721c4f91d3e7fb59d62e3
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a2\a2a260de663721c4f91d3e7fb59d62e3
+    projectPath: Library\metadata\a2\a2a260de663721c4f91d3e7fb59d62e3
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a4\a44b48ec6c7984a4a8895775c2a4230f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a4\a44b48ec6c7984a4a8895775c2a4230f
-    projectPath: Library\metadata\a4\a44b48ec6c7984a4a8895775c2a4230f
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\a2\a2a260de663721c4f91d3e7fb59d62e3.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a2\a2a260de663721c4f91d3e7fb59d62e3.info
+    projectPath: Library\metadata\a2\a2a260de663721c4f91d3e7fb59d62e3.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a6\a63aa6ad4f42e0f4e9a6a17778df0f6e.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a6\a63aa6ad4f42e0f4e9a6a17778df0f6e.info
-    projectPath: Library\metadata\a6\a63aa6ad4f42e0f4e9a6a17778df0f6e.info
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\b6\b66ace34baccd1b4db1a02f3c2b89f4c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b6\b66ace34baccd1b4db1a02f3c2b89f4c
+    projectPath: Library\metadata\b6\b66ace34baccd1b4db1a02f3c2b89f4c
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\a6\a68b17da32c5e9742b05d6ac00ca6d79.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a6\a68b17da32c5e9742b05d6ac00ca6d79.info
-    projectPath: Library\metadata\a6\a68b17da32c5e9742b05d6ac00ca6d79.info
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\b6\b66ace34baccd1b4db1a02f3c2b89f4c.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b6\b66ace34baccd1b4db1a02f3c2b89f4c.info
+    projectPath: Library\metadata\b6\b66ace34baccd1b4db1a02f3c2b89f4c.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1
-    projectPath: Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\b9\b9aae84819d7761409a17427be19e676
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b9\b9aae84819d7761409a17427be19e676
+    projectPath: Library\metadata\b9\b9aae84819d7761409a17427be19e676
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1.info
-    projectPath: Library\metadata\a7\a77cd76073c7444179779ec6271ad5e1.info
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\b9\b9aae84819d7761409a17427be19e676.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b9\b9aae84819d7761409a17427be19e676.info
+    projectPath: Library\metadata\b9\b9aae84819d7761409a17427be19e676.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\a8\a85f8ef4bf9c6e348bdc0cb52719ee34
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\a8\a85f8ef4bf9c6e348bdc0cb52719ee34
-    projectPath: Library\metadata\a8\a85f8ef4bf9c6e348bdc0cb52719ee34
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\aa\aaa8a5acdc70d5b48967151d5546192d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\aa\aaa8a5acdc70d5b48967151d5546192d
-    projectPath: Library\metadata\aa\aaa8a5acdc70d5b48967151d5546192d
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b0\b015f116d44e247468e6a5b87d4751fd.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b0\b015f116d44e247468e6a5b87d4751fd.info
-    projectPath: Library\metadata\b0\b015f116d44e247468e6a5b87d4751fd.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b0\b0586f5f9eb02374aa6a1edcc7134d34
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b0\b0586f5f9eb02374aa6a1edcc7134d34
-    projectPath: Library\metadata\b0\b0586f5f9eb02374aa6a1edcc7134d34
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b0\b0aa1930216862444bae8ea85e4caae2
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b0\b0aa1930216862444bae8ea85e4caae2
-    projectPath: Library\metadata\b0\b0aa1930216862444bae8ea85e4caae2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b1\b17392d6c54c8f4448449d6cbb7b67b5.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b1\b17392d6c54c8f4448449d6cbb7b67b5.info
-    projectPath: Library\metadata\b1\b17392d6c54c8f4448449d6cbb7b67b5.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b2\b2cfb83a99bca074fb2df043e431443f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b2\b2cfb83a99bca074fb2df043e431443f
-    projectPath: Library\metadata\b2\b2cfb83a99bca074fb2df043e431443f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b2\b2f1ba31fb1341d47bb5c05f8b04a493
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b2\b2f1ba31fb1341d47bb5c05f8b04a493
-    projectPath: Library\metadata\b2\b2f1ba31fb1341d47bb5c05f8b04a493
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b6\b6110df1616a3c745964d14ece583332
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b6\b6110df1616a3c745964d14ece583332
-    projectPath: Library\metadata\b6\b6110df1616a3c745964d14ece583332
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\b6\b6110df1616a3c745964d14ece583332.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b6\b6110df1616a3c745964d14ece583332.info
-    projectPath: Library\metadata\b6\b6110df1616a3c745964d14ece583332.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\b6\b6f8349ab79d31d4d955e8d2c5bf023f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b6\b6f8349ab79d31d4d955e8d2c5bf023f
-    projectPath: Library\metadata\b6\b6f8349ab79d31d4d955e8d2c5bf023f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b8\b8f723f8f8eb27740aa2abf2a7a76537
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b8\b8f723f8f8eb27740aa2abf2a7a76537
-    projectPath: Library\metadata\b8\b8f723f8f8eb27740aa2abf2a7a76537
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\b9\b90950afb18b9f54fbf01f6b92166f63
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b9\b90950afb18b9f54fbf01f6b92166f63
-    projectPath: Library\metadata\b9\b90950afb18b9f54fbf01f6b92166f63
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\b9\b90950afb18b9f54fbf01f6b92166f63.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b9\b90950afb18b9f54fbf01f6b92166f63.info
-    projectPath: Library\metadata\b9\b90950afb18b9f54fbf01f6b92166f63.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\b9\b91a523f7da057942b43d798c94f3e2e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\b9\b91a523f7da057942b43d798c94f3e2e
-    projectPath: Library\metadata\b9\b91a523f7da057942b43d798c94f3e2e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126
-    projectPath: Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126.info
-    projectPath: Library\metadata\ba\ba1fdeca76274e843a3d78b1bc348126.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\ba\ba8bde9a54e5ef144a61b2c7de6af6dd
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ba\ba8bde9a54e5ef144a61b2c7de6af6dd
-    projectPath: Library\metadata\ba\ba8bde9a54e5ef144a61b2c7de6af6dd
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\ba\baabca9c83f90494cb937df0dea2994b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ba\baabca9c83f90494cb937df0dea2994b
-    projectPath: Library\metadata\ba\baabca9c83f90494cb937df0dea2994b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e
-    projectPath: Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e.info
-    projectPath: Library\metadata\ba\bab6fa851cf5a1a4bba3cec5f191cb8e.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\bc\bc1ede39bf3643ee8e493720e4259791
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\bc\bc1ede39bf3643ee8e493720e4259791
-    projectPath: Library\metadata\bc\bc1ede39bf3643ee8e493720e4259791
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\bc\bc31e895af12b5745b0ce368ae1a3ac2
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\bc\bc31e895af12b5745b0ce368ae1a3ac2
-    projectPath: Library\metadata\bc\bc31e895af12b5745b0ce368ae1a3ac2
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\be\be76e5f14cfee674cb30b491fb72b09b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\be\be76e5f14cfee674cb30b491fb72b09b
-    projectPath: Library\metadata\be\be76e5f14cfee674cb30b491fb72b09b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\be\be8bdb4c0eacddd4faab154fedea292f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\be\be8bdb4c0eacddd4faab154fedea292f
-    projectPath: Library\metadata\be\be8bdb4c0eacddd4faab154fedea292f
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\c2\c2cad08cf8e43534ebc901d940507083
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\c2\c2cad08cf8e43534ebc901d940507083
-    projectPath: Library\metadata\c2\c2cad08cf8e43534ebc901d940507083
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\c3\c337ed4be0fb6e04689ba6824e47d475
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\c3\c337ed4be0fb6e04689ba6824e47d475
-    projectPath: Library\metadata\c3\c337ed4be0fb6e04689ba6824e47d475
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\c4\c4562e50bfb434c47b2cf56b5d7d4fe8
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\c4\c4562e50bfb434c47b2cf56b5d7d4fe8
-    projectPath: Library\metadata\c4\c4562e50bfb434c47b2cf56b5d7d4fe8
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+    projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1338,153 +562,69 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\cb\cb504812cfba3ef4cbf4ce0f218491d7
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cb\cb504812cfba3ef4cbf4ce0f218491d7
-    projectPath: Library\metadata\cb\cb504812cfba3ef4cbf4ce0f218491d7
+  - path: ARTest3\Library\metadata\ca\cabd5141987ed51469af58800b92b82d
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ca\cabd5141987ed51469af58800b92b82d
+    projectPath: Library\metadata\ca\cabd5141987ed51469af58800b92b82d
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\cb\cba9af98f67446249bd9088dc94ce0e3
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cb\cba9af98f67446249bd9088dc94ce0e3
-    projectPath: Library\metadata\cb\cba9af98f67446249bd9088dc94ce0e3
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\ca\cabd5141987ed51469af58800b92b82d.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ca\cabd5141987ed51469af58800b92b82d.info
+    projectPath: Library\metadata\ca\cabd5141987ed51469af58800b92b82d.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\cc\cce304c79dcac464dac67e53b7755b8a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cc\cce304c79dcac464dac67e53b7755b8a
-    projectPath: Library\metadata\cc\cce304c79dcac464dac67e53b7755b8a
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\cb\cbaa6a667f1a36141a59711b2c1b05a9
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cb\cbaa6a667f1a36141a59711b2c1b05a9
+    projectPath: Library\metadata\cb\cbaa6a667f1a36141a59711b2c1b05a9
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\cc\cce304c79dcac464dac67e53b7755b8a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cc\cce304c79dcac464dac67e53b7755b8a.info
-    projectPath: Library\metadata\cc\cce304c79dcac464dac67e53b7755b8a.info
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\cb\cbaa6a667f1a36141a59711b2c1b05a9.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cb\cbaa6a667f1a36141a59711b2c1b05a9.info
+    projectPath: Library\metadata\cb\cbaa6a667f1a36141a59711b2c1b05a9.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\ce\ce145f816376eb64d965d98c0fc27151.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ce\ce145f816376eb64d965d98c0fc27151.info
-    projectPath: Library\metadata\ce\ce145f816376eb64d965d98c0fc27151.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\ce\ced49492745505740bd679df32aca079.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ce\ced49492745505740bd679df32aca079.info
-    projectPath: Library\metadata\ce\ced49492745505740bd679df32aca079.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\cf\cf81c85f95fe47e1a27f6ae460cf182c
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cf\cf81c85f95fe47e1a27f6ae460cf182c
-    projectPath: Library\metadata\cf\cf81c85f95fe47e1a27f6ae460cf182c
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\cf\cfbe437e45143e748b39e7eb7461b9de
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cf\cfbe437e45143e748b39e7eb7461b9de
-    projectPath: Library\metadata\cf\cfbe437e45143e748b39e7eb7461b9de
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\cf\cfec88d266383da449021b518601368a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\cf\cfec88d266383da449021b518601368a.info
-    projectPath: Library\metadata\cf\cfec88d266383da449021b518601368a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
+    indexStatus: 1
+    workTreeStatus: 1
   - path: ARTest3\Library\metadata\d0\d020b4f1c893dfc4fb89a21b0477ed52.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d0\d020b4f1c893dfc4fb89a21b0477ed52.info
     projectPath: Library\metadata\d0\d020b4f1c893dfc4fb89a21b0477ed52.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\d0\d088f2cfe53d1824593bbe3531e252a9
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d0\d088f2cfe53d1824593bbe3531e252a9
-    projectPath: Library\metadata\d0\d088f2cfe53d1824593bbe3531e252a9
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d0\d088f2cfe53d1824593bbe3531e252a9.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d0\d088f2cfe53d1824593bbe3531e252a9.info
-    projectPath: Library\metadata\d0\d088f2cfe53d1824593bbe3531e252a9.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc
-    projectPath: Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc.info
-    projectPath: Library\metadata\d2\d2170503dc57f492481ebe9334c68fcc.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d3\d3058a647be823f4e9a9ace34a954abe
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d3\d3058a647be823f4e9a9ace34a954abe
-    projectPath: Library\metadata\d3\d3058a647be823f4e9a9ace34a954abe
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\d3\d3f0e5053b5d69a4e9f5b02672314bbc.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d3\d3f0e5053b5d69a4e9f5b02672314bbc.info
-    projectPath: Library\metadata\d3\d3f0e5053b5d69a4e9f5b02672314bbc.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d5\d55c080e66106074495c8208ba80a608
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d5\d55c080e66106074495c8208ba80a608
-    projectPath: Library\metadata\d5\d55c080e66106074495c8208ba80a608
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\d7\d79eb76724090f04f91b1784b09683ad
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d7\d79eb76724090f04f91b1784b09683ad
-    projectPath: Library\metadata\d7\d79eb76724090f04f91b1784b09683ad
+  - path: ARTest3\Library\metadata\d2\d2718c563e398ce49818a06020605e54
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d2\d2718c563e398ce49818a06020605e54
+    projectPath: Library\metadata\d2\d2718c563e398ce49818a06020605e54
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\d7\d79eb76724090f04f91b1784b09683ad.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d7\d79eb76724090f04f91b1784b09683ad.info
-    projectPath: Library\metadata\d7\d79eb76724090f04f91b1784b09683ad.info
+  - path: ARTest3\Library\metadata\d2\d2718c563e398ce49818a06020605e54.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d2\d2718c563e398ce49818a06020605e54.info
+    projectPath: Library\metadata\d2\d2718c563e398ce49818a06020605e54.info
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\d8\d8430fa22f162d744ad8589818f78088.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d8\d8430fa22f162d744ad8589818f78088.info
-    projectPath: Library\metadata\d8\d8430fa22f162d744ad8589818f78088.info
+  - path: ARTest3\Library\metadata\d3\d30071283eec9274ab5ded8170b48201
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d3\d30071283eec9274ab5ded8170b48201
+    projectPath: Library\metadata\d3\d30071283eec9274ab5ded8170b48201
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d8\d884bcb0921644f499bac7a96215924b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d8\d884bcb0921644f499bac7a96215924b
-    projectPath: Library\metadata\d8\d884bcb0921644f499bac7a96215924b
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\d3\d30071283eec9274ab5ded8170b48201.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d3\d30071283eec9274ab5ded8170b48201.info
+    projectPath: Library\metadata\d3\d30071283eec9274ab5ded8170b48201.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d8\d884bcb0921644f499bac7a96215924b.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d8\d884bcb0921644f499bac7a96215924b.info
-    projectPath: Library\metadata\d8\d884bcb0921644f499bac7a96215924b.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\d8\d8d6f0c023f73e740aad74a307f66b7a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d8\d8d6f0c023f73e740aad74a307f66b7a
-    projectPath: Library\metadata\d8\d8d6f0c023f73e740aad74a307f66b7a
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
+    projectPath: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\d9\d9f75c86f2a52d747bc366ec3a49e40a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\d9\d9f75c86f2a52d747bc366ec3a49e40a
-    projectPath: Library\metadata\d9\d9f75c86f2a52d747bc366ec3a49e40a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\dc\dc8b76592a4e0e546b8a061dea9e842b.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\dc\dc8b76592a4e0e546b8a061dea9e842b.info
-    projectPath: Library\metadata\dc\dc8b76592a4e0e546b8a061dea9e842b.info
+  - path: ARTest3\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
+    projectPath: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1494,36 +634,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\dd\dd89cf5b9246416f84610a006f916af7
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\dd\dd89cf5b9246416f84610a006f916af7
-    projectPath: Library\metadata\dd\dd89cf5b9246416f84610a006f916af7
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\dd\dda9ff701af714545922d99ee659c8b7
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\dd\dda9ff701af714545922d99ee659c8b7
-    projectPath: Library\metadata\dd\dda9ff701af714545922d99ee659c8b7
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\dd\dda9ff701af714545922d99ee659c8b7.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\dd\dda9ff701af714545922d99ee659c8b7.info
-    projectPath: Library\metadata\dd\dda9ff701af714545922d99ee659c8b7.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\df\df5d6788525e01e45ba43d79198f5d37
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\df\df5d6788525e01e45ba43d79198f5d37
-    projectPath: Library\metadata\df\df5d6788525e01e45ba43d79198f5d37
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\e0\e00ae3d770b094647980fbce4aa5186b.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e0\e00ae3d770b094647980fbce4aa5186b.info
-    projectPath: Library\metadata\e0\e00ae3d770b094647980fbce4aa5186b.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: ARTest3\Library\metadata\e0\e05abec9f6f784b49aad32466f95dd20.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e0\e05abec9f6f784b49aad32466f95dd20.info
     projectPath: Library\metadata\e0\e05abec9f6f784b49aad32466f95dd20.info
@@ -1536,93 +646,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\e0\e0fdaa1a612412846a8d7fe9a9dc63b1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e0\e0fdaa1a612412846a8d7fe9a9dc63b1
-    projectPath: Library\metadata\e0\e0fdaa1a612412846a8d7fe9a9dc63b1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\e2\e2b7c801693eb8a41ac79ae2cd83deec.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e2\e2b7c801693eb8a41ac79ae2cd83deec.info
-    projectPath: Library\metadata\e2\e2b7c801693eb8a41ac79ae2cd83deec.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\e3\e30d67eadf82d344c87c465419935c11.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e3\e30d67eadf82d344c87c465419935c11.info
-    projectPath: Library\metadata\e3\e30d67eadf82d344c87c465419935c11.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
   - path: ARTest3\Library\metadata\e3\e38240f7fef64a14db3e434e13ff84ca.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e3\e38240f7fef64a14db3e434e13ff84ca.info
     projectPath: Library\metadata\e3\e38240f7fef64a14db3e434e13ff84ca.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e
-    projectPath: Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e.info
-    projectPath: Library\metadata\e4\e4bfeabebc5114952a57d908ff706b7e.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\e5\e580f662e3a7fc64da993957c60eae83
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e5\e580f662e3a7fc64da993957c60eae83
-    projectPath: Library\metadata\e5\e580f662e3a7fc64da993957c60eae83
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\e8\e88e5d842cae6d941a0b9f1c3f64b942
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e8\e88e5d842cae6d941a0b9f1c3f64b942
-    projectPath: Library\metadata\e8\e88e5d842cae6d941a0b9f1c3f64b942
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\e8\e88e5d842cae6d941a0b9f1c3f64b942.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\e8\e88e5d842cae6d941a0b9f1c3f64b942.info
-    projectPath: Library\metadata\e8\e88e5d842cae6d941a0b9f1c3f64b942.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\ed\edb9f01c127fad74198d6b7403339874
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ed\edb9f01c127fad74198d6b7403339874
-    projectPath: Library\metadata\ed\edb9f01c127fad74198d6b7403339874
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\ed\edb9f01c127fad74198d6b7403339874.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ed\edb9f01c127fad74198d6b7403339874.info
-    projectPath: Library\metadata\ed\edb9f01c127fad74198d6b7403339874.info
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\ef\ef79aa811ea971d418dfd597e8677c58
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ef\ef79aa811ea971d418dfd597e8677c58
-    projectPath: Library\metadata\ef\ef79aa811ea971d418dfd597e8677c58
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\ef\ef86e79008251e8469c4ac0dca37eaa1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ef\ef86e79008251e8469c4ac0dca37eaa1
-    projectPath: Library\metadata\ef\ef86e79008251e8469c4ac0dca37eaa1
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\ef\ef86e79008251e8469c4ac0dca37eaa1.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ef\ef86e79008251e8469c4ac0dca37eaa1.info
-    projectPath: Library\metadata\ef\ef86e79008251e8469c4ac0dca37eaa1.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\ef\efbe459c8a3e16443acf8493fcaafdd4
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\ef\efbe459c8a3e16443acf8493fcaafdd4
-    projectPath: Library\metadata\ef\efbe459c8a3e16443acf8493fcaafdd4
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -1632,108 +658,54 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\f1\f16d1fec6efeb2141824ec2c9f11d22f.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f1\f16d1fec6efeb2141824ec2c9f11d22f.info
-    projectPath: Library\metadata\f1\f16d1fec6efeb2141824ec2c9f11d22f.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\f5\f544d6b99722b76409455ca0c19dc4fd
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f5\f544d6b99722b76409455ca0c19dc4fd
-    projectPath: Library\metadata\f5\f544d6b99722b76409455ca0c19dc4fd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ARTest3\Library\metadata\f5\f544d6b99722b76409455ca0c19dc4fd.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f5\f544d6b99722b76409455ca0c19dc4fd.info
     projectPath: Library\metadata\f5\f544d6b99722b76409455ca0c19dc4fd.info
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: ARTest3\Library\metadata\f5\f5ed8f5f0ed411b4ab2ef4b6e032156b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f5\f5ed8f5f0ed411b4ab2ef4b6e032156b
-    projectPath: Library\metadata\f5\f5ed8f5f0ed411b4ab2ef4b6e032156b
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a
-    projectPath: Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: ARTest3\Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a.info
-    projectPath: Library\metadata\f7\f735d317ca9afb6468c5c5ca06d9e39a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\f7\f736683d3242cbd4db25611fb1d3c34f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f7\f736683d3242cbd4db25611fb1d3c34f
-    projectPath: Library\metadata\f7\f736683d3242cbd4db25611fb1d3c34f
+  - path: ARTest3\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+    projectPath: Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\f7\f7ada0af4f174f0694ca6a487b8f543d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f7\f7ada0af4f174f0694ca6a487b8f543d
-    projectPath: Library\metadata\f7\f7ada0af4f174f0694ca6a487b8f543d
+  - path: ARTest3\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+    projectPath: Library\metadata\f7\f70555f144d8491a825f0804e09c671c
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\metadata\fb\fb12875084f53d0458d0611220b5171a.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fb\fb12875084f53d0458d0611220b5171a.info
-    projectPath: Library\metadata\fb\fb12875084f53d0458d0611220b5171a.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: ARTest3\Library\metadata\fb\fb3fa5450f2f7c64098e58def56471b6
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fb\fb3fa5450f2f7c64098e58def56471b6
-    projectPath: Library\metadata\fb\fb3fa5450f2f7c64098e58def56471b6
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\fb\fb903dcf2ad3d5d438b2a5d07b72ed40.info
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fb\fb903dcf2ad3d5d438b2a5d07b72ed40.info
-    projectPath: Library\metadata\fb\fb903dcf2ad3d5d438b2a5d07b72ed40.info
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\fc\fc5da4efc25946e41ab0fecd920302ec
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fc\fc5da4efc25946e41ab0fecd920302ec
-    projectPath: Library\metadata\fc\fc5da4efc25946e41ab0fecd920302ec
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: ARTest3\Library\metadata\fc\fc5da4efc25946e41ab0fecd920302ec.info
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fc\fc5da4efc25946e41ab0fecd920302ec.info
     projectPath: Library\metadata\fc\fc5da4efc25946e41ab0fecd920302ec.info
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: ARTest3\Library\metadata\fc\fca5477ca671b9f40a0ebff034efc526
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fc\fca5477ca671b9f40a0ebff034efc526
+    projectPath: Library\metadata\fc\fca5477ca671b9f40a0ebff034efc526
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Library\metadata\fc\fc930e13491a66b4eaf5e75253d52394
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fc\fc930e13491a66b4eaf5e75253d52394
-    projectPath: Library\metadata\fc\fc930e13491a66b4eaf5e75253d52394
+  - path: ARTest3\Library\metadata\fc\fca5477ca671b9f40a0ebff034efc526.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fc\fca5477ca671b9f40a0ebff034efc526.info
+    projectPath: Library\metadata\fc\fca5477ca671b9f40a0ebff034efc526.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\fe\fe393ace9b354375a9cb14cdbbc28be4
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fe\fe393ace9b354375a9cb14cdbbc28be4
-    projectPath: Library\metadata\fe\fe393ace9b354375a9cb14cdbbc28be4
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\fe\fe0a459cea5d200409af9c6104d720ac
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fe\fe0a459cea5d200409af9c6104d720ac
+    projectPath: Library\metadata\fe\fe0a459cea5d200409af9c6104d720ac
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\metadata\fe\fe8dbb026584fcd4fae603c73dc89d74
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fe\fe8dbb026584fcd4fae603c73dc89d74
-    projectPath: Library\metadata\fe\fe8dbb026584fcd4fae603c73dc89d74
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: ARTest3\Library\metadata\fe\fe0a459cea5d200409af9c6104d720ac.info
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\metadata\fe\fe0a459cea5d200409af9c6104d720ac.info
+    projectPath: Library\metadata\fe\fe0a459cea5d200409af9c6104d720ac.info
     originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\SceneVisibilityState.asset
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\SceneVisibilityState.asset
-    projectPath: Library\SceneVisibilityState.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
+    indexStatus: 1
+    workTreeStatus: 1
   - path: ARTest3\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -2136,39 +1108,27 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: ARTest3\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe5.log
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: ARTest3\Library\StateCache\Hierarchy\7515ec-mainStage.json
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\StateCache\Hierarchy\7515ec-mainStage.json
+    projectPath: Library\StateCache\Hierarchy\7515ec-mainStage.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: ARTest3\Library\StateCache\Hierarchy\b1a4b5-mainStage.json
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\StateCache\Hierarchy\b1a4b5-mainStage.json
     projectPath: Library\StateCache\Hierarchy\b1a4b5-mainStage.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: ARTest3\Library\StateCache\Hierarchy\badac3-mainStage.json
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\StateCache\Hierarchy\badac3-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\badac3-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: ARTest3\Library\StateCache\SceneView\115a83-mainStage.json
     fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\StateCache\SceneView\115a83-mainStage.json
     projectPath: Library\StateCache\SceneView\115a83-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\Library\StateCache\SceneView\8f5187-mainStage.json
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Library\StateCache\SceneView\8f5187-mainStage.json
-    projectPath: Library\StateCache\SceneView\8f5187-mainStage.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: ARTest3\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -2184,255 +1144,255 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-03c181e6cec21924885698c0ea73a3d0
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-03c181e6cec21924885698c0ea73a3d0
-    projectPath: Temp\UnityTempFile-03c181e6cec21924885698c0ea73a3d0
+  - path: ARTest3\Temp\UnityTempFile-001b14823abc4064884ed0831ecda47a
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-001b14823abc4064884ed0831ecda47a
+    projectPath: Temp\UnityTempFile-001b14823abc4064884ed0831ecda47a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-04bbb64bbdd326d4d89d120d1bc42a43
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-04bbb64bbdd326d4d89d120d1bc42a43
-    projectPath: Temp\UnityTempFile-04bbb64bbdd326d4d89d120d1bc42a43
+  - path: ARTest3\Temp\UnityTempFile-014c1f081b1cf3740b2ff5f337dd5846
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-014c1f081b1cf3740b2ff5f337dd5846
+    projectPath: Temp\UnityTempFile-014c1f081b1cf3740b2ff5f337dd5846
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-17808123de68fd14c9076c694f434532
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-17808123de68fd14c9076c694f434532
-    projectPath: Temp\UnityTempFile-17808123de68fd14c9076c694f434532
+  - path: ARTest3\Temp\UnityTempFile-04a86aaa2b2bef34abe6bb8365e95743
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-04a86aaa2b2bef34abe6bb8365e95743
+    projectPath: Temp\UnityTempFile-04a86aaa2b2bef34abe6bb8365e95743
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-18b9ef139f5cf9549a3402bc13a79d28
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-18b9ef139f5cf9549a3402bc13a79d28
-    projectPath: Temp\UnityTempFile-18b9ef139f5cf9549a3402bc13a79d28
+  - path: ARTest3\Temp\UnityTempFile-0a4e2a2bd36c8624f9759c0048f83e6e
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-0a4e2a2bd36c8624f9759c0048f83e6e
+    projectPath: Temp\UnityTempFile-0a4e2a2bd36c8624f9759c0048f83e6e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-18e82814f0df4554f80f049b2092be95
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-18e82814f0df4554f80f049b2092be95
-    projectPath: Temp\UnityTempFile-18e82814f0df4554f80f049b2092be95
+  - path: ARTest3\Temp\UnityTempFile-0d711f6f5e1f40a40b879e4f475bfb0c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-0d711f6f5e1f40a40b879e4f475bfb0c
+    projectPath: Temp\UnityTempFile-0d711f6f5e1f40a40b879e4f475bfb0c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-27ba57f2dce57ab41abfcc55d88c48dd
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-27ba57f2dce57ab41abfcc55d88c48dd
-    projectPath: Temp\UnityTempFile-27ba57f2dce57ab41abfcc55d88c48dd
+  - path: ARTest3\Temp\UnityTempFile-137b9725d6d999b4cb8f42165c4d32f1
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-137b9725d6d999b4cb8f42165c4d32f1
+    projectPath: Temp\UnityTempFile-137b9725d6d999b4cb8f42165c4d32f1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-2a943ed7b8a5eb348be7b5f1dfafc56c
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-2a943ed7b8a5eb348be7b5f1dfafc56c
-    projectPath: Temp\UnityTempFile-2a943ed7b8a5eb348be7b5f1dfafc56c
+  - path: ARTest3\Temp\UnityTempFile-25384315abb96e2449ec54be8c555b37
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-25384315abb96e2449ec54be8c555b37
+    projectPath: Temp\UnityTempFile-25384315abb96e2449ec54be8c555b37
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-317dae301dc166c4e963e515398dac47
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-317dae301dc166c4e963e515398dac47
-    projectPath: Temp\UnityTempFile-317dae301dc166c4e963e515398dac47
+  - path: ARTest3\Temp\UnityTempFile-265656f0b726699458582f20244e18a3
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-265656f0b726699458582f20244e18a3
+    projectPath: Temp\UnityTempFile-265656f0b726699458582f20244e18a3
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-32bb722a46d69ac41917e62e8c775613
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-32bb722a46d69ac41917e62e8c775613
-    projectPath: Temp\UnityTempFile-32bb722a46d69ac41917e62e8c775613
+  - path: ARTest3\Temp\UnityTempFile-349856e8510976841afbad1db3c4e3d1
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-349856e8510976841afbad1db3c4e3d1
+    projectPath: Temp\UnityTempFile-349856e8510976841afbad1db3c4e3d1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-3dd854984a2e5b242aabcb1b6a3de581
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-3dd854984a2e5b242aabcb1b6a3de581
-    projectPath: Temp\UnityTempFile-3dd854984a2e5b242aabcb1b6a3de581
+  - path: ARTest3\Temp\UnityTempFile-4f4823e315f84d2478ae8cccd2a79f5c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-4f4823e315f84d2478ae8cccd2a79f5c
+    projectPath: Temp\UnityTempFile-4f4823e315f84d2478ae8cccd2a79f5c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-42a0b9578f9b0b640a9c6cd4392dc18a
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-42a0b9578f9b0b640a9c6cd4392dc18a
-    projectPath: Temp\UnityTempFile-42a0b9578f9b0b640a9c6cd4392dc18a
+  - path: ARTest3\Temp\UnityTempFile-5252de98ab0b0344e929da1e46e9548f
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5252de98ab0b0344e929da1e46e9548f
+    projectPath: Temp\UnityTempFile-5252de98ab0b0344e929da1e46e9548f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-45bcca44fbd9b30458fcd9b4bf16d4ff
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-45bcca44fbd9b30458fcd9b4bf16d4ff
-    projectPath: Temp\UnityTempFile-45bcca44fbd9b30458fcd9b4bf16d4ff
+  - path: ARTest3\Temp\UnityTempFile-5473393d9dfd92a4cb4d54a336ab5305
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5473393d9dfd92a4cb4d54a336ab5305
+    projectPath: Temp\UnityTempFile-5473393d9dfd92a4cb4d54a336ab5305
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-4b51598be4231a446b00cf52162cfa48
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-4b51598be4231a446b00cf52162cfa48
-    projectPath: Temp\UnityTempFile-4b51598be4231a446b00cf52162cfa48
+  - path: ARTest3\Temp\UnityTempFile-55a9a946bc1f8c346ae57313220f782c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-55a9a946bc1f8c346ae57313220f782c
+    projectPath: Temp\UnityTempFile-55a9a946bc1f8c346ae57313220f782c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-5c13abc337b6afa4d92032ea9c942993
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5c13abc337b6afa4d92032ea9c942993
-    projectPath: Temp\UnityTempFile-5c13abc337b6afa4d92032ea9c942993
+  - path: ARTest3\Temp\UnityTempFile-55d031007231b95498f247798c57e173
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-55d031007231b95498f247798c57e173
+    projectPath: Temp\UnityTempFile-55d031007231b95498f247798c57e173
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-5ff0b1a4e69c73d4e8512039820ccf25
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5ff0b1a4e69c73d4e8512039820ccf25
-    projectPath: Temp\UnityTempFile-5ff0b1a4e69c73d4e8512039820ccf25
+  - path: ARTest3\Temp\UnityTempFile-5c093d28c6a943745b0ff6ed694cdf71
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5c093d28c6a943745b0ff6ed694cdf71
+    projectPath: Temp\UnityTempFile-5c093d28c6a943745b0ff6ed694cdf71
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-6940afc8af3bd924db609168884f694e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-6940afc8af3bd924db609168884f694e
-    projectPath: Temp\UnityTempFile-6940afc8af3bd924db609168884f694e
+  - path: ARTest3\Temp\UnityTempFile-5cb57c4c7880a364aabb1866574e8400
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5cb57c4c7880a364aabb1866574e8400
+    projectPath: Temp\UnityTempFile-5cb57c4c7880a364aabb1866574e8400
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-6b4fcb31e9f45f14ca925577be70b317
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-6b4fcb31e9f45f14ca925577be70b317
-    projectPath: Temp\UnityTempFile-6b4fcb31e9f45f14ca925577be70b317
+  - path: ARTest3\Temp\UnityTempFile-5de8c02e071664e4db86935a83465eb7
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5de8c02e071664e4db86935a83465eb7
+    projectPath: Temp\UnityTempFile-5de8c02e071664e4db86935a83465eb7
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-6eb53e20e1aa794418e9fe8c8bae00a9
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-6eb53e20e1aa794418e9fe8c8bae00a9
-    projectPath: Temp\UnityTempFile-6eb53e20e1aa794418e9fe8c8bae00a9
+  - path: ARTest3\Temp\UnityTempFile-5fc8932273bf61341baff94d13047ec9
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-5fc8932273bf61341baff94d13047ec9
+    projectPath: Temp\UnityTempFile-5fc8932273bf61341baff94d13047ec9
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-75ee89f8fa4e2e24ab601600f13b9d7d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-75ee89f8fa4e2e24ab601600f13b9d7d
-    projectPath: Temp\UnityTempFile-75ee89f8fa4e2e24ab601600f13b9d7d
+  - path: ARTest3\Temp\UnityTempFile-6b87f50e1343cc14fbfacd9a18ee4589
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-6b87f50e1343cc14fbfacd9a18ee4589
+    projectPath: Temp\UnityTempFile-6b87f50e1343cc14fbfacd9a18ee4589
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-78ccec52c36152f49a7d1d52db8dfcca
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-78ccec52c36152f49a7d1d52db8dfcca
-    projectPath: Temp\UnityTempFile-78ccec52c36152f49a7d1d52db8dfcca
+  - path: ARTest3\Temp\UnityTempFile-6c2b6a9747abb094fb72c5baa9f547c2
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-6c2b6a9747abb094fb72c5baa9f547c2
+    projectPath: Temp\UnityTempFile-6c2b6a9747abb094fb72c5baa9f547c2
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-7a1744b031a3f8f44b2132ba3aeafcfb
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-7a1744b031a3f8f44b2132ba3aeafcfb
-    projectPath: Temp\UnityTempFile-7a1744b031a3f8f44b2132ba3aeafcfb
+  - path: ARTest3\Temp\UnityTempFile-75b55aac1a254c24f804550f01604bcf
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-75b55aac1a254c24f804550f01604bcf
+    projectPath: Temp\UnityTempFile-75b55aac1a254c24f804550f01604bcf
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-7fbe39773f3ddfc46a8cc7b474360fa3
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-7fbe39773f3ddfc46a8cc7b474360fa3
-    projectPath: Temp\UnityTempFile-7fbe39773f3ddfc46a8cc7b474360fa3
+  - path: ARTest3\Temp\UnityTempFile-787d20e4ee2dcd44a8f265089a884843
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-787d20e4ee2dcd44a8f265089a884843
+    projectPath: Temp\UnityTempFile-787d20e4ee2dcd44a8f265089a884843
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-82d9c14b04d692e4bbed452a35e52dfa
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-82d9c14b04d692e4bbed452a35e52dfa
-    projectPath: Temp\UnityTempFile-82d9c14b04d692e4bbed452a35e52dfa
+  - path: ARTest3\Temp\UnityTempFile-7c687db7065b30346ad0d728a347dc08
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-7c687db7065b30346ad0d728a347dc08
+    projectPath: Temp\UnityTempFile-7c687db7065b30346ad0d728a347dc08
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-833000492c576e44793fc7616ba3a9d1
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-833000492c576e44793fc7616ba3a9d1
-    projectPath: Temp\UnityTempFile-833000492c576e44793fc7616ba3a9d1
+  - path: ARTest3\Temp\UnityTempFile-86d7fea0afa376d4390d8151041af35f
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-86d7fea0afa376d4390d8151041af35f
+    projectPath: Temp\UnityTempFile-86d7fea0afa376d4390d8151041af35f
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-85a1b1afd280e5a44a54d9b8253e5670
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-85a1b1afd280e5a44a54d9b8253e5670
-    projectPath: Temp\UnityTempFile-85a1b1afd280e5a44a54d9b8253e5670
+  - path: ARTest3\Temp\UnityTempFile-8bc3f9f6b4b091a4d802d8d054192433
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-8bc3f9f6b4b091a4d802d8d054192433
+    projectPath: Temp\UnityTempFile-8bc3f9f6b4b091a4d802d8d054192433
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-8b2f0c76ab522db48b9a91ef4ab1c529
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-8b2f0c76ab522db48b9a91ef4ab1c529
-    projectPath: Temp\UnityTempFile-8b2f0c76ab522db48b9a91ef4ab1c529
+  - path: ARTest3\Temp\UnityTempFile-929d7d2354a65d847b7a896f2bb13712
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-929d7d2354a65d847b7a896f2bb13712
+    projectPath: Temp\UnityTempFile-929d7d2354a65d847b7a896f2bb13712
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-8ce614397bd764f428cfb3675dfbb539
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-8ce614397bd764f428cfb3675dfbb539
-    projectPath: Temp\UnityTempFile-8ce614397bd764f428cfb3675dfbb539
+  - path: ARTest3\Temp\UnityTempFile-97e6e84a206dc0b4598c7fd5e2dd053d
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-97e6e84a206dc0b4598c7fd5e2dd053d
+    projectPath: Temp\UnityTempFile-97e6e84a206dc0b4598c7fd5e2dd053d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-8e48fe26ccf79e144bd35bc880ad7695
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-8e48fe26ccf79e144bd35bc880ad7695
-    projectPath: Temp\UnityTempFile-8e48fe26ccf79e144bd35bc880ad7695
+  - path: ARTest3\Temp\UnityTempFile-98f255b4bb048664da4fd1693471ef56
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-98f255b4bb048664da4fd1693471ef56
+    projectPath: Temp\UnityTempFile-98f255b4bb048664da4fd1693471ef56
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-a1bf335146316e846a71b56bf27dbee6
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-a1bf335146316e846a71b56bf27dbee6
-    projectPath: Temp\UnityTempFile-a1bf335146316e846a71b56bf27dbee6
+  - path: ARTest3\Temp\UnityTempFile-993132660f1e3b64e9c7ed2e774a7a25
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-993132660f1e3b64e9c7ed2e774a7a25
+    projectPath: Temp\UnityTempFile-993132660f1e3b64e9c7ed2e774a7a25
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-a6251c14ced98164c9e24f71ad422240
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-a6251c14ced98164c9e24f71ad422240
-    projectPath: Temp\UnityTempFile-a6251c14ced98164c9e24f71ad422240
+  - path: ARTest3\Temp\UnityTempFile-9bda48a1fb6ac8a438f11f9b4293664e
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-9bda48a1fb6ac8a438f11f9b4293664e
+    projectPath: Temp\UnityTempFile-9bda48a1fb6ac8a438f11f9b4293664e
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-b2b4e1a878d8c5e46817626f031106cb
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-b2b4e1a878d8c5e46817626f031106cb
-    projectPath: Temp\UnityTempFile-b2b4e1a878d8c5e46817626f031106cb
+  - path: ARTest3\Temp\UnityTempFile-a9b08e2ebffd3a54cb83b0fad50fe21a
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-a9b08e2ebffd3a54cb83b0fad50fe21a
+    projectPath: Temp\UnityTempFile-a9b08e2ebffd3a54cb83b0fad50fe21a
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-b653c40cb871b5a499a71992c971845b
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-b653c40cb871b5a499a71992c971845b
-    projectPath: Temp\UnityTempFile-b653c40cb871b5a499a71992c971845b
+  - path: ARTest3\Temp\UnityTempFile-b303b3a9258d0bb4a83e556ffd778c2c
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-b303b3a9258d0bb4a83e556ffd778c2c
+    projectPath: Temp\UnityTempFile-b303b3a9258d0bb4a83e556ffd778c2c
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-b9210febcb54db8439a6458722ff412d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-b9210febcb54db8439a6458722ff412d
-    projectPath: Temp\UnityTempFile-b9210febcb54db8439a6458722ff412d
+  - path: ARTest3\Temp\UnityTempFile-bc8e180204b34c748abd5491ab058d54
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-bc8e180204b34c748abd5491ab058d54
+    projectPath: Temp\UnityTempFile-bc8e180204b34c748abd5491ab058d54
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-b93743509c856eb45a34d403648a0b2f
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-b93743509c856eb45a34d403648a0b2f
-    projectPath: Temp\UnityTempFile-b93743509c856eb45a34d403648a0b2f
+  - path: ARTest3\Temp\UnityTempFile-beb8c94c988fcff4ebddf157cf4b6133
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-beb8c94c988fcff4ebddf157cf4b6133
+    projectPath: Temp\UnityTempFile-beb8c94c988fcff4ebddf157cf4b6133
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-bd3483aa344beb643a04dda43aba7a37
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-bd3483aa344beb643a04dda43aba7a37
-    projectPath: Temp\UnityTempFile-bd3483aa344beb643a04dda43aba7a37
+  - path: ARTest3\Temp\UnityTempFile-c33b64d3dd9106c438d858af448b2a64
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-c33b64d3dd9106c438d858af448b2a64
+    projectPath: Temp\UnityTempFile-c33b64d3dd9106c438d858af448b2a64
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-bf2663fe614d8914ca838217f9ef15df
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-bf2663fe614d8914ca838217f9ef15df
-    projectPath: Temp\UnityTempFile-bf2663fe614d8914ca838217f9ef15df
+  - path: ARTest3\Temp\UnityTempFile-cf43fba8703c4ae4d8e0abe8910976e0
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-cf43fba8703c4ae4d8e0abe8910976e0
+    projectPath: Temp\UnityTempFile-cf43fba8703c4ae4d8e0abe8910976e0
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-bfcee626232b9af43acc1d7422f8fe97
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-bfcee626232b9af43acc1d7422f8fe97
-    projectPath: Temp\UnityTempFile-bfcee626232b9af43acc1d7422f8fe97
+  - path: ARTest3\Temp\UnityTempFile-d00200420ca730144bf747d6b1b33cd6
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-d00200420ca730144bf747d6b1b33cd6
+    projectPath: Temp\UnityTempFile-d00200420ca730144bf747d6b1b33cd6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-c1a46e05b9a35eb419e3b2e032276c1d
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-c1a46e05b9a35eb419e3b2e032276c1d
-    projectPath: Temp\UnityTempFile-c1a46e05b9a35eb419e3b2e032276c1d
+  - path: ARTest3\Temp\UnityTempFile-d9d6e8af8cce8a14b9736a64785a3f7d
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-d9d6e8af8cce8a14b9736a64785a3f7d
+    projectPath: Temp\UnityTempFile-d9d6e8af8cce8a14b9736a64785a3f7d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-e68bfc7d44d02804fa6c74928d5ec4a6
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-e68bfc7d44d02804fa6c74928d5ec4a6
-    projectPath: Temp\UnityTempFile-e68bfc7d44d02804fa6c74928d5ec4a6
+  - path: ARTest3\Temp\UnityTempFile-f066a124481e15d4690fbc668f71c8d1
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-f066a124481e15d4690fbc668f71c8d1
+    projectPath: Temp\UnityTempFile-f066a124481e15d4690fbc668f71c8d1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-edd97f10ad1c857428e0c61bb3e83a32
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-edd97f10ad1c857428e0c61bb3e83a32
-    projectPath: Temp\UnityTempFile-edd97f10ad1c857428e0c61bb3e83a32
+  - path: ARTest3\Temp\UnityTempFile-f72a3678ee37ecd478ebea5b8987848d
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-f72a3678ee37ecd478ebea5b8987848d
+    projectPath: Temp\UnityTempFile-f72a3678ee37ecd478ebea5b8987848d
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-f55b6f9f5d4024a4dbdc8973c6291bfe
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-f55b6f9f5d4024a4dbdc8973c6291bfe
-    projectPath: Temp\UnityTempFile-f55b6f9f5d4024a4dbdc8973c6291bfe
+  - path: ARTest3\Temp\UnityTempFile-fb8479cd125618341a301901d2796803
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-fb8479cd125618341a301901d2796803
+    projectPath: Temp\UnityTempFile-fb8479cd125618341a301901d2796803
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: ARTest3\Temp\UnityTempFile-fbd330cdcc200e548831f8ed1aae165e
-    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-fbd330cdcc200e548831f8ed1aae165e
-    projectPath: Temp\UnityTempFile-fbd330cdcc200e548831f8ed1aae165e
+  - path: ARTest3\Temp\UnityTempFile-fddb4814187c2234387372f74c829329
+    fullPath: D:\Users\Brendan\source\repos\DB\WSU_internship\ARTest3\Temp\UnityTempFile-fddb4814187c2234387372f74c829329
+    projectPath: Temp\UnityTempFile-fddb4814187c2234387372f74c829329
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
