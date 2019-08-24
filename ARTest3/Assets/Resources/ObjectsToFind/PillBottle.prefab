@@ -86,9 +86,10 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Pill Bottle
-  desc1: Not biodegradable.
-  desc2: Only if the fish have a cold.
-  desc3: Do not throw in toilet.
+  desc1: Really?? You think the fish need your medicine?!
+  desc2: Do not flush; Return unused portion to pharmacy.
+  desc3: Active ingredients in the pills can persist though the sewer and into lakes
+    and streams; this is BAD.
 --- !u!114 &8335891084193940686
 MonoBehaviour:
   m_ObjectHideFlags: 0

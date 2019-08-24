@@ -59,9 +59,9 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Coffee Grounds
-  desc1: Flushable & Biodegradable.
-  desc2: Not an issue for Fatberg
-  desc3: Go ahead.
+  desc1: If you don't have another choice to dispose, can be flushed!
+  desc2: Will biodegrade over time in water.
+  desc3: Still better to dispose in trash! Still a chance they can clog drains!
 --- !u!114 &-3733669340917126782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,6 +75,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+--- !u!114 &-1284423521674685281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541304612045386501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowDistance: 3
+  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
 --- !u!114 &4754828771814215283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,20 +108,6 @@ MonoBehaviour:
   plane: {fileID: 0}
   hasCollided: 0
   hunt: {fileID: 0}
---- !u!114 &-1284423521674685281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5541304612045386501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowDistance: 3
-  glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
 --- !u!1001 &4595719159395756556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 2952deb8d1455c6409d0c472d4d22c73,
         type: 3}
       propertyPath: m_Name
-      value: Coffee_Grounds_Textured Variant
+      value: Coffee Grounds
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2952deb8d1455c6409d0c472d4d22c73,
         type: 3}

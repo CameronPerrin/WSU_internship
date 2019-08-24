@@ -119,9 +119,11 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 0
   itemName: Toy Car
-  desc1: Not flushable.
-  desc2: Problem for Fatberg.
-  desc3: Not for toilets.
+  desc1: Play with them instead!
+  desc2: Will not break down and can easily clog drains!
+  desc3: 'Donate old toys or share them with a friend!
+
+'
 --- !u!114 &1713091581987333781
 MonoBehaviour:
   m_ObjectHideFlags: 0

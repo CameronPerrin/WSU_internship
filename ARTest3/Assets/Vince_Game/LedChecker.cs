@@ -14,6 +14,7 @@ public class LedChecker : MonoBehaviour
 
     public int LedPos;
     private int RandLedBreak;
+    private Sprite abutton;
 
 
 
@@ -49,7 +50,17 @@ public class LedChecker : MonoBehaviour
         //Stephen: Added + 1 to fix orientation issues
         LedPos = Mathf.FloorToInt(joystick.GetComponent<NewJoystick>().PositionAngle) + 1;
 
-
+        foreach (GameObject led in leds)
+        {
+            if (led.GetComponent<Image>().sprite == ledColors[1])
+            {
+                led.transform.localScale = new Vector3(0.013f, 0.013f, 0.013f);
+            }
+            else
+            {
+                led.transform.localScale = new Vector3(0.009301168f, 0.009301168f, 0.009301168f);
+            }
+        }
 
         //If the joystick is pointing at the winning position and the led is not broken change sprite to Green.
         if (joystick.GetComponent<NewJoystick>().PositionAngle == joystick.GetComponent<NewJoystick>().winningPosition && !leds[LedPos - 1].GetComponent<Image>().sprite != ledColors[3] )
@@ -58,7 +69,7 @@ public class LedChecker : MonoBehaviour
         }
 
         //if the joystick is not pointing at the winning position and the led is not broken change the sprite to red.
-        if (joystick.GetComponent<NewJoystick>().PositionAngle != joystick.GetComponent<NewJoystick>().winningPosition && leds[LedPos - 1].GetComponent<Image>().sprite != ledColors[3])
+        if (joystick.GetComponent<NewJoystick>().PositionAngle != joystick.GetComponent<NewJoystick>().winningPosition)
         {
             leds[LedPos - 1].GetComponent<Image>().sprite = ledColors[2];
         }
