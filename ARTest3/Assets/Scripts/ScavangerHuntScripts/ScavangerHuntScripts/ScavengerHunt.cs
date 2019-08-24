@@ -35,7 +35,7 @@ public class ScavengerHunt : MonoBehaviour
         inventoryObject = GameObject.FindGameObjectWithTag("Inventory");
         spawnInfo = new List<SpawnedInformation>();
        // textObject = GameObject.FindGameObjectWithTag("UIBar");
-        textObject.SetActive(false);
+        //textObject.SetActive(false);
         plane = gameObject;
         for (int i = 0; i < amountToSpawn; i++)
         {
