@@ -32,8 +32,8 @@ public class FPController : MonoBehaviour
         hasMoved = true;
         currentPos = transform.position;
         camera.transform.position = transform.position;
-        float v = Input.GetAxis("Vertical");
-        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
         Vector3 vec = new Vector3(h * speed, 0, v * speed);
         vec = Vector3.ProjectOnPlane(transform.forward * speed * v, Vector3.up);
         Vector3 movement = Vector3.ProjectOnPlane(transform.right * speed * h, Vector3.up);
@@ -51,8 +51,8 @@ public class FPController : MonoBehaviour
         verticalLookRotation = Mathf.Clamp(verticalLookRotation, -60, 60);
         camera.transform.localEulerAngles = Vector3.left * verticalLookRotation;
         //ControllerMovment
-        transform.Rotate(Vector3.up * Input.GetAxis("RightJoyStickHor") * rotSpeed);
-        verticalLookRotation += Input.GetAxis("RightJoyStickVert") * rotSpeed;
+        transform.Rotate(Vector3.up * Input.GetAxisRaw("RightJoyStickHor") * rotSpeed);
+        verticalLookRotation += Input.GetAxisRaw("RightJoyStickVert") * rotSpeed;
        // Debug.Log(Input.GetAxis("RightJoyStickVert") + "  " + Input.GetAxis("RightJoyStickHor"));
         verticalLookRotation = Mathf.Clamp(verticalLookRotation, -60, 60);
         camera.transform.localEulerAngles = Vector3.left * verticalLookRotation;
