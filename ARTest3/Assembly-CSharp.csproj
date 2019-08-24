@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\ScavengerHunt.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\Timer.cs" />
     <Compile Include="Assets\Scripts\SpawnRandomlyInFatberg.cs" />
+    <Compile Include="Assets\Scripts\TransistionPhase.cs" />
     <Compile Include="Assets\Stephen\Scripts\ArrowPoint.cs" />
     <Compile Include="Assets\Stephen\Scripts\ArtifactController.cs" />
     <Compile Include="Assets\Stephen\Scripts\Buttons.cs" />
