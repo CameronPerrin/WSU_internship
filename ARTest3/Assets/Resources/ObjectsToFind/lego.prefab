@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -800177422845167868}
   - component: {fileID: -5840384662607251140}
   - component: {fileID: 7167392886366846580}
+  - component: {fileID: -1510233104156098949}
   m_Layer: 0
   m_Name: lego
   m_TagString: Untagged
@@ -192,3 +193,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowDistance: 3
   glowMaterial: {fileID: 2100000, guid: 678ae834f133a764ea29bac8db49aed6, type: 2}
+--- !u!114 &-1510233104156098949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8462265999893359495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}

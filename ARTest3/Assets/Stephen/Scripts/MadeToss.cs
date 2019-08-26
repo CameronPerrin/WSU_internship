@@ -10,6 +10,7 @@ public class MadeToss : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        item = this.gameObject;
         StartCoroutine(Delay());
     }
     void Update()

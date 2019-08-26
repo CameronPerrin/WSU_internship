@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 1990044089995599606}
   - component: {fileID: 6412860983751337011}
   - component: {fileID: 8737799023246796477}
+  - component: {fileID: -7313177868077096573}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -194,3 +195,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowDistance: 3
   glowMaterial: {fileID: 2100000, guid: 678ae834f133a764ea29bac8db49aed6, type: 2}
+--- !u!114 &-7313177868077096573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3579591739985666296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}

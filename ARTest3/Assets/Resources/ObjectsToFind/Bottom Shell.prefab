@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: -1405265564560034793}
   - component: {fileID: 1192347425850130735}
   - component: {fileID: 2487351449069926842}
+  - component: {fileID: 3365657152224816316}
   m_Layer: 0
   m_Name: Bottom Shell
   m_TagString: Untagged
@@ -192,3 +193,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowDistance: 3
   glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
+--- !u!114 &3365657152224816316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391697835323089661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
