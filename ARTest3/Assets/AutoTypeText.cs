@@ -46,7 +46,7 @@ public class AutoTypeText : MonoBehaviour
     IEnumerator ReadingDelay()
     {
         isDelay = true;
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(7f);
         isDelay = false;
         cellPhone.GetComponent<CellPhone>().playerHasSeenTextMessage = true;
     }

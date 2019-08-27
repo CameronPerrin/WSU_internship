@@ -18,6 +18,7 @@ public class CellPhone : MonoBehaviour
     string transText;
     bool secondRun;
     GuageTimer guage;
+    bool isStopping = false;
     //public AudioSource clip;
     //Alright so the reason the object keeps disappearing is because the renderer is turned off when moving off screen.
     // Update is called once per frame
@@ -33,37 +34,34 @@ public class CellPhone : MonoBehaviour
         {
             SwitchRotate();
         }
-        if (CheckIfPlayerIsClose() && !playerHasSeenTextMessage)
+        if (CheckIfPlayerIsClose() && !playerHasSeenTextMessage && !isStopping)
         {
             //play ringtone
             
            // GetComponent<AudioSource>().Play();
-            if (Input.GetKeyDown(KeyCode.Z))
-            {
                 rotate = false;
                 SwitchRotate();
                 textMessage.SetActive(!textMessage.activeInHierarchy);
                 //playerHasSeenTextMessage = true;
                 StartCoroutine(StopScreenAni());
+            isStopping = true;
                 if (!auto && secondRun)
                 {
                     auto = textMessage.GetComponentInChildren<AutoTypeText>();
                     auto.RestartAutoType(transText);
-                }
+                
 
-            }
+                }
         }
         else if(playerHasSeenTextMessage)
         {
-            if (Input.GetKeyDown(KeyCode.B))
-            {
                     guage.CanStart();
                 //textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
                 textMessage.SetActive(false);
                 cellPhoneHasBeenDisabled = true;
                 if (secondRun)
                     SceneManager.LoadScene(2);
-            }
+            
                 /*  if(textMessage.activeInHierarchy)
                       textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
                   if(!CheckIfPlayerIsClose())
@@ -107,6 +105,7 @@ public class CellPhone : MonoBehaviour
         secondRun = true;
       // textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
         rotate = false;
+        isStopping = false;
       // GetComponent<Animator>().enabled = true;
         playerHasSeenTextMessage = false;
         textMessage.GetComponentInChildren<Text>().text = "";
