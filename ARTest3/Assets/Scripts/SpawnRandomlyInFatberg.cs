@@ -22,7 +22,6 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
             SpawnAtRandomPointsInsideGameObject(i);
             i++;
         }
-
         totalItems = inventory.inventory.Count/2;
 
     }

@@ -27,22 +27,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47057626, y: 0.72651076, z: 0.6262765}
-  m_Center: {x: 0.04894759, y: 0.17293559, z: 0.026403412}
---- !u!64 &-1540003381761017591
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3953279335268211019}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 7203793515398447662, guid: 49df8204545e12440b11b47217bb27e2, type: 3}
+  m_Size: {x: 0.47057626, y: 2.060199, z: 0.8091197}
+  m_Center: {x: 0.048947588, y: 0.041733623, z: 0.117825}
 --- !u!114 &-2411934676583400351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +48,19 @@ MonoBehaviour:
   desc1: If you don't have another choice to dispose, can be flushed!
   desc2: Will biodegrade over time in water.
   desc3: Still better to dispose in trash! Still a chance they can clog drains!
+--- !u!114 &2314989672405714465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3953279335268211019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
 --- !u!114 &5191568003934062281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,19 +94,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowDistance: 3
   glowMaterial: {fileID: 2100000, guid: c8bd964181f0d574c9a522809603d16b, type: 2}
---- !u!114 &2314989672405714465
-MonoBehaviour:
+--- !u!64 &-1540003381761017591
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3953279335268211019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -1308206022671169937, guid: ec16b65623ed51e4c83bc7310453a502, type: 3}
 --- !u!1001 &5043243826639175746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,20 +120,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nut
       objectReference: {fileID: 0}
+    - target: {fileID: -5178661895559278292, guid: 24e6347c8dcd50e43af984c342d54338,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -1308206022671169937, guid: ec16b65623ed51e4c83bc7310453a502,
+        type: 3}
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.010872
+      value: 2.457264
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.496
+      value: 0.053296573
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.838
+      value: -3.0052567
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
@@ -178,17 +184,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.084977
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.084977
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 24e6347c8dcd50e43af984c342d54338,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.084977
+      value: 0.125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e6347c8dcd50e43af984c342d54338, type: 3}

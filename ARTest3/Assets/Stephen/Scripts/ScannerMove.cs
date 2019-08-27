@@ -45,7 +45,7 @@ public class ScannerMove : MonoBehaviour
     public GameObject arrowPrefab;
     public GameObject scanner;
     public Quaternion scannerDown;
-
+    Vector3 startRotScanner = Vector3.zero;
     //Variable for currently selected item
     public GameObject clicked;
 
@@ -209,6 +209,7 @@ public class ScannerMove : MonoBehaviour
 
                 //CHANGE FOR RANDOMIZE GAMES
                 GamePanel1.SetActive(true);
+               
                 /* 
                 if (x == 0)
                 {
@@ -242,6 +243,7 @@ public class ScannerMove : MonoBehaviour
         }
         else
         {
+            
             //Distance check for changing reticle color when searching FB
             indicator.GetComponent<SpriteRenderer>().color = Color.white;
 
@@ -277,7 +279,7 @@ public class ScannerMove : MonoBehaviour
                 }
             }
         }
-
+      
         //Moves item from fatberg to correct location in the "UI" as well as resets camera to original position
         if(framesleft > 0)
         {
@@ -287,7 +289,10 @@ public class ScannerMove : MonoBehaviour
             clicked.transform.rotation = oldRot;
             framesleft--;
         }
-
+        if (!GamePanel1.activeInHierarchy && scanner.transform.eulerAngles != startRotScanner)
+        {
+            scanner.transform.eulerAngles = Vector3.Lerp(scanner.transform.eulerAngles, startRotScanner, Time.deltaTime * 2f);
+        }
         if (clicked && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
         {
             clicked.transform.Rotate(Vector3.up * rotSpeed * Time.deltaTime);

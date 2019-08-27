@@ -37,8 +37,8 @@ public class TransistionPhase : MonoBehaviour
     public void Transition(CellPhone cell)
     {
         //Grab the cell phone
-        cellPhone = cell;
-        ShowCellPhone();
+        cellPhone = cell;        
+       // ShowCellPhone();
     }
     void ShowCellPhone()
     {
@@ -58,9 +58,11 @@ public class TransistionPhase : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(2.5f);
+            ShowCellPhone();
             image.gameObject.SetActive(false);
             //Activate Timeline
             player.transform.position = new Vector3(trans.position.x, player.transform.position.y, trans.position.z);
+            player.transform.eulerAngles = trans.eulerAngles;
             // timeline.SetActive(true);
         }
     }
