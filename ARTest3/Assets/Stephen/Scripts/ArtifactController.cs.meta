@@ -3,7 +3,12 @@ guid: ba8bde9a54e5ef144a61b2c7de6af6dd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cam: {instanceID: 0}
+  - textBox: {instanceID: 0}
+  - nameBox: {instanceID: 0}
+  - textBoxContainer: {instanceID: 0}
+  - throwNoise: {fileID: 8300000, guid: a4734fd68e676844eabd612797780ad2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

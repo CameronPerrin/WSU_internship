@@ -72,6 +72,7 @@ public class ScannerMove : MonoBehaviour
 
     //test
     public Vector3 testRot;
+    public AudioSource scannerFind;
 
 
     void Start()
@@ -184,6 +185,19 @@ public class ScannerMove : MonoBehaviour
 
             if (Input.GetButtonDown("Submit") && !clicked)
             {
+
+
+
+
+                //play noise
+                scannerFind.Play();
+
+
+
+
+
+
+
                 framesleft = 15 * speed;
 
                 int x = Random.Range(0, 2);

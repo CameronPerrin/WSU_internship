@@ -11,6 +11,9 @@ public class FPController : MonoBehaviour
     public float rotSpeed;
     public bool hasCollided;
     public float lerpTime;
+    public AudioSource steps;
+    [HideInInspector]
+    public bool stepNum = false;
     Vector2 rotation;
     Vector3 currentPos;
     Vector3 movePos;
@@ -24,6 +27,7 @@ public class FPController : MonoBehaviour
     void Start()
     {
         yPos = transform.position.y;
+        StartCoroutine(work());
     }
 
     // Update is called once per frame
@@ -128,5 +132,29 @@ public class FPController : MonoBehaviour
             hasCollided = false;
         }
     }
+    IEnumerator work()
+    {
+        while (true)
+        {
+            float v = Input.GetAxisRaw("Vertical");
+            float h = Input.GetAxisRaw("Horizontal");
+            yield return new WaitForSeconds(0.4f);
+            stepNum = !stepNum;
+            // Do some work
+            if (v!=0 || h!=0)
+            {
+                //play step
 
+                GetComponent<AudioSource>().Play();
+                if (stepNum)
+                {
+                    GetComponent<AudioSource>().panStereo = -0.5f;
+                }else if (!stepNum)
+                {
+                    GetComponent<AudioSource>().panStereo = 0.5f;
+
+                }
+            }
+        }
+    }
 }

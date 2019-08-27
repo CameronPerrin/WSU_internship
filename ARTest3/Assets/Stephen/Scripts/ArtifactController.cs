@@ -22,11 +22,15 @@ public class ArtifactController : MonoBehaviour
 	public GameObject textBoxContainer;
     [HideInInspector]
     public bool currentlyHolding;
-    
+    public AudioSource thro;
+    public AudioSource pickUpNoise;
+
+
 
     void Start()
     {
         other = false;
+        thro.loop = false;
     }
 
     struct ClosestObject
@@ -39,6 +43,7 @@ public class ArtifactController : MonoBehaviour
     {
         if (Input.GetKeyDown("space") && clicked && clicked.transform.parent != null || (Input.GetAxisRaw("RTXbox") >= 0.4) && clicked && clicked.transform.parent != null)
         {
+            thro.Play();
             clicked.GetComponent<Rigidbody>().isKinematic = false;
             clicked.transform.parent = null;
             clicked.GetComponent<Rigidbody>().AddForce(cam.forward * throwForce);
@@ -56,6 +61,7 @@ public class ArtifactController : MonoBehaviour
                 //Check if other item has been clicked, drop current item and replace with new item
                 if (hit != null)
                 {
+                    pickUpNoise.Play();
                     if (other && hit.transform.gameObject != clicked && clicked != null)
                     {
                         clicked.GetComponent<MeshRenderer>().material.color = origColor;

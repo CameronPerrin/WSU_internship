@@ -129,7 +129,7 @@ public class CellPhone : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2.2f);
+            yield return new WaitForSeconds(4.0f);
             // Do some work
             if (CheckIfPlayerIsClose() && !playerHasSeenTextMessage)
             {
