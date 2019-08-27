@@ -11,6 +11,7 @@ public class AutoTypeText : MonoBehaviour
     public string textToType;
     bool isWaiting = false;
     int length = 0;
+    bool isDelay = false;
 
     // Update is called once per frame
     void Update()
@@ -21,7 +22,8 @@ public class AutoTypeText : MonoBehaviour
                 StartCoroutine(Delay());
             else
             {
-                cellPhone.GetComponent<CellPhone>().playerHasSeenTextMessage = true;
+                if(!isDelay)
+                    StartCoroutine(ReadingDelay());
                 isWaiting = true;
             }
             //else do nothing its done
@@ -40,5 +42,12 @@ public class AutoTypeText : MonoBehaviour
         textToType = text;
         isWaiting = false;
         length = 0;
+    }
+    IEnumerator ReadingDelay()
+    {
+        isDelay = true;
+        yield return new WaitForSeconds(10f);
+        isDelay = false;
+        cellPhone.GetComponent<CellPhone>().playerHasSeenTextMessage = true;
     }
 }

@@ -27,7 +27,7 @@ public class FPController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         hasMoved = true;
         currentPos = transform.position;

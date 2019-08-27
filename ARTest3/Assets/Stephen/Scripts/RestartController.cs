@@ -14,14 +14,14 @@ public class RestartController : MonoBehaviour
     {
         if(!Input.anyKey)
         {
-            timePassed = timePassed + 1;
+            timePassed += Time.deltaTime;
         }
         else
         {
             timePassed = 0;
         }
 
-        if (timePassed >= 1000)
+        if (timePassed >= 300)// 300seconds = 5mins
         {
             timePassed = 0;
             SceneManager.LoadScene("TitleScreen");
