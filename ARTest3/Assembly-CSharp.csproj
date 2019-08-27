@@ -74,6 +74,7 @@
     <Compile Include="Assets\Cameron_Game\SelectorMaster.cs" />
     <Compile Include="Assets\CellPhone.cs" />
     <Compile Include="Assets\GuageTimer.cs" />
+    <Compile Include="Assets\Scripts\FadeIn.cs" />
     <Compile Include="Assets\Scripts\Player\FirstPersonCont.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\CheckIfInside.cs" />
     <Compile Include="Assets\Scripts\ScavangerHuntScripts\ScavangerHuntScripts\FPController.cs" />

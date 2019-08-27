@@ -11,8 +11,10 @@ public class GuageTimer : MonoBehaviour
     float timeForFill;
     float timeInc;
     public float offset;
-    float percentage;
+    [HideInInspector]
+    public float percentage;
     float additive = 0;
+    bool isStarting = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -26,27 +28,34 @@ public class GuageTimer : MonoBehaviour
     void Update()
     {
         //  float filled;
-        Debug.Log(percentage);
-        if (percentage < 1)
+        if (isStarting)
         {
-            timeInc += Time.deltaTime;
-            //  filled = meter.GetComponent<Image>().fillAmount + 0.15f;
-            percentage = (timeInc + additive) / time;
-            //timeForFill = percentage + offset;
-            //float fillIncrease = timeForFill * Time.deltaTime;
-            //if(offset != 0)
-            //    meter.GetComponent<Image>().fillAmount = timeForFill + .15f;
-            //  else
-            meter.GetComponent<Image>().fillAmount = (percentage);
-            float zPer = 100 - (percentage * 100f);
-            //Debug.Log(zPer/100 + " : " + meter.GetComponent<Image>().fillAmount);
+            Debug.Log(percentage);
+            if (percentage < 1)
+            {
+                timeInc += Time.deltaTime;
+                //  filled = meter.GetComponent<Image>().fillAmount + 0.15f;
+                percentage = (timeInc + additive) / time;
+                //timeForFill = percentage + offset;
+                //float fillIncrease = timeForFill * Time.deltaTime;
+                //if(offset != 0)
+                //    meter.GetComponent<Image>().fillAmount = timeForFill + .15f;
+                //  else
+                //meter.GetComponent<Image>().fillAmount = (percentage);
+                float zPer = 100 - (percentage * 100f);
+                //Debug.Log(zPer/100 + " : " + meter.GetComponent<Image>().fillAmount);
 
-            arrow.GetComponent<Transform>().eulerAngles = new Vector3(arrow.transform.eulerAngles.x, arrow.transform.eulerAngles.y,
-              (zPer / 100f) * 245f);
+                arrow.GetComponent<Transform>().eulerAngles = new Vector3(arrow.transform.eulerAngles.x, arrow.transform.eulerAngles.y,
+                  (zPer / 100f) * 245f);
+            }
         }
     }
     public void AddToPercent(float amount)
     {
         additive += amount;
+    }
+    public void CanStart()
+    {
+        isStarting = true;
     }
 }

@@ -17,8 +17,13 @@ public class CellPhone : MonoBehaviour
     AutoTypeText auto;
     string transText;
     bool secondRun;
+    GuageTimer guage;
     //Alright so the reason the object keeps disappearing is because the renderer is turned off when moving off screen.
     // Update is called once per frame
+    private void Start()
+    {
+        guage = GameObject.Find("Guage").GetComponent<GuageTimer>();
+    }
     void Update()
     {
         Debug.Log(playerHasSeenTextMessage);
@@ -47,6 +52,7 @@ public class CellPhone : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.B))
             {
+                    guage.CanStart();
                 //textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
                 textMessage.SetActive(false);
                 cellPhoneHasBeenDisabled = true;
@@ -67,8 +73,8 @@ public class CellPhone : MonoBehaviour
             textMessage.transform.LookAt(trans);
             textMessage.transform.eulerAngles = new Vector3(textMessage.transform.eulerAngles.x - 10f, textMessage.transform.eulerAngles.y + 180f, textMessage.transform.eulerAngles.z);
             //textMessage.transform.localRotation.x = new Quaternion(0, 0, 0, 0);
-            // textMessage.transform.rotation = new Quaternion(textMessage.transform.rotation.x, textMessage.transform.rotation.y + 180f,
-            //  textMessage.transform.rotation.z, textMessage.transform.rotation.w);
+            //textMessage.transform.rotation = new Quaternion(textMessage.transform.rotation.x, textMessage.transform.rotation.y + 180f,
+            //textMessage.transform.rotation.z, textMessage.transform.rotation.w);
         }
 
 
