@@ -53,7 +53,7 @@ public class ScannerMove : MonoBehaviour
     //Lerp variables for moving objects
     private Quaternion oldRot;
     private Vector3 oldPos;
-    private Vector3 newPos;
+    public Vector3 newPos;
     public float speed;
     public float framesleft;
 
@@ -68,6 +68,7 @@ public class ScannerMove : MonoBehaviour
     public GameObject oldArrow;
     public GameObject arrowTarget;
     public GameObject A2continue;
+    public bool inMiniGame;
 
 
     //test
@@ -79,9 +80,9 @@ public class ScannerMove : MonoBehaviour
     {
         cam = Camera.main.transform;
         camStartRot = cam.rotation;
-        newPos = camStartPos.position + camStartPos.forward * distance
-                                            + camStartPos.right * shift
-                                            + camStartPos.up * shiftV;
+       // newPos = camStartPos.position + camStartPos.forward * distance
+                                      //      + camStartPos.right * shift
+                                         //   + camStartPos.up * shiftV;
         SetUp();
     }
 
@@ -109,7 +110,7 @@ public class ScannerMove : MonoBehaviour
         {
             A2continue.SetActive(true);
             timePassed = timePassed + 1;
-            if (timePassed >= 300 && Input.GetButtonDown("Submit"))
+            if (timePassed >= 100 && Input.GetButtonDown("Submit"))
             {
                 timePassed = 0;
                 minigame1.GetComponent<NewJoystick>().Successes = 0;
@@ -132,13 +133,25 @@ public class ScannerMove : MonoBehaviour
                 desc3.text = "";
                 descContainer.SetActive(false);
                 A2continue.SetActive(false);
+                inMiniGame = false;
             }
+        }
+        if (descContainer.activeInHierarchy)
+        {
+            inMiniGame = true;
+        }
+        if(!inMiniGame)
+        {
+            //Vector3 newRot = new Vector3(0, scanner.transform.localEulerAngles.y, scanner.transform.localEulerAngles.z);
+            scanner.transform.localEulerAngles = Vector3.Lerp(scanner.transform.localEulerAngles, Vector3.zero, Time.deltaTime * 2f);
+            //Debug.Log(scanner.transform.localEulerAngles);
         }
         
         
     }
     void Update()
     {
+        Debug.Log(inMiniGame);
         if (!clicked)
         {
             //Camera rotation input
@@ -288,18 +301,15 @@ public class ScannerMove : MonoBehaviour
             clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
             clicked.transform.rotation = oldRot;
             framesleft--;
-        }
-        if (!GamePanel1.activeInHierarchy && scanner.transform.eulerAngles != startRotScanner)
+        }     
+        if (clicked && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets" || clicked.GetComponent<ItemInfo>().itemName == "Toy Car"))
         {
-            scanner.transform.eulerAngles = Vector3.Lerp(scanner.transform.eulerAngles, startRotScanner, Time.deltaTime * 2f);
-        }
-        if (clicked && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets"))
-        {
-            clicked.transform.Rotate(Vector3.up * rotSpeed * Time.deltaTime);
+            clicked.transform.GetChild(0).Rotate (Vector3.up * rotSpeed * Time.deltaTime);
         }
         else if (clicked && clicked.GetComponent<ItemInfo>().itemName != "Syringe")
         {
-            clicked.transform.Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
+            clicked.transform.GetChild(0).Rotate(Vector3.forward * rotSpeed * Time.deltaTime);
+            //clicked.transform.localRotation
         }
         
         /* 

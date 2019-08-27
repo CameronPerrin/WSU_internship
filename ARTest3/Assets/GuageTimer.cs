@@ -27,15 +27,17 @@ public class GuageTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //  float filled;
+        //  float filled//After the text message we can start
         if (isStarting)
         {
-            Debug.Log(percentage);
+            //Debug.Log(percentage);
             if (percentage < 1)
             {
                 timeInc += Time.deltaTime;
                 //  filled = meter.GetComponent<Image>().fillAmount + 0.15f;
                 percentage = (timeInc + additive) / time;
+                if (percentage > 1)
+                    percentage = .98f;
                 //timeForFill = percentage + offset;
                 //float fillIncrease = timeForFill * Time.deltaTime;
                 //if(offset != 0)
@@ -46,8 +48,9 @@ public class GuageTimer : MonoBehaviour
                 //Debug.Log(zPer/100 + " : " + meter.GetComponent<Image>().fillAmount);
 
                 arrow.GetComponent<Transform>().eulerAngles = new Vector3(arrow.transform.eulerAngles.x, arrow.transform.eulerAngles.y,
-                  (zPer / 100f) * 245f);
+                  (zPer / 100f) * 243f);
             }
+            
         }
     }
     public void AddToPercent(float amount)

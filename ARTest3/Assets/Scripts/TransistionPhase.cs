@@ -19,6 +19,7 @@ public class TransistionPhase : MonoBehaviour
     public AutoTypeText auto;
     public Transform trans;
     public GameObject player;
+    public ArtifactController controller;
     //public bool 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +60,7 @@ public class TransistionPhase : MonoBehaviour
         {
             yield return new WaitForSeconds(2.5f);
             ShowCellPhone();
+            controller.cannotPickUp = true;
             image.gameObject.SetActive(false);
             //Activate Timeline
             player.transform.position = new Vector3(trans.position.x, player.transform.position.y, trans.position.z);

@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour
     void Update()
     {
         //text.text = "You have removed: " + score.ToString() + " / " + count;
-        if(score >= count || guage.GetComponent<GuageTimer>().percentage>= 1f)
+        if(score >= count || guage.GetComponent<GuageTimer>().percentage>= .97f)
         {
             
             //SceneManager.LoadScene(phaseThreeSceneNum);

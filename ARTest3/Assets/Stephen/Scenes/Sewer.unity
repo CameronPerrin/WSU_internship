@@ -1947,8 +1947,9 @@ MonoBehaviour:
   - {fileID: 0}
   arrowPrefab: {fileID: 528245419}
   scanner: {fileID: 968635384}
-  scannerDown: {x: -0.00000003090862, y: 0.70710677, z: -0.70710677, w: -0.00000003090862}
+  scannerDown: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
   clicked: {fileID: 0}
+  newPos: {x: 5.7, y: 6.6, z: 22.31}
   speed: 3.5
   framesleft: 0
   minigame1: {fileID: 516448024}
@@ -1957,6 +1958,7 @@ MonoBehaviour:
   oldArrow: {fileID: 0}
   arrowTarget: {fileID: 0}
   A2continue: {fileID: 2000650588}
+  inMiniGame: 1
   testRot: {x: 0, y: 0, z: 0}
   scannerFind: {fileID: 236436833}
 --- !u!114 &357547069
@@ -2632,6 +2634,36 @@ MonoBehaviour:
   timeOut: 2
   Charstype: 5
   ORIGINAL_TEXT: a
+--- !u!1 &491285033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 491285034}
+  m_Layer: 0
+  m_Name: Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491285034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491285033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.45, y: 7.108, z: 22.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &500200762
 GameObject:
   m_ObjectHideFlags: 0

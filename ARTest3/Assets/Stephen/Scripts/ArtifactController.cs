@@ -24,6 +24,8 @@ public class ArtifactController : MonoBehaviour
     public bool currentlyHolding;
     public AudioSource thro;
     public AudioSource pickUpNoise;
+    [HideInInspector]
+    public bool cannotPickUp = false;
 
 
 
@@ -41,57 +43,78 @@ public class ArtifactController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("space") && clicked && clicked.transform.parent != null || (Input.GetAxisRaw("RTXbox") >= 0.4) && clicked && clicked.transform.parent != null)
+        if (!cannotPickUp)
         {
-            thro.Play();
-            clicked.GetComponent<Rigidbody>().isKinematic = false;
-            clicked.transform.parent = null;
-            clicked.GetComponent<Rigidbody>().AddForce(cam.forward * throwForce);
-            clicked.GetComponent<MeshRenderer>().material.color = origColor;
-            clicked = null;
-        }
-        if (!currentlyHolding)
-        {
-            // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            //Debug.DrawRay(ray.origin,ray.direction,Color.blue);
-            // RaycastHit hit;
-            if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+            if (Input.GetKeyDown("space") && clicked && clicked.transform.parent != null || (Input.GetAxisRaw("RTXbox") >= 0.4) && clicked && clicked.transform.parent != null)
             {
-                GameObject hit = InteractWithClosetGameObject();
-                //Check if other item has been clicked, drop current item and replace with new item
-                if (hit != null)
+                thro.Play();
+                clicked.GetComponent<Rigidbody>().isKinematic = false;
+                clicked.transform.parent = null;
+                clicked.GetComponent<Rigidbody>().AddForce(cam.forward * throwForce);
+                clicked.GetComponent<MeshRenderer>().material.color = origColor;
+                clicked = null;
+            }
+            if (!currentlyHolding)
+            {
+                // Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                //Debug.DrawRay(ray.origin,ray.direction,Color.blue);
+                // RaycastHit hit;
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button0))
                 {
-                    pickUpNoise.Play();
-                    if (other && hit.transform.gameObject != clicked && clicked != null)
+                    GameObject hit = InteractWithClosetGameObject();
+                    //Check if other item has been clicked, drop current item and replace with new item
+                    if (hit != null)
                     {
+                        pickUpNoise.Play();
+                        if (other && hit.transform.gameObject != clicked && clicked != null)
+                        {
+                            clicked.GetComponent<MeshRenderer>().material.color = origColor;
+                            clicked.transform.parent = null;
+                            clicked.GetComponent<Rigidbody>().isKinematic = false;
+                        }
+                        clicked = hit.transform.gameObject;
+
+                        //If item not "highlighted" save it original color to revert back when needed (also note that an item has been clicked)
+                        if (hit.transform.gameObject.GetComponent<MeshRenderer>().material.color != color)
+                        {
+                            origColor = hit.transform.gameObject.GetComponent<ItemInfo>().origColor;
+                            other = true;
+                        }
+
+                        //Check if something is hit and is not "highlighted" then change its color to "highlighted" and parent to camera
+                        //Else if clicked off current item, revert color to it's original, unparent, and change isKinematic back to false
+                        if (hit.transform != null && hit.transform.gameObject.GetComponent<MeshRenderer>().material.color == origColor)
+                        {
+                            //Debug statement to check click is working               
+                            Debug.Log(hit.transform.gameObject);
+                            hit.transform.gameObject.GetComponent<MeshRenderer>().material.color = color;
+                            clicked.GetComponent<Rigidbody>().isKinematic = true;
+                            clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
+                            clicked.transform.parent = Camera.main.transform;
+                            currentlyHolding = true;
+
+                            //textBoxContainer.SetActive(true);
+                            //nameBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().itemName;
+                            //textBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().desc;
+                        }
+                    }
+                    else
+                    {
+                        /* Allow multiple items to be clicked
+                        foreach (GameObject go in clicked)
+                        {
+                            go.GetComponent<MeshRenderer>().material.color = go.GetComponent<ItemInfo>().origColor;
+                            textBoxContainer.SetActive(false);
+                            nameBox.text = " ";
+                            textBox.text = " ";
+                        }
+                        */
                         clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                        clicked.transform.parent = null;
-                        clicked.GetComponent<Rigidbody>().isKinematic = false;
-                    }
-                    clicked = hit.transform.gameObject;
-
-                    //If item not "highlighted" save it original color to revert back when needed (also note that an item has been clicked)
-                    if (hit.transform.gameObject.GetComponent<MeshRenderer>().material.color != color)
-                    {
-                        origColor = hit.transform.gameObject.GetComponent<ItemInfo>().origColor;
-                        other = true;
-                    }
-
-                    //Check if something is hit and is not "highlighted" then change its color to "highlighted" and parent to camera
-                    //Else if clicked off current item, revert color to it's original, unparent, and change isKinematic back to false
-                    if (hit.transform != null && hit.transform.gameObject.GetComponent<MeshRenderer>().material.color == origColor)
-                    {
-                        //Debug statement to check click is working               
-                        Debug.Log(hit.transform.gameObject);
-                        hit.transform.gameObject.GetComponent<MeshRenderer>().material.color = color;
-                        clicked.GetComponent<Rigidbody>().isKinematic = true;
-                        clicked.transform.position = Camera.main.transform.position + Camera.main.transform.forward * distance;
-                        clicked.transform.parent = Camera.main.transform;
-                        currentlyHolding = true;
-
-                        //textBoxContainer.SetActive(true);
-                        //nameBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().itemName;
-                        //textBox.text = hit.transform.gameObject.GetComponent<ItemInfo>().desc;
+                        //clicked.transform.parent = null;
+                        //clicked.GetComponent<Rigidbody>().isKinematic = false;
+                        //textBoxContainer.SetActive(false);
+                        //nameBox.text = " ";
+                        //textBox.text = " ";
                     }
                 }
                 else
@@ -105,49 +128,31 @@ public class ArtifactController : MonoBehaviour
                         textBox.text = " ";
                     }
                     */
-                    clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                    //clicked.transform.parent = null;
-                    //clicked.GetComponent<Rigidbody>().isKinematic = false;
+                    //If no item is clicked, but one was previously clicked, revert to original color, unparent, and set isKinematic back to false
+                    if (clicked)
+                    {
+                        clicked.GetComponent<MeshRenderer>().material.color = origColor;
+                        //clicked.transform.parent = null;
+                        //clicked.GetComponent<Rigidbody>().isKinematic = false;
+                        currentlyHolding = false;
+                    }
                     //textBoxContainer.SetActive(false);
                     //nameBox.text = " ";
                     //textBox.text = " ";
                 }
             }
-            else
+            else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Joystick1Button0) || clicked == null)
             {
-                /* Allow multiple items to be clicked
-                foreach (GameObject go in clicked)
-                {
-                    go.GetComponent<MeshRenderer>().material.color = go.GetComponent<ItemInfo>().origColor;
-                    textBoxContainer.SetActive(false);
-                    nameBox.text = " ";
-                    textBox.text = " ";
-                }
-                */
-                //If no item is clicked, but one was previously clicked, revert to original color, unparent, and set isKinematic back to false
                 if (clicked)
                 {
                     clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                    //clicked.transform.parent = null;
-                    //clicked.GetComponent<Rigidbody>().isKinematic = false;
+                    clicked.transform.parent = null;
+                    clicked.GetComponent<Rigidbody>().isKinematic = false;
                     currentlyHolding = false;
                 }
-                //textBoxContainer.SetActive(false);
-                //nameBox.text = " ";
-                //textBox.text = " ";
+                else // Just in case clicked is null and it can never switch the  currently holding value
+                    currentlyHolding = false;
             }
-        }
-        else if (Input.GetKeyDown(KeyCode.E)|| Input.GetKeyDown(KeyCode.Joystick1Button0) || clicked == null)
-        {
-            if (clicked)
-            {
-                clicked.GetComponent<MeshRenderer>().material.color = origColor;
-                clicked.transform.parent = null;
-                clicked.GetComponent<Rigidbody>().isKinematic = false;
-                currentlyHolding = false;
-            }
-            else // Just in case clicked is null and it can never switch the  currently holding value
-                currentlyHolding = false;
         }
     }
     GameObject InteractWithClosetGameObject()

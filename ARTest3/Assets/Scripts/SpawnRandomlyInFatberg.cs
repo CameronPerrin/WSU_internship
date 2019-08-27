@@ -52,67 +52,67 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         if (objectName == "Flushable Wipes")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.13f);
+          //  temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.13f);
         }
         else if(objectName == "Bottom Shell")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, 0.05f);
+          //  temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, 0.05f);
         }
         else if (objectName == "Top Egg")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.06f, 0.35f, -0.09f);
+           // temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.06f, 0.35f, -0.09f);
         }
         else if(objectName == "bleach")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.28f);
+           // temp.transform.localPosition = temp.transform.localPosition + new Vector3(-.15f, -.3f, -0.28f);
         }
         else if(objectName == "Car")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.1f, -0.05f, -0.075f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.48f, 0, 0);
         }
         else if(objectName == "oil")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.15f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.253f, 0, -0.131f);
         }
         else if (objectName == "Pill")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.05f);
+           // temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.05f);
         }
         else if (objectName == "lego")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.04f);
+            temp.transform.localPosition = temp.transform.localPosition + new Vector3(.2f, 0f, 0f);
         }
         else if (objectName == "Coffee Grounds")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.06f);
+            //temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.06f);
         }
         else if (objectName =="FryingPan")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.1f, 0f, -0.1f);
+           // temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.1f, 0f, -0.1f);
         }
         else if(objectName == "Ketchup")
         {
-            //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0.055f, -0.025f, 0f);
+            //Perfect // -3.1 // 1.787 //11.46
+            //temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.6f, -0.025f, 0f);
         }
         else if (objectName == "Syrn")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, -0.05f, 0f);
+         //   temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, -0.05f, 0f);
         }
         else if (objectName == "Floss" || objectName == "PillBottle")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.025f);
+          //  temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.025f);
         }
 
         //Various cehcks to make sure items are proper size for fatberg
