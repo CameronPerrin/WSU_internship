@@ -68,3 +68,5 @@ crashlytics-build.properties
 Library\metadata\*
 =======
 >>>>>>> db1c726fadf9f03ad4326efa8a70ac39e632712f:.gitignore
+ARTest3/Library/CurrentLayout.dwlt
+ARTest3/Library/LastSceneManagerSetup.txt
