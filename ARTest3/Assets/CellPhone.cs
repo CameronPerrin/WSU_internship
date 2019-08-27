@@ -18,11 +18,13 @@ public class CellPhone : MonoBehaviour
     string transText;
     bool secondRun;
     GuageTimer guage;
+    //public AudioSource clip;
     //Alright so the reason the object keeps disappearing is because the renderer is turned off when moving off screen.
     // Update is called once per frame
     private void Start()
     {
         guage = GameObject.Find("Guage").GetComponent<GuageTimer>();
+        StartCoroutine(work());
     }
     void Update()
     {
@@ -33,6 +35,9 @@ public class CellPhone : MonoBehaviour
         }
         if (CheckIfPlayerIsClose() && !playerHasSeenTextMessage)
         {
+            //play ringtone
+            
+           // GetComponent<AudioSource>().Play();
             if (Input.GetKeyDown(KeyCode.Z))
             {
                 rotate = false;
@@ -120,5 +125,19 @@ public class CellPhone : MonoBehaviour
        // textMessage.GetComponent<Animator>().enabled = false;
        // textMessage.GetComponent<RectTransform>().sizeDelta = new Vector2(132.51f, 111.61f);
        // textMessage.GetComponent<RectTransform>().localPosition = pos;
+    }
+    IEnumerator work()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2.2f);
+            // Do some work
+            if (CheckIfPlayerIsClose() && !playerHasSeenTextMessage)
+            {
+                //play ringtone
+
+                GetComponent<AudioSource>().Play();
+            }
+        }
     }
 }
