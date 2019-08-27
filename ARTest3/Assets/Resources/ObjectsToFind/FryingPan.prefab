@@ -1,12 +1,95 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!54 &6692575209035730758
+--- !u!1 &7793177225513105101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6520566561118979294}
+  - component: {fileID: 2821137940385021672}
+  - component: {fileID: 8366064580820812305}
+  - component: {fileID: 7360451899333656670}
+  - component: {fileID: 4008799546903540234}
+  - component: {fileID: -4018554702932200956}
+  - component: {fileID: -6760838005413536489}
+  - component: {fileID: 1196147562855869517}
+  - component: {fileID: 5993832500457778889}
+  m_Layer: 0
+  m_Name: FryingPan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6520566561118979294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.02, y: 1.28, z: -2.15}
+  m_LocalScale: {x: 0.14522503, y: 0.14522503, z: 0.10704737}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2821137940385021672
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_Mesh: {fileID: 3495225198683614240, guid: d7de6286cb92e524ba0bf7224a3087ab, type: 3}
+--- !u!23 &8366064580820812305
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: baef150d3b287584790c7a887ff4d304, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!54 &7360451899333656670
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
+  m_GameObject: {fileID: 7793177225513105101}
   serializedVersion: 2
   m_Mass: 0.2
   m_Drag: 0
@@ -16,86 +99,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!64 &598346646262759196
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 3495225198683614240, guid: d16765d2cc45ded46a80663757c97b6c, type: 3}
---- !u!65 &8820129027963890950
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.719067, y: 3.0859199, z: 1.1199499}
-  m_Center: {x: 0.8163932, y: -0.00000011920932, z: 0.52726775}
---- !u!114 &-8041759744960738701
+--- !u!114 &4008799546903540234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
---- !u!114 &-3834328696786939357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pressureIncrease: 5
-  name: Frying Pan
-  description: 
-  flushable: 0
-  plane: {fileID: 0}
-  hasCollided: 0
-  hunt: {fileID: 0}
---- !u!114 &-3370603201423774923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  glowDistance: 3
-  glowMaterial: {fileID: 2100000, guid: b4a807e01e5233048947a6cd4d667930, type: 2}
---- !u!114 &-1328416336188700531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8626390679240122256}
+  m_GameObject: {fileID: 7793177225513105101}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c337ed4be0fb6e04689ba6824e47d475, type: 3}
@@ -108,93 +118,62 @@ MonoBehaviour:
   desc1: Used to cook McDonald's fries.
   desc2: '"Flushable", but not safe. Dispose in the trash.'
   desc3: Reacts with the pipe lining and solidifies.
---- !u!1001 &330721587925239449
-PrefabInstance:
+--- !u!114 &-4018554702932200956
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -927199367670048503, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_Name
-      value: FryingPan
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.273
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.031
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.7890146
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.16865417
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.16865417
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: d16765d2cc45ded46a80663757c97b6c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1243174
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d16765d2cc45ded46a80663757c97b6c, type: 3}
---- !u!1 &8626390679240122256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: d16765d2cc45ded46a80663757c97b6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 330721587925239449}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e316f08c6c3fe345ba8d537a11b19d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowDistance: 3
+  glowMaterial: {fileID: 2100000, guid: b4a807e01e5233048947a6cd4d667930, type: 2}
+--- !u!114 &-6760838005413536489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca320ebeb9b3ab541b9bb12ffd1da9ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressureIncrease: 5
+  name: Frying Pan
+  description: 
+  flushable: 0
+  plane: {fileID: 0}
+  hasCollided: 0
+  hunt: {fileID: 0}
+--- !u!114 &1196147562855869517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85f8ef4bf9c6e348bdc0cb52719ee34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 0}
+--- !u!65 &5993832500457778889
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7793177225513105101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.719067, y: 3.0859199, z: 1.1199499}
+  m_Center: {x: 0.8163932, y: -0.00000011920932, z: 0.52726775}
