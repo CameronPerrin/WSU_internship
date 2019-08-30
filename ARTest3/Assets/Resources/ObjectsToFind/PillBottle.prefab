@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glowDistance: 3
-  glowMaterial: {fileID: 2100000, guid: b4a807e01e5233048947a6cd4d667930, type: 2}
+  glowMaterial: {fileID: 2100000, guid: ed2823515f15a724e93d910383f4b22d, type: 2}
 --- !u!114 &4329383673386412072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,17 +124,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: fb2fc82f14fcdbf49bc4a7e55358332f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.9000003
+      value: 2.7698226
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fb2fc82f14fcdbf49bc4a7e55358332f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.207
+      value: -1.6248511
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fb2fc82f14fcdbf49bc4a7e55358332f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.8367248
+      value: 7.9922695
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: fb2fc82f14fcdbf49bc4a7e55358332f,
         type: 3}

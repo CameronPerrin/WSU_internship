@@ -48,7 +48,8 @@ public class ScannerMove : MonoBehaviour
     Vector3 startRotScanner = Vector3.zero;
     //Variable for currently selected item
     public GameObject clicked;
-
+    //Used to Place Object into the correct Position
+    public Transform uiPosition;
 
     //Lerp variables for moving objects
     private Quaternion oldRot;
@@ -218,7 +219,7 @@ public class ScannerMove : MonoBehaviour
                 clicked = hit.transform.parent.gameObject;
                 oldPos = clicked.transform.position;
                 oldRot = clicked.transform.rotation;
-                clicked.transform.parent = cam;
+                //clicked.transform.parent = cam;
 
                 //CHANGE FOR RANDOMIZE GAMES
                 GamePanel1.SetActive(true);
@@ -255,8 +256,7 @@ public class ScannerMove : MonoBehaviour
             }
         }
         else
-        {
-            
+        {            
             //Distance check for changing reticle color when searching FB
             indicator.GetComponent<SpriteRenderer>().color = Color.white;
 
@@ -296,11 +296,21 @@ public class ScannerMove : MonoBehaviour
         //Moves item from fatberg to correct location in the "UI" as well as resets camera to original position
         if(framesleft > 0)
         {
+            Canvas canvas;
             scanner.transform.rotation = Quaternion.Lerp(scanner.transform.rotation, scannerDown, Time.deltaTime * 2f);
             transform.rotation = Quaternion.Lerp(transform.rotation, camStartRot, Time.deltaTime * speed);
-            clicked.transform.position = Vector3.Lerp(clicked.transform.position, newPos, Time.deltaTime * speed);
+            Vector2 ViewportPosition = Camera.main.ViewportToWorldPoint(uiPosition.position);
+            //Vector2 WorldObject_ScreenPosition = new Vector2(
+            //    ((ViewportPosition.x * uiPosition.GetComponentInParent<Canvas>().pixelRect.x) - (uiPosition.GetComponentInParent<Canvas>().pixelRect.x * 0.5f)),
+            //    ((ViewportPosition.y * uiPosition.GetComponentInParent<Canvas>().pixelRect.y) - (uiPosition.GetComponentInParent<Canvas>().pixelRect.y * 0.5f)));
+
+            clicked.transform.localPosition = new Vector3(uiPosition.position.x, uiPosition.position.y, uiPosition.position.z);
+            clicked.transform.GetChild(0).transform.localPosition = new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y, 
+            clicked.transform.GetChild(0).transform.localPosition.z);
+
             clicked.transform.rotation = oldRot;
             framesleft--;
+            Debug.Log(ViewportPosition);
         }     
         if (clicked && (clicked.GetComponent<ItemInfo>().itemName == "Syringe" || clicked.GetComponent<ItemInfo>().itemName == "Sauce Packets" || clicked.GetComponent<ItemInfo>().itemName == "Toy Car"))
         {

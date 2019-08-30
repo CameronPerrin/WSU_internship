@@ -24,7 +24,6 @@ public class ArtifactController : MonoBehaviour
     public bool currentlyHolding;
     public AudioSource thro;
     public AudioSource pickUpNoise;
-    [HideInInspector]
     public bool cannotPickUp = false;
 
 

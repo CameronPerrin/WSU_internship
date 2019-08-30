@@ -23,7 +23,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_A484BF5:
-        m_Texture: {fileID: 2800000, guid: 390c137808ffb4d44a3ffd1c3beab1ef, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2ccb3a7104c781446b85223cac32fb2e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:

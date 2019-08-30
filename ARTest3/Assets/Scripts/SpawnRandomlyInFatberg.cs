@@ -16,13 +16,25 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         // We are getting the inventory by finding the tag
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         //List<InventoryInfo> inven = inventory.inventory.OrderBy(s => s.objInfo.name).ToList();
+        int[] randomNumbers = new int[6];
+        for (int i = 0; i < 6; i++)
+        {
+            int num = Random.Range(0, inventory.inventory.Count);
+            for (int k = 0; k < 6; k++)
+            {
+                while(randomNumbers[k] == num)
+                {
+                    num = Random.Range(0, inventory.inventory.Count);
+                }
+            }
+            randomNumbers[i] = num;
 
+        }
         for (int i = 0; i < inventory.inventory.Count; i++)
         {
-            SpawnAtRandomPointsInsideGameObject(i);
-            i++;
+            SpawnAtRandomPointsInsideGameObject(randomNumbers[i]);
         }
-        totalItems = inventory.inventory.Count/2;
+        
 
     }
     void SpawnAtRandomPointsInsideGameObject(int i)
@@ -87,7 +99,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         else if (objectName == "lego")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(.2f, 0f, 0f);
+            //temp.transform.localPosition = temp.transform.localPosition + new Vector3(.2f, 0f, 0f);
         }
         else if (objectName == "Coffee Grounds")
         {

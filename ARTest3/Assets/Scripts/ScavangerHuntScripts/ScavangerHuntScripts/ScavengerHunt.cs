@@ -42,6 +42,7 @@ public class ScavengerHunt : MonoBehaviour
             SpawnItems();
         }
         GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().score = 0;
+        Debug.Log(this.gameObject.name);
      }
     private void Update()
     {
@@ -74,7 +75,7 @@ public class ScavengerHunt : MonoBehaviour
                     }
                 }
             }
-        vec = new Vector3(vec.x, vec.y + plane.GetComponent<MeshRenderer>().bounds.extents.y, vec.z);
+        vec = new Vector3(vec.x, (vec.y + plane.GetComponent<MeshRenderer>().bounds.extents.y)/3f, vec.z);
         info.pos = vec; // make a loop that checks for all the positions;
                         //Just have to spawn them all in different positions;
                         //  Debug.Log(vec);

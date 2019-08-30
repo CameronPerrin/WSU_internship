@@ -16,6 +16,7 @@ TagManager:
   - pickUp
   - Filled
   - Glow
+  - NoSpawnIncrease
   layers:
   - Default
   - TransparentFX
