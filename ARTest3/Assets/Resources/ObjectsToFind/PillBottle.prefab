@@ -16,19 +16,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!65 &-7184506263345711189
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3223460058623683793}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7364778, y: 0.73647803, z: 1.487563}
-  m_Center: {x: 0, y: -0.000000014901165, z: 0.0012387041}
 --- !u!64 &2928431483546065394
 MeshCollider:
   m_ObjectHideFlags: 0

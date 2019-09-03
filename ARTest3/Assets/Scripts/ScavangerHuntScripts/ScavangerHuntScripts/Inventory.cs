@@ -28,8 +28,10 @@ public class Inventory : MonoBehaviour
     }
     public void AddToList(InventoryInfo inven)
     {
-        if(inventory != null)
+        if (inventory != null)
+        {
             inventory.Add(inven);
+        }
     }
     
     public void ShowList()

@@ -33,6 +33,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         for (int i = 0; i < inventory.inventory.Count; i++)
         {
             SpawnAtRandomPointsInsideGameObject(randomNumbers[i]);
+            Debug.Log(inventory.inventory[i].spawn);
         }
         
 
@@ -64,7 +65,7 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         if (objectName == "Flushable Wipes")
         {
             //Prefect
-          //  temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.13f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.13f);
         }
         else if(objectName == "Bottom Shell")
         {
@@ -79,17 +80,17 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         else if(objectName == "bleach")
         {
             //Perfect
-           // temp.transform.localPosition = temp.transform.localPosition + new Vector3(-.15f, -.3f, -0.28f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(-.15f, -.3f, -0.28f);
         }
         else if(objectName == "Car")
         {
             //Prefect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.48f, 0, 0);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(-0.38f, 0, 0);
         }
         else if(objectName == "oil")
         {
             //Perfect
-            temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.253f, 0, -0.131f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(-0.353f, 0, -0.131f);
         }
         else if (objectName == "Pill")
         {
@@ -99,32 +100,32 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         else if (objectName == "lego")
         {
             //Prefect
-            //temp.transform.localPosition = temp.transform.localPosition + new Vector3(.2f, 0f, 0f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(.2f, 0f, 0f);
         }
         else if (objectName == "Coffee Grounds")
         {
             //Perfect
-            //temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.06f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.06f);
         }
         else if (objectName =="FryingPan")
         {
             //Perfect
-           // temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.1f, 0f, -0.1f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(-0.1f, 0f, -0.1f);
         }
         else if(objectName == "Ketchup")
         {
             //Perfect // -3.1 // 1.787 //11.46
-            //temp.transform.localPosition = temp.transform.localPosition + new Vector3(-0.6f, -0.025f, 0f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(-0.6f, -0.025f, 0f);
         }
         else if (objectName == "Syrn")
         {
             //Perfect
-         //   temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, -0.05f, 0f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(0f, -0.05f, 0f);
         }
         else if (objectName == "Floss" || objectName == "PillBottle")
         {
             //Perfect
-          //  temp.transform.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.025f);
+            temp.transform.parent.localPosition = temp.transform.localPosition + new Vector3(0f, 0f, -0.025f);
         }
 
         //Various cehcks to make sure items are proper size for fatberg

@@ -43,12 +43,13 @@ public class FPController : MonoBehaviour
         Vector3 movement = Vector3.ProjectOnPlane(transform.right * speed * h, Vector3.up);
         if (cannotMoveForward)
         {
-            vec.z = 0;
-            Debug.Log(vec);
+            //vec.z = 0;
+            //Debug.Log(vec);
         }
         vec.y = 0;
         movePos = (vec + movement + transform.position); // So i know where we want to move if we are colliding
         transform.position += (vec + movement);
+        Debug.Log(vec + movement);
         //mouse movement 
         transform.Rotate(Vector3.up * Input.GetAxis("Mouse X") * rotSpeed);
         verticalLookRotation += Input.GetAxis("Mouse Y") * rotSpeed;
@@ -103,8 +104,8 @@ public class FPController : MonoBehaviour
                     //Debug.Log(Vector3.Distance(hit.point, movePos));
                     if (Vector3.Distance(hit.point, movePos) < .8f)
                     {
-                        cannotMoveForward = true;
-                        Debug.Log("Cant move forward");
+                       // cannotMoveForward = true;
+                     //   Debug.Log("Cant move forward");
                     }
                 }
             }

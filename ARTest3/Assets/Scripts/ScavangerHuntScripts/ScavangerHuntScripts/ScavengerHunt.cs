@@ -87,10 +87,13 @@ public class ScavengerHunt : MonoBehaviour
         string objectName = spawns[Random.Range(0, spawns.Length)];
         //Debug.Log(objectName);
         GameObject temp = Instantiate(Resources.Load<GameObject>("ObjectsToFind/" + objectName));
-
+        Debug.Log(objectName + "  " + this.gameObject);
         info = temp.GetComponent<ObjectInformation>().objectInfo;
         //info.name = objectName;
-        pos = new Vector3(pos.x, pos.y + temp.GetComponent<MeshRenderer>().bounds.extents.y, pos.z);
+        if(temp.GetComponent<MeshRenderer>())
+            pos = new Vector3(pos.x, pos.y + temp.GetComponent<MeshRenderer>().bounds.extents.y, pos.z);
+        else
+            pos = new Vector3(pos.x, pos.y + temp.GetComponentInChildren<MeshRenderer>().bounds.extents.y, pos.z);
         info.obj = temp;
         CheckIfInside[] check = GameObject.FindObjectsOfType(typeof(CheckIfInside)) as CheckIfInside[];
         foreach (CheckIfInside c in check) // Check if we spawned inside an object and if so spawn ontop of it

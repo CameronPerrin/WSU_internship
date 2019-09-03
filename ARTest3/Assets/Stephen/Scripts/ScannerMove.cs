@@ -143,8 +143,9 @@ public class ScannerMove : MonoBehaviour
         }
         if(!inMiniGame)
         {
-            //Vector3 newRot = new Vector3(0, scanner.transform.localEulerAngles.y, scanner.transform.localEulerAngles.z);
-            scanner.transform.localEulerAngles = Vector3.Lerp(scanner.transform.localEulerAngles, Vector3.zero, Time.deltaTime * 2f);
+            //Vector3 newRot = new Vector3(0, scanner.transform.localEulerAngles.y, scanner.transform.localEulerAngles.z);            
+            scanner.transform.localEulerAngles = Vector3.Lerp(scanner.transform.localEulerAngles, new Vector3(scanner.transform.localEulerAngles.x,
+                0f,scanner.transform.localEulerAngles.z), Time.deltaTime * 3f);
             //Debug.Log(scanner.transform.localEulerAngles);
         }
         
@@ -305,8 +306,8 @@ public class ScannerMove : MonoBehaviour
             //    ((ViewportPosition.y * uiPosition.GetComponentInParent<Canvas>().pixelRect.y) - (uiPosition.GetComponentInParent<Canvas>().pixelRect.y * 0.5f)));
 
             clicked.transform.localPosition = new Vector3(uiPosition.position.x, uiPosition.position.y, uiPosition.position.z);
-            clicked.transform.GetChild(0).transform.localPosition = new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y, 
-            clicked.transform.GetChild(0).transform.localPosition.z);
+            clicked.transform.GetChild(0).transform.localPosition = Vector3.Lerp(clicked.transform.GetChild(0).transform.localPosition,
+                new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y, clicked.transform.GetChild(0).transform.localPosition.z), Time.deltaTime * 1.5f);
 
             clicked.transform.rotation = oldRot;
             framesleft--;

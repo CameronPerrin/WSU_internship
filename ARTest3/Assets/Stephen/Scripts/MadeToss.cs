@@ -22,14 +22,14 @@ public class MadeToss : MonoBehaviour
     {
         if (other.tag == "NoSpawn" || other.tag == "NoSpawnIncrease")
         {
-            Destroy(gameObject);
+            
             if (hasWaited)
             {
                 GameController controller = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>();
                 controller.GetComponent<GameController>().score++;
                 if (other.tag == "NoSpawnIncrease")
                 {
-                    GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().guage.GetComponent<GuageTimer>().AddToPercent(1f);
+                    GameObject.FindGameObjectWithTag("Controller").GetComponent<GameController>().guage.GetComponent<GuageTimer>().AddToPercent(3f);
                     Inventory inven = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
                     InventoryInfo inventoryInfo = new InventoryInfo(GetComponent<ObjectInformation>().objectInfo, GetComponent<ObjectInformation>());
                     inven.GetComponent<Inventory>().AddToList(inventoryInfo);
@@ -38,8 +38,8 @@ public class MadeToss : MonoBehaviour
                 {
                     other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
                 }
-
-
+                Destroy(gameObject);
+                StartCoroutine(Delay());
             }
             else
             {
@@ -50,7 +50,7 @@ public class MadeToss : MonoBehaviour
     IEnumerator Delay()
     {
         hasWaited = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(.5f);
         hasWaited = true;
     }
 }
