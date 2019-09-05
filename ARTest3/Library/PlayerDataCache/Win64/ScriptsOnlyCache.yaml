@@ -193,6 +193,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10590}
     - Class: 114
+      Script: {instanceID: 10884}
+    - Class: 114
       Script: {instanceID: 11248}
     - Class: 114
       Script: {instanceID: 11808}
@@ -612,7 +614,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14962}
     - Class: 114
-      Script: {instanceID: 27280}
+      Script: {instanceID: 37260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1400,7 +1402,7 @@ ScriptsOnlyBuild:
     className: CameraSwitcher
   - hash:
       serializedVersion: 2
-      Hash: 67ec6426185d23997fd7f52cee9388bf
+      Hash: 55dd00ed3d50e782a3496ae881f6b4c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FadeIn
@@ -2636,7 +2638,7 @@ ScriptsOnlyBuild:
     className: AutoTypeText
   - hash:
       serializedVersion: 2
-      Hash: ebff813b08f61f19a46f53998a4e1fb0
+      Hash: d07bd46c9cd370586e3313a84180ef27
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CellPhone
@@ -3360,4 +3362,4 @@ ScriptsOnlyBuild:
   - Assets/GregsStuff/Phase1.unity
   - Assets/Stephen/Scenes/Sewer.unity
   - Assets/Stephen/Scenes/EndScreen.unity
-  playerPath: E:/WSUFinalBuildV5/ARTest3.exe
+  playerPath: C:/Users/Greg/Documents/__DontFeedTheFatBerg/Dont Feed The FatBerg.exe

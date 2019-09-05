@@ -19,6 +19,7 @@ public class CellPhone : MonoBehaviour
     bool secondRun;
     GuageTimer guage;
     bool isStopping = false;
+    public Image fadeImage;
     //public AudioSource clip;
     //Alright so the reason the object keeps disappearing is because the renderer is turned off when moving off screen.
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class CellPhone : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(playerHasSeenTextMessage);
+       // Debug.Log(playerHasSeenTextMessage);
         if (rotate)
         {
             SwitchRotate();
@@ -59,8 +60,13 @@ public class CellPhone : MonoBehaviour
                 //textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
                 textMessage.SetActive(false);
                 cellPhoneHasBeenDisabled = true;
-                if (secondRun)
-                    SceneManager.LoadScene(2);
+            if (secondRun)
+            {
+                //SceneManager.LoadScene(2);
+                GetComponent<FadeIn>().FadeOut(fadeImage);
+               // StartCoroutine(Delay());
+                secondRun = false;
+            }
             
                 /*  if(textMessage.activeInHierarchy)
                       textMessage.GetComponent<RectTransform>().sizeDelta = normSize;
@@ -113,6 +119,11 @@ public class CellPhone : MonoBehaviour
         cellPhoneHasBeenDisabled = false;
         
         transText = s;
+    }
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(2);
     }
     IEnumerator StopScreenAni()
     {

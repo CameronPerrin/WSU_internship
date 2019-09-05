@@ -306,20 +306,22 @@ public class ScannerMove : MonoBehaviour
             //    ((ViewportPosition.y * uiPosition.GetComponentInParent<Canvas>().pixelRect.y) - (uiPosition.GetComponentInParent<Canvas>().pixelRect.y * 0.5f)));
 
             clicked.transform.localPosition = new Vector3(uiPosition.position.x, uiPosition.position.y, uiPosition.position.z);
-            if (clicked.transform.GetChild(0).GetComponent<ItemInfo>().itemName != "Top Egg" && clicked.transform.GetChild(0).GetComponent<ItemInfo>().itemName != "Oil")
+            if (clicked.transform.GetChild(0).GetComponent<ItemInfo>().itemName != "Egg Shell" && clicked.transform.GetChild(0).GetComponent<ItemInfo>().itemName != "Oil")
             {
                 clicked.transform.GetChild(0).transform.localPosition = Vector3.Lerp(clicked.transform.GetChild(0).transform.localPosition,
                     new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y, clicked.transform.GetChild(0).transform.localPosition.z), Time.deltaTime * 1.5f);
             }
             else if (clicked.transform.GetChild(0).GetComponent<ItemInfo>().itemName == "Egg Shell")
             {
-                clicked.transform.GetChild(0).transform.localPosition = Vector3.Lerp(clicked.transform.GetChild(0).transform.localPosition,
-                new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y + 0.4f, clicked.transform.GetChild(0).transform.localPosition.z), Time.deltaTime * 1.5f);
+              //  clicked.transform.GetChild(0).transform.localPosition = Vector3.Lerp(clicked.transform.GetChild(0).transform.localPosition, clicked.transform.positi
+             //    clicked.transform.localPosition = new Vector3(uiPosition.position.x, uiPosition.position.y, uiPosition.position.z);
+                  clicked.transform.GetChild(0).transform.localPosition = Vector3.Lerp(clicked.transform.GetChild(0).transform.localPosition,
+                new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y + 1.1f, clicked.transform.GetChild(0).transform.localPosition.z), Time.deltaTime * 1.5f);
             }
             else if (clicked.transform.GetChild(0).GetComponent<ItemInfo>().itemName == "Oil")
             {
                 clicked.transform.GetChild(0).transform.localPosition = Vector3.Lerp(clicked.transform.GetChild(0).transform.localPosition,
-                    new Vector3(0f, clicked.transform.GetChild(0).transform.localPosition.y - 1.45f, clicked.transform.GetChild(0).transform.localPosition.z), Time.deltaTime * 1.5f);
+                    new Vector3(.9f, clicked.transform.GetChild(0).transform.localPosition.y + 3.5f, clicked.transform.GetChild(0).transform.localPosition.z), Time.deltaTime * 1.5f);
             }
 
             clicked.transform.rotation = oldRot;

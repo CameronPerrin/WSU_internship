@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FadeIn : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class FadeIn : MonoBehaviour
     public float delay;
     public float subtractBy;
     public GameObject activate;
-    bool isWaiting = false;
+    public bool isWaiting = false;
+    public bool firstScene = false;
     void Start()
     {
         
@@ -19,8 +21,11 @@ public class FadeIn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isWaiting)
+        if (!isWaiting && !firstScene)
             StartCoroutine(Delay());
+        else if (!isWaiting && firstScene)
+            StartCoroutine(FadeOutDelay());
+
     }
     IEnumerator Delay()
     {
@@ -36,5 +41,37 @@ public class FadeIn : MonoBehaviour
         }
         else
             isWaiting = false;
+    }
+    IEnumerator FadeOutDelay()
+    {
+        isWaiting = true;
+        yield return new WaitForSeconds(delay);
+        Color color;
+        color = image.color;
+        color.a += subtractBy;
+        image.color = color;
+        if (color.a >= 1f)
+        {
+            SceneManager.LoadScene(2);
+        }
+        else
+            isWaiting = false;
+    }
+    public void FadeOut()
+    {
+        isWaiting = false;
+    }
+    public void FadeOut(Image i)
+    {
+        image = i;
+        Color color = image.color;
+        color.a = 0;
+        image.color = color;
+        
+        if(!image.gameObject.activeInHierarchy)
+        {
+            image.gameObject.SetActive(true);
+        }
+        isWaiting = false;
     }
 }

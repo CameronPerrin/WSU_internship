@@ -17,18 +17,29 @@ public class SpawnRandomlyInFatberg : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
         //List<InventoryInfo> inven = inventory.inventory.OrderBy(s => s.objInfo.name).ToList();
         int[] randomNumbers = new int[6];
-        for (int i = 0; i < 6; i++)
+        if (inventory.inventory.Count > 6)
         {
-            int num = Random.Range(0, inventory.inventory.Count);
-            for (int k = 0; k < 6; k++)
+            for (int i = 0; i < 6; i++)
             {
-                while(randomNumbers[k] == num)
+                int num = Random.Range(0, inventory.inventory.Count);
+                for (int k = 0; k < 6; k++)
                 {
-                    num = Random.Range(0, inventory.inventory.Count);
+                    while (randomNumbers[k] == num)
+                    {
+                        num = Random.Range(0, inventory.inventory.Count);
+                    }
                 }
-            }
-            randomNumbers[i] = num;
+                randomNumbers[i] = num;
 
+            }
+        }
+        else
+        {
+            for (int i = 0; i < inventory.inventory.Count - 1; i++)
+            {
+                randomNumbers[i] = i;
+                Debug.Log(i);
+            }
         }
         for (int i = 0; i < inventory.inventory.Count; i++)
         {

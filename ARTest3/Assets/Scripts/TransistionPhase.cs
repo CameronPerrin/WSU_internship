@@ -43,6 +43,7 @@ public class TransistionPhase : MonoBehaviour
     }
     void ShowCellPhone()
     {
+        cellPhone.fadeImage = image;
         cellPhone.CallPhone(textToText);
     }
     IEnumerator ScreenToBlack()
@@ -58,13 +59,16 @@ public class TransistionPhase : MonoBehaviour
         }
         else
         {
-            yield return new WaitForSeconds(2.5f);
-            ShowCellPhone();
+            yield return new WaitForSeconds(1.5f);
             controller.cannotPickUp = true;
+            yield return new WaitForSeconds(1f);
+            ShowCellPhone();
+            
             image.gameObject.SetActive(false);
             //Activate Timeline
             player.transform.position = new Vector3(trans.position.x, player.transform.position.y, trans.position.z);
-            player.transform.eulerAngles = trans.eulerAngles;
+            player.transform.GetChild(0).transform.eulerAngles = trans.eulerAngles;
+            player.GetComponent<FPController>().enabled = false;
             // timeline.SetActive(true);
         }
     }

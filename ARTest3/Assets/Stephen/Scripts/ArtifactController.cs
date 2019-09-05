@@ -42,6 +42,7 @@ public class ArtifactController : MonoBehaviour
 
     void Update()
     {
+        
         if (!cannotPickUp)
         {
             if (Input.GetKeyDown("space") && clicked && clicked.transform.parent != null || (Input.GetAxisRaw("RTXbox") >= 0.4) && clicked && clicked.transform.parent != null)
@@ -152,6 +153,12 @@ public class ArtifactController : MonoBehaviour
                 else // Just in case clicked is null and it can never switch the  currently holding value
                     currentlyHolding = false;
             }
+        }
+        else
+        {
+            if(clicked != null && clicked.transform.parent != null)
+                clicked.transform.parent = null;
+             clicked.GetComponentInChildren<Rigidbody>().isKinematic = false;
         }
     }
     GameObject InteractWithClosetGameObject()
