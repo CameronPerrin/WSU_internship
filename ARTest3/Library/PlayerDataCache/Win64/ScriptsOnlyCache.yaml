@@ -99,6 +99,8 @@ ScriptsOnlyBuild:
     - UnityEngine.Timeline.AnimationTrack
     - UnityEngine.Timeline.MarkerTrack
     - UnityEngine.Timeline.TimelineAsset
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -116,6 +118,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/GregsStuff/Phase1.unity:
     - Class: 1
@@ -289,6 +293,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13456}
     - Class: 114
       Script: {instanceID: 13760}
+    - Class: 114
+      Script: {instanceID: 14654}
+    - Class: 114
+      Script: {instanceID: 14682}
     - Class: 114
       Script: {instanceID: 14716}
     - Class: 115
@@ -610,7 +618,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14962}
     - Class: 114
-      Script: {instanceID: 27288}
+      Script: {instanceID: 45714}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1500,7 +1508,7 @@ ScriptsOnlyBuild:
     className: PostProcessEffectSettings
   - hash:
       serializedVersion: 2
-      Hash: b17eb0105db8e5c362e9b5dfe17edb5b
+      Hash: 1f417e908e63b7d1124a2949027c2a30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScannerMove
@@ -3358,4 +3366,4 @@ ScriptsOnlyBuild:
   - Assets/GregsStuff/Phase1.unity
   - Assets/Stephen/Scenes/Sewer.unity
   - Assets/Stephen/Scenes/EndScreen.unity
-  playerPath: C:/Users/Greg/Documents/DontFeedTheFatbergFinal/Dont Feed The Fatberg.exe
+  playerPath: C:/Users/Gregory/Desktop/FinalWSUBuild/Dont Feed The Fatberg.exe

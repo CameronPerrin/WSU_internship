@@ -1993,6 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0daa9ed4f59b008459edccb5527620d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedForMovement: 0.2
   x: 0
   y: 0
   cam: {fileID: 357547067}

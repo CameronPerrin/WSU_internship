@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class ScannerMove : MonoBehaviour
 {
+    //CameraSpeed
+    public float speedForMovement = 1f;
     //Camera Rotation Variables
     public float x;
     public float y;
@@ -159,7 +161,7 @@ public class ScannerMove : MonoBehaviour
             //Camera rotation input
             y = Input.GetAxisRaw("Horizontal");
             x = Input.GetAxisRaw("Vertical");
-            rotate = new Vector3(x * 1, y * -1, 0);
+            rotate = new Vector3(x * speedForMovement, y * -speedForMovement, 0);
             transform.eulerAngles = transform.eulerAngles - rotate;
             testRot = transform.localEulerAngles;
             //Constraints for camera rotation - PERFECT
